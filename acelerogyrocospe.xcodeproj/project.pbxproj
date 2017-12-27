@@ -103,8 +103,6 @@
 			children = (
 				F250DD861FE8318D00785891 /* ButtonTelasViewController.swift */,
 				F224C5501FEBEE5A00FE59EE /* Maps */,
-				F22EB1F21FE0521300A1936F /* WebViewController.swift */,
-				F250DD801FE3E97F00785891 /* TextViewController.swift */,
 				F21EA1601FA8C37400CDCD83 /* acelerogyrocospe */,
 				F21EA1751FA8C37500CDCD83 /* acelerogyrocospeTests */,
 				F21EA1801FA8C37500CDCD83 /* acelerogyrocospeUITests */,
@@ -126,6 +124,8 @@
 		F21EA1601FA8C37400CDCD83 /* acelerogyrocospe */ = {
 			isa = PBXGroup;
 			children = (
+				F250DD801FE3E97F00785891 /* TextViewController.swift */,
+				F22EB1F21FE0521300A1936F /* WebViewController.swift */,
 				F21EA1611FA8C37500CDCD83 /* AppDelegate.swift */,
 				F21EA1631FA8C37500CDCD83 /* ViewController.swift */,
 				F24607DD1FD7FDE400B07B52 /* SplashTesteViewController.swift */,

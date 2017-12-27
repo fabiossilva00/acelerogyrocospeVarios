@@ -13,10 +13,33 @@ class SearchTableViewController: UITableViewController {
     
     var matchItens: [MKMapItem] = []
     
-    var mapViewS : MKMapItem?
+    var mapView : MKMapView? = nil
+    
+    var handleMapSearchDelegate: HandlerMapSearch? = nil
+    
+    func parseAddress(selectedItem:MKPlacemark) -> String {
+        
+        let firstSpace = (selectedItem.subThoroughfare != nil && selectedItem.thoroughfare != nil) ? "" : ""
+        let comma = (selectedItem.subThoroughfare != nil || selectedItem.thoroughfare != nil) && (selectedItem.subAdministrativeArea != nil || selectedItem.administrativeArea != nil) ? "" : ""
+        let secondSpace = (selectedItem.subAdministrativeArea != nil && selectedItem.administrativeArea != nil) ? "" : ""
+        
+        let addressLine =  String (
+            format: "%@%@%@%@%@%@%@",
+            selectedItem.subThoroughfare ?? "",
+            firstSpace,
+            selectedItem.thoroughfare ?? "",
+            comma,
+            selectedItem.locality ?? "",
+            secondSpace,
+            selectedItem.administrativeArea ?? ""
+        )
+        return addressLine
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -32,26 +55,32 @@ class SearchTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
+//    override func numberOfSections(in tableView: UITableView) -> Int {
+//        // #warning Incomplete implementation, return the number of sections
+//        return 0
+//    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return matchItens.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
+        let selecteditem = matchItens[indexPath.row].placemark
+        cell.textLabel?.text = selecteditem.name
+        cell.detailTextLabel?.text = parseAddress(selectedItem: selecteditem)
         // Configure the cell...
 
         return cell
     }
-    */
-
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selecteditem = matchItens[indexPath.row].placemark
+        handleMapSearchDelegate?.dropPinZoomIn(placemark: selecteditem)
+        dismiss(animated: true, completion: nil)
+    }
+ 
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -96,21 +125,18 @@ class SearchTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }
 
 extension SearchTableViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
-        guard let mapView = mapViewS,
-            let searchBarText = searchController.searchBar.text else { return }
-        
-        let request  = MKLocalSearchRequest()
+        guard let mapView = mapView, let searchBarText = searchController.searchBar.text else {return}
+        let request = MKLocalSearchRequest()
         request.naturalLanguageQuery = searchBarText
-        let search = MKLocalSearch (request: request)
-        search.start(completionHandler: ){ response, error in
-            guard let response = response else {
-                return
-            }
+        request.region = mapView.region
+        let search = MKLocalSearch(request: request)
+        search.start { response, error in
+                guard let response = response else {return}
+                print(response)
             self.matchItens = response.mapItems
             self.tableView.reloadData()
         }

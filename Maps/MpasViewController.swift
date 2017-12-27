@@ -10,10 +10,8 @@ import UIKit
 import MapKit
 import CoreLocation
 
-struct locationUser{
-    static var latitude = Double()
-    static var longitude = Double()
-    static var region = MKCoordinateRegion()
+protocol HandlerMapSearch{
+    func dropPinZoomIn(placemark: MKPlacemark)
 }
 
 class MpasViewController: UIViewController, UISearchBarDelegate{
@@ -23,6 +21,7 @@ class MpasViewController: UIViewController, UISearchBarDelegate{
     var locationManager = CLLocationManager()
     var resultSearch : UISearchController!
     
+    var selectedPin : MKPlacemark? = nil
     
     let searchTable = SearchTableViewController()
     
@@ -48,10 +47,12 @@ class MpasViewController: UIViewController, UISearchBarDelegate{
         resultSearch.hidesNavigationBarDuringPresentation = false
         resultSearch.dimsBackgroundDuringPresentation  = true
         definesPresentationContext = true
-               
-//        localTable.mapViewS = mapView?
         
         mapView.mapType = .standard
+        
+        localTable.mapView = mapView
+        
+        localTable.handleMapSearchDelegate = self
         
         // Do any additional setup after loading the view.
     }
@@ -59,6 +60,14 @@ class MpasViewController: UIViewController, UISearchBarDelegate{
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @objc func getDirections() {
+        if let selectedPin = selectedPin{
+            let mapItem = MKMapItem(placemark: selectedPin)
+            let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving]
+            mapItem.openInMaps(launchOptions: launchOptions)
+        }
     }
     
     
@@ -110,10 +119,45 @@ extension MpasViewController: CLLocationManagerDelegate{
             let region = MKCoordinateRegionMake(location.coordinate, span)
             mapView.setRegion(region, animated: true)
         }
-        
     }
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print(Error.self)
     }
 }
 
+extension MpasViewController: HandlerMapSearch{
+    func dropPinZoomIn(placemark: MKPlacemark) {
+        selectedPin = placemark
+        mapView.removeAnnotations(mapView.annotations)
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = placemark.coordinate
+        annotation.title = placemark.name
+        if let city = placemark.locality, let state = placemark.administrativeArea {
+            annotation.subtitle = "\(city) \(state)"
+        }
+        mapView.addAnnotation(annotation)
+        let span = MKCoordinateSpanMake(0.1, 0.1)
+        let region = MKCoordinateRegionMake(placemark.coordinate, span)
+        mapView.setRegion(region, animated: true)
+    }
+}
+
+extension MpasViewController: MKMapViewDelegate{
+    
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        if annotation is MKUserLocation{
+            return nil
+        }
+        let reuseId = "pin"
+        var pinView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseId)
+        pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
+        pinView?.canShowCallout = true
+        let smallSquare = CGSize(width: 30.0, height: 30.0)
+        let button = UIButton(frame: CGRect(origin: .zero, size: smallSquare))
+        button.setBackgroundImage(UIImage(named: "carVerde"), for: .normal)
+        button.addTarget(self, action: #selector (MpasViewController.getDirections), for: .touchUpInside)
+        pinView?.leftCalloutAccessoryView = button
+        
+        return pinView
+    }
+}
