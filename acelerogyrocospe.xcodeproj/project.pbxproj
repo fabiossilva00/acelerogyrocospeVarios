@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F21810071FBDD338006BFD5B /* Tab1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21810061FBDD337006BFD5B /* Tab1ViewController.swift */; };
+		F21810091FBDD352006BFD5B /* Tab2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21810081FBDD352006BFD5B /* Tab2ViewController.swift */; };
 		F21EA1621FA8C37500CDCD83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21EA1611FA8C37500CDCD83 /* AppDelegate.swift */; };
 		F21EA1641FA8C37500CDCD83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21EA1631FA8C37500CDCD83 /* ViewController.swift */; };
 		F21EA1671FA8C37500CDCD83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F21EA1651FA8C37500CDCD83 /* Main.storyboard */; };
@@ -14,6 +16,15 @@
 		F21EA16C1FA8C37500CDCD83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F21EA16A1FA8C37500CDCD83 /* LaunchScreen.storyboard */; };
 		F21EA1771FA8C37500CDCD83 /* acelerogyrocospeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21EA1761FA8C37500CDCD83 /* acelerogyrocospeTests.swift */; };
 		F21EA1821FA8C37500CDCD83 /* acelerogyrocospeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21EA1811FA8C37500CDCD83 /* acelerogyrocospeUITests.swift */; };
+		F21EA1911FA8C86600CDCD83 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21EA1901FA8C84A00CDCD83 /* CoreMotion.framework */; };
+		F224C5521FEBEEF000FE59EE /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F224C5511FEBEEF000FE59EE /* SearchTableViewController.swift */; };
+		F224C5541FEC4B6900FE59EE /* FormataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F224C5531FEC4B6900FE59EE /* FormataViewController.swift */; };
+		F22EB1F31FE0521300A1936F /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22EB1F21FE0521300A1936F /* WebViewController.swift */; };
+		F24607DE1FD7FDE400B07B52 /* SplashTesteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24607DD1FD7FDE400B07B52 /* SplashTesteViewController.swift */; };
+		F250DD811FE3E98000785891 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F250DD801FE3E97F00785891 /* TextViewController.swift */; };
+		F250DD831FE807D400785891 /* MpasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F250DD821FE807D300785891 /* MpasViewController.swift */; };
+		F250DD851FE829AD00785891 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F250DD841FE829AD00785891 /* MapKit.framework */; };
+		F250DD871FE8318D00785891 /* ButtonTelasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F250DD861FE8318D00785891 /* ButtonTelasViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F21810061FBDD337006BFD5B /* Tab1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1ViewController.swift; sourceTree = "<group>"; };
+		F21810081FBDD352006BFD5B /* Tab2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab2ViewController.swift; sourceTree = "<group>"; };
 		F21EA15E1FA8C37400CDCD83 /* acelerogyrocospe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = acelerogyrocospe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F21EA1611FA8C37500CDCD83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F21EA1631FA8C37500CDCD83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +60,15 @@
 		F21EA17D1FA8C37500CDCD83 /* acelerogyrocospeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = acelerogyrocospeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F21EA1811FA8C37500CDCD83 /* acelerogyrocospeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = acelerogyrocospeUITests.swift; sourceTree = "<group>"; };
 		F21EA1831FA8C37500CDCD83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F21EA1901FA8C84A00CDCD83 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		F224C5511FEBEEF000FE59EE /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		F224C5531FEC4B6900FE59EE /* FormataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormataViewController.swift; sourceTree = "<group>"; };
+		F22EB1F21FE0521300A1936F /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		F24607DD1FD7FDE400B07B52 /* SplashTesteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashTesteViewController.swift; sourceTree = "<group>"; };
+		F250DD801FE3E97F00785891 /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
+		F250DD821FE807D300785891 /* MpasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MpasViewController.swift; sourceTree = "<group>"; };
+		F250DD841FE829AD00785891 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		F250DD861FE8318D00785891 /* ButtonTelasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTelasViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +76,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F250DD851FE829AD00785891 /* MapKit.framework in Frameworks */,
+				F21EA1911FA8C86600CDCD83 /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +101,15 @@
 		F21EA1551FA8C37400CDCD83 = {
 			isa = PBXGroup;
 			children = (
+				F250DD861FE8318D00785891 /* ButtonTelasViewController.swift */,
+				F224C5501FEBEE5A00FE59EE /* Maps */,
+				F22EB1F21FE0521300A1936F /* WebViewController.swift */,
+				F250DD801FE3E97F00785891 /* TextViewController.swift */,
 				F21EA1601FA8C37400CDCD83 /* acelerogyrocospe */,
 				F21EA1751FA8C37500CDCD83 /* acelerogyrocospeTests */,
 				F21EA1801FA8C37500CDCD83 /* acelerogyrocospeUITests */,
 				F21EA15F1FA8C37400CDCD83 /* Products */,
+				F21EA18F1FA8C84800CDCD83 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,7 +128,11 @@
 			children = (
 				F21EA1611FA8C37500CDCD83 /* AppDelegate.swift */,
 				F21EA1631FA8C37500CDCD83 /* ViewController.swift */,
+				F24607DD1FD7FDE400B07B52 /* SplashTesteViewController.swift */,
 				F21EA1651FA8C37500CDCD83 /* Main.storyboard */,
+				F224C5531FEC4B6900FE59EE /* FormataViewController.swift */,
+				F21810061FBDD337006BFD5B /* Tab1ViewController.swift */,
+				F21810081FBDD352006BFD5B /* Tab2ViewController.swift */,
 				F21EA1681FA8C37500CDCD83 /* Assets.xcassets */,
 				F21EA16A1FA8C37500CDCD83 /* LaunchScreen.storyboard */,
 				F21EA16D1FA8C37500CDCD83 /* Info.plist */,
@@ -123,6 +156,24 @@
 				F21EA1831FA8C37500CDCD83 /* Info.plist */,
 			);
 			path = acelerogyrocospeUITests;
+			sourceTree = "<group>";
+		};
+		F21EA18F1FA8C84800CDCD83 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F250DD841FE829AD00785891 /* MapKit.framework */,
+				F21EA1901FA8C84A00CDCD83 /* CoreMotion.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F224C5501FEBEE5A00FE59EE /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				F250DD821FE807D300785891 /* MpasViewController.swift */,
+				F224C5511FEBEEF000FE59EE /* SearchTableViewController.swift */,
+			);
+			path = Maps;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +245,11 @@
 					F21EA15D1FA8C37400CDCD83 = {
 						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					F21EA1711FA8C37500CDCD83 = {
 						CreatedOnToolsVersion = 9.0.1;
@@ -259,7 +315,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F22EB1F31FE0521300A1936F /* WebViewController.swift in Sources */,
+				F224C5541FEC4B6900FE59EE /* FormataViewController.swift in Sources */,
+				F24607DE1FD7FDE400B07B52 /* SplashTesteViewController.swift in Sources */,
 				F21EA1641FA8C37500CDCD83 /* ViewController.swift in Sources */,
+				F250DD871FE8318D00785891 /* ButtonTelasViewController.swift in Sources */,
+				F250DD811FE3E98000785891 /* TextViewController.swift in Sources */,
+				F250DD831FE807D400785891 /* MpasViewController.swift in Sources */,
+				F21810071FBDD338006BFD5B /* Tab1ViewController.swift in Sources */,
+				F224C5521FEBEEF000FE59EE /* SearchTableViewController.swift in Sources */,
+				F21810091FBDD352006BFD5B /* Tab2ViewController.swift in Sources */,
 				F21EA1621FA8C37500CDCD83 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,13 +491,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7Z9K2S6NTF;
 				INFOPLIST_FILE = acelerogyrocospe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.acelerogyrocospe.acelerogyrocospe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -440,13 +509,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7Z9K2S6NTF;
 				INFOPLIST_FILE = acelerogyrocospe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.acelerogyrocospe.acelerogyrocospe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
