@@ -59,9 +59,7 @@ class Maps2ViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestLocation()
-        
-//        locationManager.requestWhenInUseAuthorization()
-
+    
     }
     
     func checkLocationAuthorizationStatus() {
