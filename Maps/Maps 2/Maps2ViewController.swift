@@ -14,6 +14,8 @@ class Maps2ViewController: UIViewController, CLLocationManagerDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
     
+    var pinTabs: [PinTabs] = []
+    
     var locationManager = CLLocationManager()
     
     @IBAction func voltarButton(_ sender: Any) {
@@ -21,9 +23,28 @@ class Maps2ViewController: UIViewController, CLLocationManagerDelegate {
         self.present(vc, animated: true, completion: nil)
     }
     
+    func loadInitialData() {
+        guard let fileName = Bundle.main.path(forResource: "PublicArt", ofType: "json") else {return}
+        let optionalData = try? Data(contentsOf: URL(fileURLWithPath: fileName))
+        
+        guard let data = optionalData,
+            let json = try? JSONSerialization.jsonObject(with: data),
+            let dictionary = json as? [String: Any],
+            let works = dictionary["data"] as? [[Any]]
+            else {return}
+        let valid = works.flatMap { PinTabs(json: $0) }
+        pinTabs.append(contentsOf: valid)
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        mapView.delegate = self
+        
+        loadInitialData()
+        mapView.addAnnotations(pinTabs)
+        
         // Do any additional setup after loading the view.
     }
 
@@ -80,4 +101,22 @@ class Maps2ViewController: UIViewController, CLLocationManagerDelegate {
     }
     */
 
+}
+
+extension Maps2ViewController: MKMapViewDelegate{
+    
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        guard let annotation = annotation as? PinTabs else {return nil}
+        let identifier  =  "Marca"
+        var view: MKMarkerAnnotationView
+        if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKMarkerAnnotationView {
+            dequeuedView.annotation = annotation
+            view = dequeuedView
+        }else{
+            view = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+            view.calloutOffset = CGPoint(x: -5, y: 5)
+            view.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+        }
+        return view
+    }
 }
