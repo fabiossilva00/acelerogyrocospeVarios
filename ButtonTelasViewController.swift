@@ -36,6 +36,12 @@ class ButtonTelasViewController: UIViewController {
         self.present(vc, animated: true, completion: nil)
     }
     
+    @IBAction func maps2Bnt(_ sender: Any) {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "map2ID")
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

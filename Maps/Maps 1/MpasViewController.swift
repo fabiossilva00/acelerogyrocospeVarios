@@ -95,6 +95,7 @@ class MpasViewController: UIViewController, UISearchBarDelegate{
         
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "buttonTelasID")
         self.present(vc, animated: true, completion: nil)
+        
     }
 
     /*

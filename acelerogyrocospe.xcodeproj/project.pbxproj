@@ -25,6 +25,8 @@
 		F250DD831FE807D400785891 /* MpasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F250DD821FE807D300785891 /* MpasViewController.swift */; };
 		F250DD851FE829AD00785891 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F250DD841FE829AD00785891 /* MapKit.framework */; };
 		F250DD871FE8318D00785891 /* ButtonTelasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F250DD861FE8318D00785891 /* ButtonTelasViewController.swift */; };
+		F2CBFFBD1FF42D96002F685C /* Maps2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CBFFBC1FF42D96002F685C /* Maps2ViewController.swift */; };
+		F2CBFFC01FF53D59002F685C /* PublicArt.json in Resources */ = {isa = PBXBuildFile; fileRef = F2CBFFBF1FF53D58002F685C /* PublicArt.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		F250DD821FE807D300785891 /* MpasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MpasViewController.swift; sourceTree = "<group>"; };
 		F250DD841FE829AD00785891 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		F250DD861FE8318D00785891 /* ButtonTelasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTelasViewController.swift; sourceTree = "<group>"; };
+		F2CBFFBC1FF42D96002F685C /* Maps2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Maps2ViewController.swift; path = "Maps/Maps 2/Maps2ViewController.swift"; sourceTree = SOURCE_ROOT; };
+		F2CBFFBF1FF53D58002F685C /* PublicArt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PublicArt.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,10 +174,28 @@
 		F224C5501FEBEE5A00FE59EE /* Maps */ = {
 			isa = PBXGroup;
 			children = (
-				F250DD821FE807D300785891 /* MpasViewController.swift */,
-				F224C5511FEBEEF000FE59EE /* SearchTableViewController.swift */,
+				F2CBFFBF1FF53D58002F685C /* PublicArt.json */,
+				F2CBFFBE1FF42D9C002F685C /* Maps 2 */,
+				F2CBFFBB1FF42D5C002F685C /* Maps 1 */,
 			);
 			path = Maps;
+			sourceTree = "<group>";
+		};
+		F2CBFFBB1FF42D5C002F685C /* Maps 1 */ = {
+			isa = PBXGroup;
+			children = (
+				F224C5511FEBEEF000FE59EE /* SearchTableViewController.swift */,
+				F250DD821FE807D300785891 /* MpasViewController.swift */,
+			);
+			path = "Maps 1";
+			sourceTree = "<group>";
+		};
+		F2CBFFBE1FF42D9C002F685C /* Maps 2 */ = {
+			isa = PBXGroup;
+			children = (
+				F2CBFFBC1FF42D96002F685C /* Maps2ViewController.swift */,
+			);
+			path = "Maps 2";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,6 +310,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2CBFFC01FF53D59002F685C /* PublicArt.json in Resources */,
 				F21EA16C1FA8C37500CDCD83 /* LaunchScreen.storyboard in Resources */,
 				F21EA1691FA8C37500CDCD83 /* Assets.xcassets in Resources */,
 				F21EA1671FA8C37500CDCD83 /* Main.storyboard in Resources */,
@@ -321,6 +344,7 @@
 				F21EA1641FA8C37500CDCD83 /* ViewController.swift in Sources */,
 				F250DD871FE8318D00785891 /* ButtonTelasViewController.swift in Sources */,
 				F250DD811FE3E98000785891 /* TextViewController.swift in Sources */,
+				F2CBFFBD1FF42D96002F685C /* Maps2ViewController.swift in Sources */,
 				F250DD831FE807D400785891 /* MpasViewController.swift in Sources */,
 				F21810071FBDD338006BFD5B /* Tab1ViewController.swift in Sources */,
 				F224C5521FEBEEF000FE59EE /* SearchTableViewController.swift in Sources */,
