@@ -8,11 +8,29 @@
 
 import UIKit
 
-class FormataViewController: UIViewController {
-
+class FormataViewController: UIViewController, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return arrayTable.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = arrayTable[indexPath.row]
+        return cell
+    }
+    
+    
+    @IBOutlet weak var viewBnt1: UIView!
+    @IBOutlet weak var viewBnt2: UIView!
+    @IBOutlet weak var tableView: UITableView!
+    
+    let arrayTable: Array<String> = ["Teste 1", "teste 2", "teste 3", "Teste 4"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.tableView.dataSource = self
         // Do any additional setup after loading the view.
     }
 
@@ -21,7 +39,12 @@ class FormataViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func voltarButton(_ sender: Any) {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "buttonTelasID")
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    
     /*
     // MARK: - Navigation
 

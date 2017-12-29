@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let modelName = UIDevice.current.modelName
         print(modelName)
         
+        
         return true
     }
 
