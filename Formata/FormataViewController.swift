@@ -8,29 +8,47 @@
 
 import UIKit
 
-class FormataViewController: UIViewController, UITableViewDataSource {
+class FormataViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrayTable.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = arrayTable[indexPath.row]
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
+        let testando = arrayTable[indexPath.row]
+        cell.teste1Lbl?.text = testando.testeA
+        cell.teste2Lbl?.text = testando.testeB
+        cell.teste3Lbl?.text = testando.testeC
+        cell.testeImageCell.image = UIImage(named: testando.testeImage)
+        
+        
+        cell.testeImageCell.layer.cornerRadius = 12
+        cell.testeImageCell.layer.masksToBounds = true
+        
         return cell
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UIDevice.current.userInterfaceIdiom == UIUserInterfaceIdiom.pad ? 260 : 175
+    }
     
+    @IBOutlet weak var view1: UIView!
     @IBOutlet weak var viewBnt1: UIView!
     @IBOutlet weak var viewBnt2: UIView!
     @IBOutlet weak var tableView: UITableView!
     
-    let arrayTable: Array<String> = ["Teste 1", "teste 2", "teste 3", "Teste 4"]
+    let arrayTable: Array<ItensTable> = Teste().retornaTestes()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        viewBnt1.layer.cornerRadius = 12
+        viewBnt2.layer.cornerRadius = 12
+                
         self.tableView.dataSource = self
+        self.tableView.delegate = self
         // Do any additional setup after loading the view.
     }
 
