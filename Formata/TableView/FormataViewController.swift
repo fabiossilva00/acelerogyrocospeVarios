@@ -18,11 +18,10 @@ class FormataViewController: UIViewController, UITableViewDataSource, UITableVie
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
         let testando = arrayTable[indexPath.row]
-        cell.teste1Lbl?.text = testando.testeA
+        cell.teste1Lbl?.text = testando.testado
         cell.teste2Lbl?.text = testando.testeB
         cell.teste3Lbl?.text = testando.testeC
         cell.testeImageCell.image = UIImage(named: testando.testeImage)
-        
         
         cell.testeImageCell.layer.cornerRadius = 12
         cell.testeImageCell.layer.masksToBounds = true
@@ -44,8 +43,8 @@ class FormataViewController: UIViewController, UITableViewDataSource, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        viewBnt1.layer.cornerRadius = 12
-        viewBnt2.layer.cornerRadius = 12
+        viewBnt1.layer.cornerRadius = 23
+        viewBnt2.layer.cornerRadius = 23
                 
         self.tableView.dataSource = self
         self.tableView.delegate = self

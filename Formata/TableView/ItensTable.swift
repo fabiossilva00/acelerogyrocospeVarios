@@ -10,13 +10,13 @@ import UIKit
 
 class ItensTable: NSObject {
     
-    let testeA: String
-    let testeB: String
-    let testeC: String
-    let testeImage: String
+    let testado : String
+    let testeB : String
+    let testeC : String
+    let testeImage : String
     
-    init(testeA: String, testeB: String, testeC: String, testeImage: String){
-        self.testeA = testeA
+    init(testado: String, testeB: String, testeC: String, testeImage: String){
+        self.testado = testado
         self.testeB = testeB
         self.testeC = testeC
         self.testeImage = testeImage

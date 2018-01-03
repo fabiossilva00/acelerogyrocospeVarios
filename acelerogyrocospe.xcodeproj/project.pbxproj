@@ -25,12 +25,15 @@
 		F250DD831FE807D400785891 /* MpasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F250DD821FE807D300785891 /* MpasViewController.swift */; };
 		F250DD851FE829AD00785891 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F250DD841FE829AD00785891 /* MapKit.framework */; };
 		F250DD871FE8318D00785891 /* ButtonTelasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F250DD861FE8318D00785891 /* ButtonTelasViewController.swift */; };
+		F2B2349B1FFCED7600BBC572 /* Formata2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B2349A1FFCED7600BBC572 /* Formata2ViewController.swift */; };
+		F2B2349D1FFCEF5A00BBC572 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B2349C1FFCEF5A00BBC572 /* CollectionViewCell.swift */; };
 		F2C94B271FFB9BE2000331B2 /* ItensTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C94B261FFB9BE2000331B2 /* ItensTable.swift */; };
 		F2C94B2B1FFBA18F000331B2 /* Teste.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C94B2A1FFBA18F000331B2 /* Teste.swift */; };
 		F2C94B351FFBB6C7000331B2 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C94B341FFBB6C7000331B2 /* TableViewCell.swift */; };
 		F2CBFFBD1FF42D96002F685C /* Maps2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CBFFBC1FF42D96002F685C /* Maps2ViewController.swift */; };
 		F2CBFFC01FF53D59002F685C /* PublicArt.json in Resources */ = {isa = PBXBuildFile; fileRef = F2CBFFBF1FF53D58002F685C /* PublicArt.json */; };
 		F2CBFFC41FF54621002F685C /* PinTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CBFFC31FF54621002F685C /* PinTabs.swift */; };
+		F2EFDE7F1FFD4C3000B705EE /* DetalhesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EFDE7E1FFD4C3000B705EE /* DetalhesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,12 +78,15 @@
 		F250DD821FE807D300785891 /* MpasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MpasViewController.swift; sourceTree = "<group>"; };
 		F250DD841FE829AD00785891 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		F250DD861FE8318D00785891 /* ButtonTelasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTelasViewController.swift; sourceTree = "<group>"; };
+		F2B2349A1FFCED7600BBC572 /* Formata2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formata2ViewController.swift; sourceTree = "<group>"; };
+		F2B2349C1FFCEF5A00BBC572 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		F2C94B261FFB9BE2000331B2 /* ItensTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItensTable.swift; sourceTree = "<group>"; };
 		F2C94B2A1FFBA18F000331B2 /* Teste.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teste.swift; sourceTree = "<group>"; };
 		F2C94B341FFBB6C7000331B2 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		F2CBFFBC1FF42D96002F685C /* Maps2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Maps2ViewController.swift; path = "Maps/Maps 2/Maps2ViewController.swift"; sourceTree = SOURCE_ROOT; };
 		F2CBFFBF1FF53D58002F685C /* PublicArt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PublicArt.json; sourceTree = "<group>"; };
 		F2CBFFC31FF54621002F685C /* PinTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinTabs.swift; sourceTree = "<group>"; };
+		F2EFDE7E1FFD4C3000B705EE /* DetalhesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,13 +195,32 @@
 			path = Maps;
 			sourceTree = "<group>";
 		};
-		F2C94B251FFB9A9F000331B2 /* Formata */ = {
+		F2B234981FFCECFE00BBC572 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
-				F2C94B341FFBB6C7000331B2 /* TableViewCell.swift */,
 				F224C5531FEC4B6900FE59EE /* FormataViewController.swift */,
 				F2C94B261FFB9BE2000331B2 /* ItensTable.swift */,
 				F2C94B2A1FFBA18F000331B2 /* Teste.swift */,
+				F2C94B341FFBB6C7000331B2 /* TableViewCell.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		F2B234991FFCED2F00BBC572 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				F2B2349A1FFCED7600BBC572 /* Formata2ViewController.swift */,
+				F2B2349C1FFCEF5A00BBC572 /* CollectionViewCell.swift */,
+				F2EFDE7E1FFD4C3000B705EE /* DetalhesViewController.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		F2C94B251FFB9A9F000331B2 /* Formata */ = {
+			isa = PBXGroup;
+			children = (
+				F2B234991FFCED2F00BBC572 /* CollectionView */,
+				F2B234981FFCECFE00BBC572 /* TableView */,
 			);
 			path = Formata;
 			sourceTree = "<group>";
@@ -368,10 +393,12 @@
 			files = (
 				F2CBFFC41FF54621002F685C /* PinTabs.swift in Sources */,
 				F2C94B351FFBB6C7000331B2 /* TableViewCell.swift in Sources */,
+				F2B2349D1FFCEF5A00BBC572 /* CollectionViewCell.swift in Sources */,
 				F22EB1F31FE0521300A1936F /* WebViewController.swift in Sources */,
 				F224C5541FEC4B6900FE59EE /* FormataViewController.swift in Sources */,
 				F24607DE1FD7FDE400B07B52 /* SplashTesteViewController.swift in Sources */,
 				F21EA1641FA8C37500CDCD83 /* ViewController.swift in Sources */,
+				F2B2349B1FFCED7600BBC572 /* Formata2ViewController.swift in Sources */,
 				F250DD871FE8318D00785891 /* ButtonTelasViewController.swift in Sources */,
 				F250DD811FE3E98000785891 /* TextViewController.swift in Sources */,
 				F2CBFFBD1FF42D96002F685C /* Maps2ViewController.swift in Sources */,
@@ -379,6 +406,7 @@
 				F250DD831FE807D400785891 /* MpasViewController.swift in Sources */,
 				F21810071FBDD338006BFD5B /* Tab1ViewController.swift in Sources */,
 				F224C5521FEBEEF000FE59EE /* SearchTableViewController.swift in Sources */,
+				F2EFDE7F1FFD4C3000B705EE /* DetalhesViewController.swift in Sources */,
 				F2C94B271FFB9BE2000331B2 /* ItensTable.swift in Sources */,
 				F21810091FBDD352006BFD5B /* Tab2ViewController.swift in Sources */,
 				F21EA1621FA8C37500CDCD83 /* AppDelegate.swift in Sources */,

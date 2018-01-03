@@ -1,19 +1,19 @@
 //
-//  Tab2ViewController.swift
+//  DetalhesViewController.swift
 //  acelerogyrocospe
 //
-//  Created by Fabio Sousa da Silva on 16/11/2017.
-//  Copyright © 2017 Fabio Sousa da Silva. All rights reserved.
+//  Created by Fabio Sousa da Silva on 03/01/2018.
+//  Copyright © 2018 Fabio Sousa da Silva. All rights reserved.
 //
 
 import UIKit
 
-class Tab2ViewController: UIViewController {
+class DetalhesViewController: UIViewController {
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        viewBntVolta.layer.cornerRadius = 23
 
         // Do any additional setup after loading the view.
     }
@@ -22,13 +22,8 @@ class Tab2ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    @IBOutlet weak var viewBntVolta: UIView!
     
-    @IBAction func voltarButton(_ sender: Any) {
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "buttonTelasID")
-        self.present(vc, animated: true, completion: nil)
-    }
-    
+
     /*
     // MARK: - Navigation
 

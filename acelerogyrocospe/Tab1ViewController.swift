@@ -12,9 +12,15 @@ class Tab1ViewController: UIViewController {
     
     var startData = NSDate()
 
+    @IBOutlet weak var viewButton: UIView!
+    @IBOutlet weak var imageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        viewButton.layer.cornerRadius = 18
+//        imageView.image = UIImage(named: "icone.300.png")
+        
         // Do any additional setup after loading the view.
     }
 
