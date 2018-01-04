@@ -76,6 +76,12 @@ class Formata2ViewController: UIViewController, UICollectionViewDataSource, UICo
         return arrayTeste.count == 0 ? "Nada" : "\(arrayTeste.count) Testes"
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "detalhesID")
+        self.present(vc, animated: true, completion: nil)
+        
+    }
     
     /*
     // MARK: - Navigation
