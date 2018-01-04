@@ -10,11 +10,11 @@ import UIKit
 
 class DetalhesViewController: UIViewController {
     
-    
+    let arrayPacote: Array<PacoteViagem> = PacoteViagemDAO().retornaTodasAsViagens()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
 
