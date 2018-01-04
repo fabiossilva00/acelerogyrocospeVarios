@@ -34,6 +34,7 @@
 		F2CBFFC01FF53D59002F685C /* PublicArt.json in Resources */ = {isa = PBXBuildFile; fileRef = F2CBFFBF1FF53D58002F685C /* PublicArt.json */; };
 		F2CBFFC41FF54621002F685C /* PinTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CBFFC31FF54621002F685C /* PinTabs.swift */; };
 		F2EFDE7F1FFD4C3000B705EE /* DetalhesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EFDE7E1FFD4C3000B705EE /* DetalhesViewController.swift */; };
+		F2EFDE811FFE928C00B705EE /* PacoteViagemDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EFDE801FFE928A00B705EE /* PacoteViagemDAO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		F2CBFFBF1FF53D58002F685C /* PublicArt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PublicArt.json; sourceTree = "<group>"; };
 		F2CBFFC31FF54621002F685C /* PinTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinTabs.swift; sourceTree = "<group>"; };
 		F2EFDE7E1FFD4C3000B705EE /* DetalhesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhesViewController.swift; sourceTree = "<group>"; };
+		F2EFDE801FFE928A00B705EE /* PacoteViagemDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PacoteViagemDAO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +214,7 @@
 				F2B2349A1FFCED7600BBC572 /* Formata2ViewController.swift */,
 				F2B2349C1FFCEF5A00BBC572 /* CollectionViewCell.swift */,
 				F2EFDE7E1FFD4C3000B705EE /* DetalhesViewController.swift */,
+				F2EFDE801FFE928A00B705EE /* PacoteViagemDAO.swift */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -396,6 +399,7 @@
 				F2B2349D1FFCEF5A00BBC572 /* CollectionViewCell.swift in Sources */,
 				F22EB1F31FE0521300A1936F /* WebViewController.swift in Sources */,
 				F224C5541FEC4B6900FE59EE /* FormataViewController.swift in Sources */,
+				F2EFDE811FFE928C00B705EE /* PacoteViagemDAO.swift in Sources */,
 				F24607DE1FD7FDE400B07B52 /* SplashTesteViewController.swift in Sources */,
 				F21EA1641FA8C37500CDCD83 /* ViewController.swift in Sources */,
 				F2B2349B1FFCED7600BBC572 /* Formata2ViewController.swift in Sources */,
