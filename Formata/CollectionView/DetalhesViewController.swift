@@ -66,7 +66,7 @@ class DetalhesViewController: UIViewController{
     
     @objc func dataTexty(sender: UIDatePicker){
         let formatter = DateFormatter()
-        formatter.dateFormat = "DD/MM/YYYY"
+        formatter.dateFormat = "dd/MM/YYYY"
         dataText.text = formatter.string(from: sender.date)
         
     }
