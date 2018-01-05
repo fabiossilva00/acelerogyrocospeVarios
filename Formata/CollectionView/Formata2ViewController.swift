@@ -13,6 +13,7 @@ class Formata2ViewController: UIViewController, UICollectionViewDataSource, UICo
     var arrayTeste: Array<ItensTable> = Teste().retornaTestes()
     var arrayVazio: Array<ItensTable> = []
     let arrayPacote: Array<PacoteViagem> = PacoteViagemDAO().retornaTodasAsViagens()
+    var arrayMudaPacote: Array<PacoteViagem> = []
     
     
     @IBOutlet weak var searchTeste: UISearchBar!
@@ -45,13 +46,9 @@ class Formata2ViewController: UIViewController, UICollectionViewDataSource, UICo
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
 
-        let searchTeste = NSPredicate(format: "testando contains[c] %@", searchText)
-        print(searchTeste)
-//        let searchFinal:Array<ItensTable> = (arrayVazio as NSArray).filtered(using: searchTeste) as! Array
-//            print(arrayTeste)
-        let arrayV:Array<ItensTable> = Teste().retornaTestes()
-//        let searchFinal:Array<ItensTable> = (arrayTeste as NSArray).filtered(using: searchTeste) as! Array
-//        arrayTeste = searchFinal
+//        let searchTeste = NSPredicate(format: "titulo contains[c] %@", searchText)
+//        let searchFinal:Array<PacoteViagem> = (arrayPacote as NSArray).filtered(using: searchTeste) as! Array
+//        arrayMudaPacote = searchFinal
 //        collectionTesteView.reloadData()
     }
     
@@ -80,12 +77,12 @@ class Formata2ViewController: UIViewController, UICollectionViewDataSource, UICo
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        
-        
+        let pacote = arrayPacote[indexPath.item]
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "detalhesID")
+        let vc = storyboard.instantiateViewController(withIdentifier: "detalhesID") as! DetalhesViewController
+        vc.pacoteSelecionado = pacote
         self.present(vc, animated: true, completion: nil)
-        
+
     }
     
     /*
