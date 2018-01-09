@@ -27,6 +27,7 @@
 		F250DD871FE8318D00785891 /* ButtonTelasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F250DD861FE8318D00785891 /* ButtonTelasViewController.swift */; };
 		F2B2349B1FFCED7600BBC572 /* Formata2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B2349A1FFCED7600BBC572 /* Formata2ViewController.swift */; };
 		F2B2349D1FFCEF5A00BBC572 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B2349C1FFCEF5A00BBC572 /* CollectionViewCell.swift */; };
+		F2B38BFA2004F2C300AE084D /* TerminaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B38BF92004F2C300AE084D /* TerminaViewController.swift */; };
 		F2C94B271FFB9BE2000331B2 /* ItensTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C94B261FFB9BE2000331B2 /* ItensTable.swift */; };
 		F2C94B2B1FFBA18F000331B2 /* Teste.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C94B2A1FFBA18F000331B2 /* Teste.swift */; };
 		F2C94B351FFBB6C7000331B2 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C94B341FFBB6C7000331B2 /* TableViewCell.swift */; };
@@ -84,6 +85,7 @@
 		F250DD861FE8318D00785891 /* ButtonTelasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTelasViewController.swift; sourceTree = "<group>"; };
 		F2B2349A1FFCED7600BBC572 /* Formata2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formata2ViewController.swift; sourceTree = "<group>"; };
 		F2B2349C1FFCEF5A00BBC572 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		F2B38BF92004F2C300AE084D /* TerminaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminaViewController.swift; sourceTree = "<group>"; };
 		F2C94B261FFB9BE2000331B2 /* ItensTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItensTable.swift; sourceTree = "<group>"; };
 		F2C94B2A1FFBA18F000331B2 /* Teste.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teste.swift; sourceTree = "<group>"; };
 		F2C94B341FFBB6C7000331B2 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 				F2EFDE7E1FFD4C3000B705EE /* DetalhesViewController.swift */,
 				F2EFDE801FFE928A00B705EE /* PacoteViagemDAO.swift */,
 				F2EFDE821FFE937800B705EE /* PacoteViagem.swift */,
+				F2B38BF92004F2C300AE084D /* TerminaViewController.swift */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -408,6 +411,7 @@
 				F2B2349D1FFCEF5A00BBC572 /* CollectionViewCell.swift in Sources */,
 				F22EB1F31FE0521300A1936F /* WebViewController.swift in Sources */,
 				F224C5541FEC4B6900FE59EE /* FormataViewController.swift in Sources */,
+				F2B38BFA2004F2C300AE084D /* TerminaViewController.swift in Sources */,
 				F2EFDE811FFE928C00B705EE /* PacoteViagemDAO.swift in Sources */,
 				F24607DE1FD7FDE400B07B52 /* SplashTesteViewController.swift in Sources */,
 				F21EA1641FA8C37500CDCD83 /* ViewController.swift in Sources */,

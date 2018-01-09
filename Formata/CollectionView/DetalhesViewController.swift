@@ -24,6 +24,7 @@ class DetalhesViewController: UIViewController{
     @IBOutlet weak var scrollPacote: UIScrollView!
     @IBOutlet weak var numeroText: UITextField!
     @IBOutlet weak var dataText: UITextField!
+    @IBOutlet weak var terminaButton: UIButton!
     
     var pacoteSelecionado: PacoteViagem? = nil
     
@@ -38,12 +39,17 @@ class DetalhesViewController: UIViewController{
     @IBAction func voltarButton(_ sender: Any) {
         
         dismiss(animated: true, completion: nil)
-        
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let vc = storyboard.instantiateViewController(withIdentifier: "")
-//        self.present(vc, animated: true, completion: nil)
+    }
+    
+    @IBAction func terminaButton(_ sender: Any) {
+
+        let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "terminaID") as! TerminaViewController
+        vc.pacoteDetales = pacoteSelecionado
+        self.present(vc, animated: true, completion: nil)
         
     }
+    
     
     func atuTela(){
         
