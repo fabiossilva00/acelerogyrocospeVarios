@@ -79,6 +79,7 @@ class DetalhesViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         NotificationCenter.default.addObserver(self, selector: #selector(pacoteScroll(notification:)), name: .UIKeyboardDidShow, object: nil)
         
         atuTela()

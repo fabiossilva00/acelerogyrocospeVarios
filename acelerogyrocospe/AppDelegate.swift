@@ -17,8 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         let modelName = UIDevice.current.modelName
+        let battery = UIDevice.current.batteryLevel
+        let localModel = UIDevice.current.userInterfaceIdiom
+        print(battery)
         print(modelName)
-        
+        print(localModel)
         
         return true
     }
@@ -46,6 +49,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 }
+
 public extension UIDevice {
     
     var modelName: String {

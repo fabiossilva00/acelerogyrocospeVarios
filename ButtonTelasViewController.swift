@@ -46,6 +46,18 @@ class ButtonTelasViewController: UIViewController {
         self.present(vc, animated: true, completion: nil)
     }
     
+    @IBAction func cepButton(_ sender: Any) {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "cepID")
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+
+    @IBAction func ingressosButton(_ sender: Any) {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ingressosID")
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
