@@ -17,16 +17,41 @@ class IngressosAluraViewController: UIViewController {
     
     @IBOutlet var camposText: [UITextField]!
     
-    func textVer(){
-        camposText.count
-            
+    @IBAction func comprarButton(_ sender: Any) {
+        let camposVerificar = textVer(camposText: camposText)
         
+        if camposVerificar {
+            print("true")
+        }else{
+            print("false")
+            present(notificaText(), animated: true, completion: nil)
+        }
     }
-    
     
     @IBAction func voltarButton(_ sender: Any) {
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "buttonTelasID")
         self.present(vc, animated: true, completion: nil)
+    }
+    
+    func textVer(camposText: Array<UITextField>) -> Bool{
+        var textCampos = true
+        
+        for campoText in camposText{
+            if campoText.text  == "" {
+                textCampos = false
+            }else{
+                textCampos = true
+            }
+        }
+        return textCampos
+    }
+    
+    func notificaText() -> UIAlertController {
+        
+        let notifica = UIAlertController(title: "Campos", message: "Vazios", preferredStyle: .alert)
+        let button = UIAlertAction(title: "Okay", style: .cancel, handler: nil)
+        notifica.addAction(button)
+        return notifica
     }
     
     func atuaTela(){
@@ -40,6 +65,9 @@ class IngressosAluraViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        let tap: UIGestureRecognizer = UIGestureRecognizer(target: self, action: #selector(IngressosAluraViewController.dismissed))
+//        view.addGestureRecognizer(tap)
+        
         atuaTela()
         // Do any additional setup after loading the view.
     }
@@ -49,6 +77,9 @@ class IngressosAluraViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @objc func dismissed() {
+        
+    }
 
     /*
     // MARK: - Navigation
