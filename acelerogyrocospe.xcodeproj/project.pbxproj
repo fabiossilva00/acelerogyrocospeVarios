@@ -39,6 +39,8 @@
 		F2CBFFBD1FF42D96002F685C /* Maps2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CBFFBC1FF42D96002F685C /* Maps2ViewController.swift */; };
 		F2CBFFC01FF53D59002F685C /* PublicArt.json in Resources */ = {isa = PBXBuildFile; fileRef = F2CBFFBF1FF53D58002F685C /* PublicArt.json */; };
 		F2CBFFC41FF54621002F685C /* PinTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CBFFC31FF54621002F685C /* PinTabs.swift */; };
+		F2E044AA200D1043001F4254 /* AlamoCampos.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E044A9200D1043001F4254 /* AlamoCampos.swift */; };
+		F2E044AC200D1070001F4254 /* AlamoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E044AB200D1070001F4254 /* AlamoAPI.swift */; };
 		F2EFDE7F1FFD4C3000B705EE /* DetalhesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EFDE7E1FFD4C3000B705EE /* DetalhesViewController.swift */; };
 		F2EFDE811FFE928C00B705EE /* PacoteViagemDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EFDE801FFE928A00B705EE /* PacoteViagemDAO.swift */; };
 		F2EFDE831FFE937800B705EE /* PacoteViagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EFDE821FFE937800B705EE /* PacoteViagem.swift */; };
@@ -89,6 +91,13 @@
 			remoteGlobalIDString = 11F5A1EA77FB906965A003918997AC06;
 			remoteInfo = "Pods-acelerogyrocospeUITests";
 		};
+		F2E044A5200D0F90001F4254 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F26239472006937E009DD5C3 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 258EBF0FBA29477ADFA41CC591FF46D4;
+			remoteInfo = "CPF-CNPJ-Validator";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -137,6 +146,8 @@
 		F2CBFFBC1FF42D96002F685C /* Maps2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Maps2ViewController.swift; path = "Maps/Maps 2/Maps2ViewController.swift"; sourceTree = SOURCE_ROOT; };
 		F2CBFFBF1FF53D58002F685C /* PublicArt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PublicArt.json; sourceTree = "<group>"; };
 		F2CBFFC31FF54621002F685C /* PinTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinTabs.swift; sourceTree = "<group>"; };
+		F2E044A9200D1043001F4254 /* AlamoCampos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamoCampos.swift; sourceTree = "<group>"; };
+		F2E044AB200D1070001F4254 /* AlamoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamoAPI.swift; sourceTree = "<group>"; };
 		F2EFDE7E1FFD4C3000B705EE /* DetalhesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhesViewController.swift; sourceTree = "<group>"; };
 		F2EFDE801FFE928A00B705EE /* PacoteViagemDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PacoteViagemDAO.swift; sourceTree = "<group>"; };
 		F2EFDE821FFE937800B705EE /* PacoteViagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacoteViagem.swift; sourceTree = "<group>"; };
@@ -277,6 +288,7 @@
 			isa = PBXGroup;
 			children = (
 				F262394F2006937E009DD5C3 /* Alamofire.framework */,
+				F2E044A6200D0F90001F4254 /* CPF_CNPJ_Validator.framework */,
 				F26239512006937E009DD5C3 /* Pods_acelerogyrocospe.framework */,
 				F26239532006937E009DD5C3 /* Pods_acelerogyrocospeTests.framework */,
 				F26239552006937E009DD5C3 /* Pods_acelerogyrocospeUITests.framework */,
@@ -288,6 +300,8 @@
 			isa = PBXGroup;
 			children = (
 				F262395B20079DC3009DD5C3 /* IngressosAluraViewController.swift */,
+				F2E044A9200D1043001F4254 /* AlamoCampos.swift */,
+				F2E044AB200D1070001F4254 /* AlamoAPI.swift */,
 			);
 			path = "Alura Formatacao Cartao";
 			sourceTree = "<group>";
@@ -504,6 +518,13 @@
 			remoteRef = F26239542006937E009DD5C3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		F2E044A6200D0F90001F4254 /* CPF_CNPJ_Validator.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CPF_CNPJ_Validator.framework;
+			remoteRef = F2E044A5200D0F90001F4254 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -609,10 +630,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-acelerogyrocospe/Pods-acelerogyrocospe-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CPF-CNPJ-Validator/CPF_CNPJ_Validator.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CPF_CNPJ_Validator.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -694,9 +717,11 @@
 				F2C94B351FFBB6C7000331B2 /* TableViewCell.swift in Sources */,
 				F2B2349D1FFCEF5A00BBC572 /* CollectionViewCell.swift in Sources */,
 				F22EB1F31FE0521300A1936F /* WebViewController.swift in Sources */,
+				F2E044AC200D1070001F4254 /* AlamoAPI.swift in Sources */,
 				F224C5541FEC4B6900FE59EE /* FormataViewController.swift in Sources */,
 				F2B38BFA2004F2C300AE084D /* TerminaViewController.swift in Sources */,
 				F2EFDE811FFE928C00B705EE /* PacoteViagemDAO.swift in Sources */,
+				F2E044AA200D1043001F4254 /* AlamoCampos.swift in Sources */,
 				F262395C20079DC3009DD5C3 /* IngressosAluraViewController.swift in Sources */,
 				F24607DE1FD7FDE400B07B52 /* SplashTesteViewController.swift in Sources */,
 				F21EA1641FA8C37500CDCD83 /* ViewController.swift in Sources */,

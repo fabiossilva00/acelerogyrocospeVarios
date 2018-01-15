@@ -19,10 +19,12 @@ class CEPViewController: UIViewController {
     @IBOutlet weak var estadoLabel: UILabel!
     @IBOutlet weak var ibgeLabel: UILabel!
     @IBOutlet weak var complementoText: UITextField!
+    @IBOutlet weak var cepText2: UITextField!
     
     var urlCEP = String()
     
 //    https://viacep.com.br/ws/cepURL/json/
+    
     
     func alamoCEP() {
         
