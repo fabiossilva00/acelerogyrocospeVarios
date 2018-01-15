@@ -9,6 +9,7 @@
 import UIKit
 import CPF_CNPJ_Validator
 import Alamofire
+import CreditCardValidator
 
 enum textCampos: Int {
     
@@ -61,13 +62,6 @@ class IngressosAluraViewController: UIViewController {
             failure: {(error) in print(error)})
     }
     
-    @IBAction func codSegText(_ sender: UITextField) {
-        
-        u
-        
-    }
-    
-    
     @IBAction func voltarButton(_ sender: Any) {
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "buttonTelasID")
         self.present(vc, animated: true, completion: nil)
@@ -97,6 +91,7 @@ class IngressosAluraViewController: UIViewController {
         
         guard let cpf = textDict[.cpf], BooleanValidator().validate(cpf: cpf.text!) else {return false}
         guard let email = textDict[.email], self.emailV(email.text!) else {return false}
+        guard let cartao = textDict[.numero], CreditCardValidator().validate(string: cartao.text!) else {return false}
         
         return true
     }

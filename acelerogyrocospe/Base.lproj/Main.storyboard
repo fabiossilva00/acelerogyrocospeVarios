@@ -1354,9 +1354,6 @@
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                                                <connections>
-                                                                    <action selector="codSegText:" destination="McR-h2-T7P" eventType="editingChanged" id="myM-3S-cNp"/>
-                                                                </connections>
                                                             </textField>
                                                         </subviews>
                                                     </stackView>
