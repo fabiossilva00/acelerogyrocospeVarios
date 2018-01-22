@@ -24,10 +24,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var txtField02: UITextField!
     
     func startTime(){
-        startData = Date() as! NSDate!
+        startData = Date() as NSDate!
     }
     func endTime(){
-       let ti: TimeInterval = Date().timeIntervalSince(startData as! Date)
+        let ti: TimeInterval = Date().timeIntervalSince(startData as Date)
         
         print("Terminei \(ti)")
         
@@ -132,11 +132,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
     @objc func update() {
         if let accelerometerData = motionManager.accelerometerData {
-            var x = accelerometerData.acceleration.x*10
-            var y = accelerometerData.acceleration.y*10
-            var z = accelerometerData.acceleration.z*10
+            let x = accelerometerData.acceleration.x*10
+            let y = accelerometerData.acceleration.y*10
+            let z = accelerometerData.acceleration.z*10
             
-            var formatter = NumberFormatter()
+            let formatter = NumberFormatter()
             formatter.numberStyle = .decimal
             formatter.maximumFractionDigits = 0
             

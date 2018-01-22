@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreTelephony
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,6 +23,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print(battery)
         print(modelName)
         print(localModel)
+        
+        let version = Bundle.main.infoDictionary!["CFBundleShortVersionString"]
+        print(version)
+        
+        let networkInfo = CTTelephonyNetworkInfo().subscriberCellularProvider?.carrierName
+        print(networkInfo)
         
         return true
     }

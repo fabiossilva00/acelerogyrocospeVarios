@@ -45,6 +45,7 @@ class Maps2ViewController: UIViewController, CLLocationManagerDelegate {
         loadInitialData()
         mapView.addAnnotations(pinTabs)
         
+        
         // Do any additional setup after loading the view.
     }
 
@@ -59,6 +60,7 @@ class Maps2ViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestLocation()
+        locationEnable()
     
     }
     
@@ -73,6 +75,49 @@ class Maps2ViewController: UIViewController, CLLocationManagerDelegate {
         } else {
             locationManager.requestWhenInUseAuthorization()
         }
+    }
+    
+    func locationEnable(){
+        if CLLocationManager.locationServicesEnabled() == true {
+            switch (CLLocationManager.authorizationStatus()){
+            case .denied:
+                alertLocationOff()
+                break
+            case .notDetermined:
+                print("Nao determinado")
+                break
+            case .restricted:
+                print("Restrito")
+                break
+            case .authorizedAlways:
+                print("Sempre")
+                break
+            case .authorizedWhenInUse:
+                print("Em uso")
+                break
+            }
+        }else{
+            print("Desabilitado?")
+        }
+    }
+    
+    func alertLocationOff(){
+        let alertController = UIAlertController(title: "Localizacao", message: "Localizacao Nunca", preferredStyle: .alert )
+        
+        let settingsAction = UIAlertAction(title: "Configuracoes", style: .default, handler: { _ in
+            guard let settingsURL = URL(string: UIApplicationOpenSettingsURLString) else {return}
+            if UIApplication.shared.canOpenURL(settingsURL){
+                UIApplication.shared.open(settingsURL, completionHandler: { (success) in
+                    print(settingsURL)
+                })
+            }
+        })
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
+        alertController.addAction(cancelAction)
+        alertController.addAction(settingsAction)
+        
+        self.present(alertController, animated: true, completion: nil)
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {

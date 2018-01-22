@@ -27,9 +27,11 @@ enum textCampos: Int {
     
 }
 
-class IngressosAluraViewController: UIViewController {
-    
+class IngressosAluraViewController: UIViewController, PickerViewMesText, PickerViewAnoText{
+
     var urlCEP = String()
+    var pickerMes = PickerViewMes()
+    var pickerAno = PickerViewAno()
     
     @IBOutlet weak var scrollIngressos: UIScrollView!
     @IBOutlet weak var aluraImage: UIImageView!
@@ -65,6 +67,54 @@ class IngressosAluraViewController: UIViewController {
     @IBAction func voltarButton(_ sender: Any) {
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "buttonTelasID")
         self.present(vc, animated: true, completion: nil)
+    }
+    
+    @IBAction func mesText(_ sender: UITextField) {
+        let pickerView = UIPickerView()
+        pickerView.delegate = pickerMes
+        pickerView.dataSource = pickerMes
+        sender.inputView = pickerView
+        
+        let toolbar = UIToolbar()
+        toolbar.barStyle = .default
+        toolbar.alpha = 0.8
+        toolbar.isTranslucent = true
+        toolbar.sizeToFit()
+
+        let okButton = UIBarButtonItem(title: "Ok", style: .plain, target: self, action: #selector(okClick))
+        let spaceButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil )
+
+        toolbar.setItems([spaceButton, okButton], animated: false)
+        toolbar.isUserInteractionEnabled = true
+        
+        sender.inputAccessoryView = toolbar
+    }
+    
+    @IBAction func anoText(_ sender: UITextField) {
+        let pickerView = UIPickerView()
+        pickerView.delegate = pickerAno
+        pickerView.dataSource = pickerAno
+        sender.inputView = pickerView
+        
+        let tolbar = UIToolbar()
+        tolbar.barStyle = .default
+        tolbar.isTranslucent = true
+        tolbar.alpha = 0.8
+//        tolbar.sizeToFit()
+        
+//        let okButton = UIBarButtonItem(title: "OK", style: .done, target: self, action: <#T##Selector?#>)
+    }
+    
+    func anoText(ano: String) {
+        self.cepCampos(textCampo: .ano) { (textA) in
+            textA.text = ano
+        }
+    }
+    
+    func mesText(mes: String) {
+        self.cepCampos(textCampo: .mes ) {  (textM) in
+            textM.text = mes
+        }
     }
     
     func textVer(camposText: Array<UITextField>) -> Bool{
@@ -131,10 +181,31 @@ class IngressosAluraViewController: UIViewController {
         ingressoImage.layer.masksToBounds = true
     }
     
+    @objc func okClick(_ textField: UITextField) {
+        self.cepCampos(textCampo: .mes){ (cepText) in
+            cepText.resignFirstResponder()
+        }
+        self.cepCampos(textCampo: .ano) { (anoText) in
+            anoText.resignFirstResponder()
+        }
+    }
+    
+    @objc func scrollUP(notification:Notification){
+        scrollIngressos.contentSize = CGSize(width: self.scrollIngressos.frame.width, height: self.scrollIngressos.frame.height + (self.scrollIngressos.frame.height * 2) )
+    }
+    
+    @objc func scrollDown(notification: Notification){
+        scrollIngressos.contentSize = CGSize(width: self.scrollIngressos.frame.width, height: self.scrollIngressos.frame.height)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         atuaTela()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(scrollUP(notification:)), name: .UIKeyboardDidShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(scrollDown(notification:)), name: .UIKeyboardDidHide, object: nil)
+        
         // Do any additional setup after loading the view.
     }
 
