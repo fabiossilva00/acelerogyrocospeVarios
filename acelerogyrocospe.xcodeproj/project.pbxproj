@@ -39,6 +39,11 @@
 		F2CBFFBD1FF42D96002F685C /* Maps2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CBFFBC1FF42D96002F685C /* Maps2ViewController.swift */; };
 		F2CBFFC01FF53D59002F685C /* PublicArt.json in Resources */ = {isa = PBXBuildFile; fileRef = F2CBFFBF1FF53D58002F685C /* PublicArt.json */; };
 		F2CBFFC41FF54621002F685C /* PinTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CBFFC31FF54621002F685C /* PinTabs.swift */; };
+		F2DA047C20160C8000E3484B /* CryptoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DA047B20160C8000E3484B /* CryptoViewController.swift */; };
+		F2DA0480201757BB00E3484B /* AlamoTestesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DA047F201757BB00E3484B /* AlamoTestesViewController.swift */; };
+		F2DA048220175C4A00E3484B /* AlamoTeste.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DA048120175C4A00E3484B /* AlamoTeste.swift */; };
+		F2DA0484201768F300E3484B /* AlamoTesteCampos.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DA0483201768F300E3484B /* AlamoTesteCampos.swift */; };
+		F2DA048620177FAA00E3484B /* AlamoTestes2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DA048520177FAA00E3484B /* AlamoTestes2ViewController.swift */; };
 		F2E044AA200D1043001F4254 /* AlamoCampos.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E044A9200D1043001F4254 /* AlamoCampos.swift */; };
 		F2E044AC200D1070001F4254 /* AlamoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E044AB200D1070001F4254 /* AlamoAPI.swift */; };
 		F2E044AF200E0DC4001F4254 /* PickerViewMes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E044AE200E0DC4001F4254 /* PickerViewMes.swift */; };
@@ -92,6 +97,20 @@
 			proxyType = 2;
 			remoteGlobalIDString = 11F5A1EA77FB906965A003918997AC06;
 			remoteInfo = "Pods-acelerogyrocospeUITests";
+		};
+		F2DA047720160C5500E3484B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F26239472006937E009DD5C3 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4E2A9B5289C1671A152BBA2BDE084ED0;
+			remoteInfo = AKMaskField;
+		};
+		F2DA047920160C5500E3484B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F26239472006937E009DD5C3 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7D49326B6391047A8996DDC64EFC8338;
+			remoteInfo = CryptoSwift;
 		};
 		F2E044A5200D0F90001F4254 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -155,6 +174,11 @@
 		F2CBFFBC1FF42D96002F685C /* Maps2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Maps2ViewController.swift; path = "Maps/Maps 2/Maps2ViewController.swift"; sourceTree = SOURCE_ROOT; };
 		F2CBFFBF1FF53D58002F685C /* PublicArt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PublicArt.json; sourceTree = "<group>"; };
 		F2CBFFC31FF54621002F685C /* PinTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinTabs.swift; sourceTree = "<group>"; };
+		F2DA047B20160C8000E3484B /* CryptoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewController.swift; sourceTree = "<group>"; };
+		F2DA047F201757BB00E3484B /* AlamoTestesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamoTestesViewController.swift; sourceTree = "<group>"; };
+		F2DA048120175C4A00E3484B /* AlamoTeste.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamoTeste.swift; sourceTree = "<group>"; };
+		F2DA0483201768F300E3484B /* AlamoTesteCampos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamoTesteCampos.swift; sourceTree = "<group>"; };
+		F2DA048520177FAA00E3484B /* AlamoTestes2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamoTestes2ViewController.swift; sourceTree = "<group>"; };
 		F2E044A9200D1043001F4254 /* AlamoCampos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamoCampos.swift; sourceTree = "<group>"; };
 		F2E044AB200D1070001F4254 /* AlamoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamoAPI.swift; sourceTree = "<group>"; };
 		F2E044AE200E0DC4001F4254 /* PickerViewMes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewMes.swift; sourceTree = "<group>"; };
@@ -212,11 +236,13 @@
 		F21EA1551FA8C37400CDCD83 = {
 			isa = PBXGroup;
 			children = (
+				F2DA047E2017579400E3484B /* AlamoTestes */,
+				F2DA046E20160C5300E3484B /* Try CrypoSwift */,
 				F2C94B251FFB9A9F000331B2 /* Formata */,
 				F2CBFFC51FF56EF6002F685C /* TouchID */,
-				F250DD861FE8318D00785891 /* ButtonTelasViewController.swift */,
 				F224C5501FEBEE5A00FE59EE /* Maps */,
 				F262395A20079D1A009DD5C3 /* Alura Formatacao Cartao */,
+				F250DD861FE8318D00785891 /* ButtonTelasViewController.swift */,
 				F21EA1601FA8C37400CDCD83 /* acelerogyrocospe */,
 				F21EA1751FA8C37500CDCD83 /* acelerogyrocospeTests */,
 				F21EA1801FA8C37500CDCD83 /* acelerogyrocospeUITests */,
@@ -298,9 +324,11 @@
 		F26239482006937E009DD5C3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				F2DA047820160C5500E3484B /* AKMaskField.framework */,
 				F262394F2006937E009DD5C3 /* Alamofire.framework */,
 				F2E044A6200D0F90001F4254 /* CPF_CNPJ_Validator.framework */,
 				F2E044B7200E0DC5001F4254 /* CreditCardValidator.framework */,
+				F2DA047A20160C5500E3484B /* CryptoSwift.framework */,
 				F26239512006937E009DD5C3 /* Pods_acelerogyrocospe.framework */,
 				F26239532006937E009DD5C3 /* Pods_acelerogyrocospeTests.framework */,
 				F26239552006937E009DD5C3 /* Pods_acelerogyrocospeUITests.framework */,
@@ -379,6 +407,25 @@
 			children = (
 			);
 			path = TouchID;
+			sourceTree = "<group>";
+		};
+		F2DA046E20160C5300E3484B /* Try CrypoSwift */ = {
+			isa = PBXGroup;
+			children = (
+				F2DA047B20160C8000E3484B /* CryptoViewController.swift */,
+			);
+			path = "Try CrypoSwift";
+			sourceTree = "<group>";
+		};
+		F2DA047E2017579400E3484B /* AlamoTestes */ = {
+			isa = PBXGroup;
+			children = (
+				F2DA047F201757BB00E3484B /* AlamoTestesViewController.swift */,
+				F2DA048120175C4A00E3484B /* AlamoTeste.swift */,
+				F2DA0483201768F300E3484B /* AlamoTesteCampos.swift */,
+				F2DA048520177FAA00E3484B /* AlamoTestes2ViewController.swift */,
+			);
+			path = AlamoTestes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -530,6 +577,20 @@
 			fileType = wrapper.framework;
 			path = Pods_acelerogyrocospeUITests.framework;
 			remoteRef = F26239542006937E009DD5C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F2DA047820160C5500E3484B /* AKMaskField.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AKMaskField.framework;
+			remoteRef = F2DA047720160C5500E3484B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F2DA047A20160C5500E3484B /* CryptoSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CryptoSwift.framework;
+			remoteRef = F2DA047920160C5500E3484B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		F2E044A6200D0F90001F4254 /* CPF_CNPJ_Validator.framework */ = {
@@ -742,7 +803,9 @@
 				F2623959200694BD009DD5C3 /* CEPViewController.swift in Sources */,
 				F2CBFFC41FF54621002F685C /* PinTabs.swift in Sources */,
 				F2C94B351FFBB6C7000331B2 /* TableViewCell.swift in Sources */,
+				F2DA0484201768F300E3484B /* AlamoTesteCampos.swift in Sources */,
 				F2B2349D1FFCEF5A00BBC572 /* CollectionViewCell.swift in Sources */,
+				F2DA048220175C4A00E3484B /* AlamoTeste.swift in Sources */,
 				F22EB1F31FE0521300A1936F /* WebViewController.swift in Sources */,
 				F2E044AC200D1070001F4254 /* AlamoAPI.swift in Sources */,
 				F224C5541FEC4B6900FE59EE /* FormataViewController.swift in Sources */,
@@ -761,10 +824,13 @@
 				F2C94B2B1FFBA18F000331B2 /* Teste.swift in Sources */,
 				F250DD831FE807D400785891 /* MpasViewController.swift in Sources */,
 				F21810071FBDD338006BFD5B /* Tab1ViewController.swift in Sources */,
+				F2DA048620177FAA00E3484B /* AlamoTestes2ViewController.swift in Sources */,
 				F224C5521FEBEEF000FE59EE /* SearchTableViewController.swift in Sources */,
+				F2DA047C20160C8000E3484B /* CryptoViewController.swift in Sources */,
 				F2EFDE871FFEA15600B705EE /* Viagem.swift in Sources */,
 				F2EFDE7F1FFD4C3000B705EE /* DetalhesViewController.swift in Sources */,
 				F2EFDE851FFEA14000B705EE /* ViagemDAO.swift in Sources */,
+				F2DA0480201757BB00E3484B /* AlamoTestesViewController.swift in Sources */,
 				F2EFDE831FFE937800B705EE /* PacoteViagem.swift in Sources */,
 				F2C94B271FFB9BE2000331B2 /* ItensTable.swift in Sources */,
 				F21810091FBDD352006BFD5B /* Tab2ViewController.swift in Sources */,

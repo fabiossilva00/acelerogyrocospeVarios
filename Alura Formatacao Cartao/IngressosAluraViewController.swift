@@ -165,6 +165,7 @@ class IngressosAluraViewController: UIViewController, PickerViewMesText, PickerV
         
     }
     
+    
     func notificaText() -> UIAlertController {
         
         let notifica = UIAlertController(title: "Campos", message: "Vazios", preferredStyle: .alert)

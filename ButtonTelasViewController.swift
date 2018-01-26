@@ -57,6 +57,22 @@ class ButtonTelasViewController: UIViewController {
         self.present(vc, animated: true, completion: nil)
     }
     
+    @IBAction func cryptoButton(_ sender: Any) {
+        let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "cryptoID")
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    @IBAction func alamoTesteButton(_ sender: Any) {
+        
+        let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "alamoTesteID")
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    @IBAction func alamoTeste2Button(_ sender: Any) {
+        let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "alamoTeste2ID")
+        self.present(vc, animated: true, completion: nil)
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
