@@ -36,6 +36,7 @@
 		F2B2349B1FFCED7600BBC572 /* Formata2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B2349A1FFCED7600BBC572 /* Formata2ViewController.swift */; };
 		F2B2349D1FFCEF5A00BBC572 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B2349C1FFCEF5A00BBC572 /* CollectionViewCell.swift */; };
 		F2B38BFA2004F2C300AE084D /* TerminaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B38BF92004F2C300AE084D /* TerminaViewController.swift */; };
+		F2C3557A20237A08001ACA0F /* CoisasAcontecemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C3557920237A08001ACA0F /* CoisasAcontecemViewController.swift */; };
 		F2C94B271FFB9BE2000331B2 /* ItensTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C94B261FFB9BE2000331B2 /* ItensTable.swift */; };
 		F2C94B2B1FFBA18F000331B2 /* Teste.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C94B2A1FFBA18F000331B2 /* Teste.swift */; };
 		F2C94B351FFBB6C7000331B2 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C94B341FFBB6C7000331B2 /* TableViewCell.swift */; };
@@ -181,6 +182,7 @@
 		F2B2349A1FFCED7600BBC572 /* Formata2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formata2ViewController.swift; sourceTree = "<group>"; };
 		F2B2349C1FFCEF5A00BBC572 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		F2B38BF92004F2C300AE084D /* TerminaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminaViewController.swift; sourceTree = "<group>"; };
+		F2C3557920237A08001ACA0F /* CoisasAcontecemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoisasAcontecemViewController.swift; sourceTree = "<group>"; };
 		F2C94B261FFB9BE2000331B2 /* ItensTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItensTable.swift; sourceTree = "<group>"; };
 		F2C94B2A1FFBA18F000331B2 /* Teste.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teste.swift; sourceTree = "<group>"; };
 		F2C94B341FFBB6C7000331B2 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 		F21EA1551FA8C37400CDCD83 = {
 			isa = PBXGroup;
 			children = (
+				F2C3556F202379D1001ACA0F /* VerificaNotificationCenter */,
 				F22807DE2021DC890002EB37 /* CamposRegEx */,
 				F22807C3201F41290002EB37 /* SwiftyJSON */,
 				F2DA047E2017579400E3484B /* AlamoTestes */,
@@ -405,6 +408,14 @@
 				F2B38BF92004F2C300AE084D /* TerminaViewController.swift */,
 			);
 			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		F2C3556F202379D1001ACA0F /* VerificaNotificationCenter */ = {
+			isa = PBXGroup;
+			children = (
+				F2C3557920237A08001ACA0F /* CoisasAcontecemViewController.swift */,
+			);
+			path = VerificaNotificationCenter;
 			sourceTree = "<group>";
 		};
 		F2C94B251FFB9A9F000331B2 /* Formata */ = {
@@ -871,6 +882,7 @@
 				F21810071FBDD338006BFD5B /* Tab1ViewController.swift in Sources */,
 				F2DA048620177FAA00E3484B /* AlamoTestes2ViewController.swift in Sources */,
 				F224C5521FEBEEF000FE59EE /* SearchTableViewController.swift in Sources */,
+				F2C3557A20237A08001ACA0F /* CoisasAcontecemViewController.swift in Sources */,
 				F2DA047C20160C8000E3484B /* CryptoViewController.swift in Sources */,
 				F2EFDE871FFEA15600B705EE /* Viagem.swift in Sources */,
 				F2EFDE7F1FFD4C3000B705EE /* DetalhesViewController.swift in Sources */,

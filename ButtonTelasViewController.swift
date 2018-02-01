@@ -83,6 +83,10 @@ class ButtonTelasViewController: UIViewController {
             self.present(vc, animated: true, completion: nil)
     }
     
+    @IBAction func coisasButton(_ sender: Any) {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "coisasID")
+        self.present(vc, animated: true, completion: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
