@@ -83,9 +83,15 @@ class CamposRegExViewController: UIViewController {
 
         dataText.addTarget(self, action: #selector(textFieldRegEx), for: .editingChanged)
         
+        
+        
         // Do any additional setup after loading the view.
     }
 
+    @objc func dismissKeyBoard(){
+        view.endEditing(true)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

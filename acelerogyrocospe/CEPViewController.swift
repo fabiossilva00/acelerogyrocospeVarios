@@ -85,8 +85,15 @@ class CEPViewController: UIViewController {
         super.viewDidLoad()
         
         cepText.delegate = self
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyBoard")
+        view.addGestureRecognizer(tap)
 
         // Do any additional setup after loading the view.
+    }
+    
+    @objc func dismissKeyBoard(){
+        view.endEditing(true)
     }
 
     override func didReceiveMemoryWarning() {

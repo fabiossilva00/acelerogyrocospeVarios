@@ -162,7 +162,14 @@ class SwifyJSONViewController: UIViewController, AKMaskFieldDelegate {
 //        cartaoText.maskExpression = "{dddd} {dddd} {dddd} {dddd}"
 //        cartaoText.maskTemplate = " "
         
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyBoard")
+        view.addGestureRecognizer(tap)
+        
         // Do any additional setup after loading the view.
+    }
+    
+    @objc func dismissKeyBoard(){
+        view.endEditing(true)
     }
 
     override func didReceiveMemoryWarning() {

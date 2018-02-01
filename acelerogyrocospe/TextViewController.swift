@@ -107,7 +107,14 @@ class TextViewController: UIViewController, AKMaskFieldDelegate {
         textField3.maskDelegate = self
         textField4.maskDelegate = self
         
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyBoard")
+        view.addGestureRecognizer(tap)
+        
         // Do any additional setup after loading the view.
+    }
+    
+    @objc func dismissKeyBoard(){
+        view.endEditing(true)
     }
 
     override func didReceiveMemoryWarning() {

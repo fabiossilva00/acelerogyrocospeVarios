@@ -63,7 +63,14 @@ class AlamoTestes2ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyBoard")
+        view.addGestureRecognizer(tap)
+        
         // Do any additional setup after loading the view.
+    }
+    
+    @objc func dismissKeyBoard(){
+        view.endEditing(true)
     }
 
     override func didReceiveMemoryWarning() {
