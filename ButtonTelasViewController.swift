@@ -73,6 +73,16 @@ class ButtonTelasViewController: UIViewController {
         self.present(vc, animated: true, completion: nil)
     }
     
+    @IBAction func switfyJSONButton(_ sender: Any) {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SwifyJSONID")
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    @IBAction func camposRegExButton(_ sender: Any) {
+            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "camposRegExID")
+            self.present(vc, animated: true, completion: nil)
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

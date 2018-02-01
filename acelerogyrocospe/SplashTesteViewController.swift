@@ -14,7 +14,7 @@ class SplashTesteViewController: UIViewController {
     
     
     func del(){
-        delay(3.5){
+        delay(1.5){
             let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "buttonTelasID")
             self.present(vc, animated: true, completion: nil)
         }

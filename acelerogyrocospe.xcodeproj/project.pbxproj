@@ -22,6 +22,9 @@
 		F21EA1911FA8C86600CDCD83 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21EA1901FA8C84A00CDCD83 /* CoreMotion.framework */; };
 		F224C5521FEBEEF000FE59EE /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F224C5511FEBEEF000FE59EE /* SearchTableViewController.swift */; };
 		F224C5541FEC4B6900FE59EE /* FormataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F224C5531FEC4B6900FE59EE /* FormataViewController.swift */; };
+		F22807CD201F414C0002EB37 /* AlamoSwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22807CC201F414C0002EB37 /* AlamoSwiftyJSON.swift */; };
+		F22807D0201F434A0002EB37 /* SwifyJSONViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22807CF201F434A0002EB37 /* SwifyJSONViewController.swift */; };
+		F22807E02021DCC70002EB37 /* CamposRegExViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22807DF2021DCC60002EB37 /* CamposRegExViewController.swift */; };
 		F22EB1F31FE0521300A1936F /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22EB1F21FE0521300A1936F /* WebViewController.swift */; };
 		F24607DE1FD7FDE400B07B52 /* SplashTesteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24607DD1FD7FDE400B07B52 /* SplashTesteViewController.swift */; };
 		F250DD811FE3E98000785891 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F250DD801FE3E97F00785891 /* TextViewController.swift */; };
@@ -69,6 +72,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = F21EA15D1FA8C37400CDCD83;
 			remoteInfo = acelerogyrocospe;
+		};
+		F22807DA201F434B0002EB37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F26239472006937E009DD5C3 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 12EE2EA3AB0684C14269A00CF7428EAB;
+			remoteInfo = SwiftyJSON;
 		};
 		F262394E2006937E009DD5C3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -156,6 +166,9 @@
 		F21EA1901FA8C84A00CDCD83 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		F224C5511FEBEEF000FE59EE /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		F224C5531FEC4B6900FE59EE /* FormataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormataViewController.swift; sourceTree = "<group>"; };
+		F22807CC201F414C0002EB37 /* AlamoSwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamoSwiftyJSON.swift; sourceTree = "<group>"; };
+		F22807CF201F434A0002EB37 /* SwifyJSONViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifyJSONViewController.swift; sourceTree = "<group>"; };
+		F22807DF2021DCC60002EB37 /* CamposRegExViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamposRegExViewController.swift; sourceTree = "<group>"; };
 		F22EB1F21FE0521300A1936F /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		F24607DD1FD7FDE400B07B52 /* SplashTesteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashTesteViewController.swift; sourceTree = "<group>"; };
 		F250DD801FE3E97F00785891 /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
@@ -236,6 +249,8 @@
 		F21EA1551FA8C37400CDCD83 = {
 			isa = PBXGroup;
 			children = (
+				F22807DE2021DC890002EB37 /* CamposRegEx */,
+				F22807C3201F41290002EB37 /* SwiftyJSON */,
 				F2DA047E2017579400E3484B /* AlamoTestes */,
 				F2DA046E20160C5300E3484B /* Try CrypoSwift */,
 				F2C94B251FFB9A9F000331B2 /* Formata */,
@@ -321,6 +336,23 @@
 			path = Maps;
 			sourceTree = "<group>";
 		};
+		F22807C3201F41290002EB37 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				F22807CC201F414C0002EB37 /* AlamoSwiftyJSON.swift */,
+				F22807CF201F434A0002EB37 /* SwifyJSONViewController.swift */,
+			);
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		F22807DE2021DC890002EB37 /* CamposRegEx */ = {
+			isa = PBXGroup;
+			children = (
+				F22807DF2021DCC60002EB37 /* CamposRegExViewController.swift */,
+			);
+			path = CamposRegEx;
+			sourceTree = "<group>";
+		};
 		F26239482006937E009DD5C3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -332,6 +364,7 @@
 				F26239512006937E009DD5C3 /* Pods_acelerogyrocospe.framework */,
 				F26239532006937E009DD5C3 /* Pods_acelerogyrocospeTests.framework */,
 				F26239552006937E009DD5C3 /* Pods_acelerogyrocospeUITests.framework */,
+				F22807DB201F434B0002EB37 /* SwiftyJSON.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -551,6 +584,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		F22807DB201F434B0002EB37 /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = F22807DA201F434B0002EB37 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		F262394F2006937E009DD5C3 /* Alamofire.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -716,6 +756,7 @@
 				"${BUILT_PRODUCTS_DIR}/CPF-CNPJ-Validator/CPF_CNPJ_Validator.framework",
 				"${BUILT_PRODUCTS_DIR}/CreditCardValidator/CreditCardValidator.framework",
 				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -724,6 +765,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CPF_CNPJ_Validator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CreditCardValidator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -802,6 +844,7 @@
 			files = (
 				F2623959200694BD009DD5C3 /* CEPViewController.swift in Sources */,
 				F2CBFFC41FF54621002F685C /* PinTabs.swift in Sources */,
+				F22807D0201F434A0002EB37 /* SwifyJSONViewController.swift in Sources */,
 				F2C94B351FFBB6C7000331B2 /* TableViewCell.swift in Sources */,
 				F2DA0484201768F300E3484B /* AlamoTesteCampos.swift in Sources */,
 				F2B2349D1FFCEF5A00BBC572 /* CollectionViewCell.swift in Sources */,
@@ -822,7 +865,9 @@
 				F250DD811FE3E98000785891 /* TextViewController.swift in Sources */,
 				F2CBFFBD1FF42D96002F685C /* Maps2ViewController.swift in Sources */,
 				F2C94B2B1FFBA18F000331B2 /* Teste.swift in Sources */,
+				F22807CD201F414C0002EB37 /* AlamoSwiftyJSON.swift in Sources */,
 				F250DD831FE807D400785891 /* MpasViewController.swift in Sources */,
+				F22807E02021DCC70002EB37 /* CamposRegExViewController.swift in Sources */,
 				F21810071FBDD338006BFD5B /* Tab1ViewController.swift in Sources */,
 				F2DA048620177FAA00E3484B /* AlamoTestes2ViewController.swift in Sources */,
 				F224C5521FEBEEF000FE59EE /* SearchTableViewController.swift in Sources */,
