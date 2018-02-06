@@ -95,7 +95,6 @@ class SwifyJSONViewController: UIViewController, AKMaskFieldDelegate {
     @IBAction func muda2Button(_ sender: Any) {
         
         let texto1 = "Atencao! Abra o aplicativo ou acesse o site do banco \(bancos[0]) e transfira o valor abaixo para a conta do Consutaí"
-//        mutable = NSMutableString(string: texto1)
 
         variosLbl.text = ""
         variosLbl.numberOfLines = 3

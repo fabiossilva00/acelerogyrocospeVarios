@@ -52,6 +52,7 @@
 		F2E044AC200D1070001F4254 /* AlamoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E044AB200D1070001F4254 /* AlamoAPI.swift */; };
 		F2E044AF200E0DC4001F4254 /* PickerViewMes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E044AE200E0DC4001F4254 /* PickerViewMes.swift */; };
 		F2E044B9200E2B84001F4254 /* PickerViewAno.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E044B8200E2B84001F4254 /* PickerViewAno.swift */; };
+		F2E197BC202A2ED500FC45B5 /* AutoAdaptavelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E197BB202A2ED400FC45B5 /* AutoAdaptavelViewController.swift */; };
 		F2EFDE7F1FFD4C3000B705EE /* DetalhesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EFDE7E1FFD4C3000B705EE /* DetalhesViewController.swift */; };
 		F2EFDE811FFE928C00B705EE /* PacoteViagemDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EFDE801FFE928A00B705EE /* PacoteViagemDAO.swift */; };
 		F2EFDE831FFE937800B705EE /* PacoteViagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EFDE821FFE937800B705EE /* PacoteViagem.swift */; };
@@ -198,6 +199,7 @@
 		F2E044AB200D1070001F4254 /* AlamoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamoAPI.swift; sourceTree = "<group>"; };
 		F2E044AE200E0DC4001F4254 /* PickerViewMes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewMes.swift; sourceTree = "<group>"; };
 		F2E044B8200E2B84001F4254 /* PickerViewAno.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewAno.swift; sourceTree = "<group>"; };
+		F2E197BB202A2ED400FC45B5 /* AutoAdaptavelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoAdaptavelViewController.swift; sourceTree = "<group>"; };
 		F2EFDE7E1FFD4C3000B705EE /* DetalhesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhesViewController.swift; sourceTree = "<group>"; };
 		F2EFDE801FFE928A00B705EE /* PacoteViagemDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PacoteViagemDAO.swift; sourceTree = "<group>"; };
 		F2EFDE821FFE937800B705EE /* PacoteViagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacoteViagem.swift; sourceTree = "<group>"; };
@@ -283,6 +285,7 @@
 		F21EA1601FA8C37400CDCD83 /* acelerogyrocospe */ = {
 			isa = PBXGroup;
 			children = (
+				F2E197BB202A2ED400FC45B5 /* AutoAdaptavelViewController.swift */,
 				F2623958200694BD009DD5C3 /* CEPViewController.swift */,
 				F250DD801FE3E97F00785891 /* TextViewController.swift */,
 				F22EB1F21FE0521300A1936F /* WebViewController.swift */,
@@ -879,6 +882,7 @@
 				F22807CD201F414C0002EB37 /* AlamoSwiftyJSON.swift in Sources */,
 				F250DD831FE807D400785891 /* MpasViewController.swift in Sources */,
 				F22807E02021DCC70002EB37 /* CamposRegExViewController.swift in Sources */,
+				F2E197BC202A2ED500FC45B5 /* AutoAdaptavelViewController.swift in Sources */,
 				F21810071FBDD338006BFD5B /* Tab1ViewController.swift in Sources */,
 				F2DA048620177FAA00E3484B /* AlamoTestes2ViewController.swift in Sources */,
 				F224C5521FEBEEF000FE59EE /* SearchTableViewController.swift in Sources */,

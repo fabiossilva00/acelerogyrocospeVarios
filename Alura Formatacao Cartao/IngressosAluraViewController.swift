@@ -204,8 +204,8 @@ class IngressosAluraViewController: UIViewController, PickerViewMesText, PickerV
         
         atuaTela()
         
-        NotificationCenter.default.addObserver(self, selector: #selector(scrollUP(notification:)), name: .UIKeyboardDidShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(scrollDown(notification:)), name: .UIKeyboardDidHide, object: nil)
+//        NotificationCenter.default.addObserver(self, selector: #selector(scrollUP(notification:)), name: .UIKeyboardDidShow, object: nil)
+//        NotificationCenter.default.addObserver(self, selector: #selector(scrollDown(notification:)), name: .UIKeyboardDidHide, object: nil)
         
         // Do any additional setup after loading the view.
     }
