@@ -32,7 +32,9 @@ class AutoAdaptavelViewController: UIViewController {
         viewButton.layer.cornerRadius = CGFloat(array[3])
         viewButton.layer.masksToBounds = true
         
-    
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismis")
+        view.addGestureRecognizer(tap)
+        
 //        let model = UIDevice.current.modelName
 //        switch model {
 //        case "iPhone SE":
@@ -49,6 +51,10 @@ class AutoAdaptavelViewController: UIViewController {
         
 
         // Do any additional setup after loading the view.
+    }
+    
+    @objc func dismis() {
+        view.endEditing(true)
     }
     
     

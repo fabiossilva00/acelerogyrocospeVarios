@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="crh-Nn-1aF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XTo-ea-a22">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -2129,7 +2129,7 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VFf-ST-fgo">
-                                        <rect key="frame" x="0.0" y="204" width="374" height="1.3333333333333428"/>
+                                        <rect key="frame" x="0.0" y="204" width="374" height="0.0"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="lessThanOrEqual" constant="35" id="Wam-jT-ZHV"/>
                                         </constraints>
@@ -2138,7 +2138,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pPY-mU-qsA">
-                                        <rect key="frame" x="0.0" y="209.33333333333334" width="374" height="60.000000000000028"/>
+                                        <rect key="frame" x="0.0" y="208" width="374" height="60"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="pPY-mU-qsA" secondAttribute="height" multiplier="187:30" id="Hje-8O-fzF"/>
@@ -2146,10 +2146,10 @@
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="unZ-G7-whZ">
-                                        <rect key="frame" x="0.0" y="273.33333333333331" width="374" height="160"/>
+                                        <rect key="frame" x="0.0" y="272" width="374" height="161.33333333333337"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ugd-7c-Gnt">
-                                                <rect key="frame" x="0.0" y="0.0" width="124.66666666666667" height="160"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="124.66666666666667" height="161.33333333333334"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Jo-9n-Zri">
                                                         <rect key="frame" x="17" y="17" width="89.666666666666671" height="90.666666666666671"/>
@@ -2167,7 +2167,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xBi-sF-b7Z">
-                                                <rect key="frame" x="124.66666666666666" y="0.0" width="124.66666666666666" height="160"/>
+                                                <rect key="frame" x="124.66666666666666" y="0.0" width="124.66666666666666" height="161.33333333333334"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="paH-38-ilS">
                                                         <rect key="frame" x="17" y="17" width="89.666666666666671" height="89.666666666666671"/>
@@ -2185,7 +2185,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T1c-r6-uP1">
-                                                <rect key="frame" x="249.33333333333329" y="0.0" width="124.66666666666666" height="160"/>
+                                                <rect key="frame" x="249.33333333333329" y="0.0" width="124.66666666666666" height="161.33333333333334"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9eJ-pW-ZPW">
                                                         <rect key="frame" x="17" y="17" width="89.666666666666671" height="89.666666666666671"/>
@@ -2797,7 +2797,7 @@
                                         </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teste" textAlignment="center" lineBreakMode="tailTruncation" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FDk-7t-VNo">
-                                        <rect key="frame" x="146" y="8" width="123" height="21"/>
+                                        <rect key="frame" x="146.33333333333334" y="8" width="123.00000000000003" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="PGb-UW-7ly"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="123" id="amK-VU-htd"/>

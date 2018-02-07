@@ -12,21 +12,23 @@ class AdptavelEscondidoViewController: UIViewController {
     
     @IBAction func voltaButton(_ sender: Any) {
         
-        
+        let buttonTelasID = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "buttonTelasID")
+        self.present(buttonTelasID, animated: true, completion: nil)
         
     }
     
     @IBAction func adaptavelButton(_ sender: Any) {
         
-        
+        let autoAdaptavelID = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "autoAdaptavelID")
+        self.present(autoAdaptavelID, animated: true, completion: nil)
         
     }
-    
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+//        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismiss")
+//        view.addGestureRecognizer(tap)
         // Do any additional setup after loading the view.
     }
 
@@ -35,7 +37,10 @@ class AdptavelEscondidoViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @objc func dismiss() {
+        view.endEditing(true)
+    }
+    
     /*
     // MARK: - Navigation
 
