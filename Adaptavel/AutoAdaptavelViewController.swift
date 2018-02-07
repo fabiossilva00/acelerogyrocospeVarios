@@ -13,6 +13,11 @@ class AutoAdaptavelViewController: UIViewController {
     
     @IBOutlet weak var viewButton: UIView!
     
+    @IBAction func mudaEscondido(_ sender: Any) {
+        let adaptavelEscondidoID = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "adaptavelEscondidoID")
+        self.present(adaptavelEscondidoID, animated: true, completion: nil)
+        
+    }
     
     @IBAction func voltarButton(_ sender: Any) {
         let buttonTelasID = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "buttonTelasID")
@@ -22,7 +27,9 @@ class AutoAdaptavelViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        viewButton.layer.cornerRadius =  tamanhoTelaCorner()
+        let array = tamanhoTelaCorner()
+        
+        viewButton.layer.cornerRadius = CGFloat(array[3])
         viewButton.layer.masksToBounds = true
         
     
@@ -44,25 +51,24 @@ class AutoAdaptavelViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    let screen = UIScreen.main.bounds
     
-    func tamanhoTelaCorner() -> CGFloat {
-        
+    func tamanhoTelaCorner() -> Array<Int> {
+        let screen = UIScreen.main.bounds
         let screeWidth = screen.width
-
+        
         switch(screeWidth) {
 
         case 375:
-            return 100
+            return [77, 80, 90, 100]
 
         case 414:
-            return 32
+            return [32, 8, 1, 90]
 
         case 320:
-            return 77
+            return [77, 15, 30, 60]
 
         default:
-            return 77
+            return [77, 77, 77, 77]
         }
     }
 

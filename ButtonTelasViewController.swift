@@ -88,6 +88,12 @@ class ButtonTelasViewController: UIViewController {
         self.present(vc, animated: true, completion: nil)
     }
     
+    @IBAction func autoAdaptavelButton(_ sender: Any) {
+        let autoAdaptavelID = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "autoAdaptavelID")
+        self.present(autoAdaptavelID, animated: true, completion: nil)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
