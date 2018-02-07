@@ -93,6 +93,12 @@ class ButtonTelasViewController: UIViewController {
         self.present(autoAdaptavelID, animated: true, completion: nil)
     }
     
+    @IBAction func childButton(_ sender: Any) {
+        
+        let callChildID = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "callChildID")
+        self.present(callChildID, animated: true, completion: nil)
+    
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XTo-ea-a22">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -299,7 +299,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uDA-Zb-m33" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1513" y="-1424"/>
+            <point key="canvasLocation" x="1818.840579710145" y="-1424.1847826086957"/>
         </scene>
         <!--Formata2 View Controller-->
         <scene sceneID="703-sv-rcj">
@@ -428,7 +428,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pNe-Sk-ECv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2336.25" y="-2175"/>
+            <point key="canvasLocation" x="3565.217391304348" y="-2175"/>
         </scene>
         <!--Detalhes View Controller-->
         <scene sceneID="jmn-Dn-Nag">
@@ -698,7 +698,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4pn-Hz-xDU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3174.375" y="-2175"/>
+            <point key="canvasLocation" x="4402.898550724638" y="-2175"/>
         </scene>
         <!--Termina View Controller-->
         <scene sceneID="Xo6-QT-thL">
@@ -819,7 +819,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b9Q-gF-IdU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4012" y="-2174.6305418719212"/>
+            <point key="canvasLocation" x="5240.579710144928" y="-2175"/>
         </scene>
         <!--Tab1 View Controller-->
         <scene sceneID="RWq-Le-br6">
@@ -1454,6 +1454,80 @@
             </objects>
             <point key="canvasLocation" x="761" y="18"/>
         </scene>
+        <!--Call Child View View Controller-->
+        <scene sceneID="hGP-SO-065">
+            <objects>
+                <viewController storyboardIdentifier="callChildID" id="pHC-Gr-UkF" customClass="CallChildViewViewController" customModule="acelerogyrocospe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2zA-vK-7kw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iCz-EH-QW2">
+                                <rect key="frame" x="20" y="36" width="374" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A03-3z-4zS">
+                                        <rect key="frame" x="27" y="10" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MrW-Kz-hgq">
+                                        <rect key="frame" x="336" y="10" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ytn-TZ-FOZ">
+                                        <rect key="frame" x="182" y="10" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.20933058841592908" green="0.3003268877114833" blue="0.43494504690170288" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ky-Bn-0x3">
+                                <rect key="frame" x="319" y="671" width="75" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="goButton:" destination="pHC-Gr-UkF" eventType="touchUpInside" id="Ft3-cg-Ipb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CN7-Ua-awE">
+                                <rect key="frame" x="20" y="671" width="75" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="backButton:" destination="pHC-Gr-UkF" eventType="touchUpInside" id="etO-Ps-tWQ"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8N3-th-mDH">
+                                <rect key="frame" x="20" y="94" width="374" height="569"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99y-ID-Me7">
+                                <rect key="frame" x="170" y="671" width="75" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="voltarButton:" destination="pHC-Gr-UkF" eventType="touchUpInside" id="64O-fA-7UG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="L6q-6j-dZv"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gvM-Dx-cTd"/>
+                    <connections>
+                        <outlet property="mostraView" destination="8N3-th-mDH" id="vuj-OF-f3R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qfV-Jj-3Rs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1284.0579710144928" y="-1425"/>
+        </scene>
         <!--Text View Controller-->
         <scene sceneID="b2g-yC-re1">
             <objects>
@@ -1519,7 +1593,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J46-uL-yk7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-807.24637681159425" y="-1423.3695652173915"/>
+            <point key="canvasLocation" x="-500.00000000000006" y="-1423.3695652173915"/>
         </scene>
         <!--Coisas Acontecem View Controller-->
         <scene sceneID="Iff-X5-kRb">
@@ -2258,7 +2332,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pzx-r4-79h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1462.3188405797102" y="-2175"/>
+            <point key="canvasLocation" x="-2362" y="-743"/>
         </scene>
         <!--Auto Adaptavel View Controller-->
         <scene sceneID="jXZ-up-pBb">
@@ -2520,7 +2594,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w5a-2F-RMd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-808.69565217391312" y="-2175"/>
+            <point key="canvasLocation" x="-1542" y="-743"/>
         </scene>
         <!--Button Telas View Controller-->
         <scene sceneID="fU4-qM-OFL">
@@ -2662,6 +2736,14 @@
                                 <rect key="frame" x="163" y="422" width="91" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="childButton:" destination="crh-Nn-1aF" eventType="touchUpInside" id="fao-rQ-TmS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6K-Xo-xZz">
+                                <rect key="frame" x="288" y="420" width="91" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2673,7 +2755,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xcr-CQ-KLq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-20.289855072463769" y="-2172.554347826087"/>
+            <point key="canvasLocation" x="1208.6956521739132" y="-2172.554347826087"/>
         </scene>
         <!--Splash Teste View Controller-->
         <scene sceneID="onO-Yh-0tR">
@@ -2702,7 +2784,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0vr-Qy-1Kc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-20.289855072463769" y="-1423.3695652173915"/>
+            <point key="canvasLocation" x="286.95652173913044" y="-1423.3695652173915"/>
         </scene>
         <!--Mpas View Controller-->
         <scene sceneID="gce-C7-3C4">
@@ -2739,7 +2821,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g7v-eJ-7Z6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="826.875" y="-1425"/>
+            <point key="canvasLocation" x="1133.3333333333335" y="-1425"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kpl-Dm-KRl">
@@ -2757,7 +2839,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Qo-5s-JVV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="763" y="-2173"/>
+            <point key="canvasLocation" x="1991.3043478260872" y="-2173.3695652173915"/>
         </scene>
         <!--Formata View Controller-->
         <scene sceneID="Iau-lf-1PR">
@@ -3006,7 +3088,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D08-Ka-ltp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1511" y="-2173"/>
+            <point key="canvasLocation" x="2737.68115942029" y="-2173.3695652173915"/>
         </scene>
     </scenes>
     <resources>
