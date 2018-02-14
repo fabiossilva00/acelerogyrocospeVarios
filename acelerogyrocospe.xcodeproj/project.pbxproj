@@ -38,6 +38,7 @@
 		F291220E203468B8005A8AFB /* PageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F291220D203468B8005A8AFB /* PageController.swift */; };
 		F29122122034772B005A8AFB /* PageViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29122112034772B005A8AFB /* PageViewViewController.swift */; };
 		F2912214203478CC005A8AFB /* Page1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2912213203478CC005A8AFB /* Page1ViewController.swift */; };
+		F29122172034A569005A8AFB /* BananaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29122162034A569005A8AFB /* BananaViewController.swift */; };
 		F2B2349B1FFCED7600BBC572 /* Formata2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B2349A1FFCED7600BBC572 /* Formata2ViewController.swift */; };
 		F2B2349D1FFCEF5A00BBC572 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B2349C1FFCEF5A00BBC572 /* CollectionViewCell.swift */; };
 		F2B38BFA2004F2C300AE084D /* TerminaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B38BF92004F2C300AE084D /* TerminaViewController.swift */; };
@@ -192,6 +193,7 @@
 		F291220D203468B8005A8AFB /* PageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageController.swift; sourceTree = "<group>"; };
 		F29122112034772B005A8AFB /* PageViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewViewController.swift; sourceTree = "<group>"; };
 		F2912213203478CC005A8AFB /* Page1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page1ViewController.swift; sourceTree = "<group>"; };
+		F29122162034A569005A8AFB /* BananaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BananaViewController.swift; sourceTree = "<group>"; };
 		F2B2349A1FFCED7600BBC572 /* Formata2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formata2ViewController.swift; sourceTree = "<group>"; };
 		F2B2349C1FFCEF5A00BBC572 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		F2B38BF92004F2C300AE084D /* TerminaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminaViewController.swift; sourceTree = "<group>"; };
@@ -267,6 +269,7 @@
 		F21EA1551FA8C37400CDCD83 = {
 			isa = PBXGroup;
 			children = (
+				F29122152034A551005A8AFB /* Bananas */,
 				F291220A203463A8005A8AFB /* PageView */,
 				F29121FE20346131005A8AFB /* Transitions */,
 				F2E197C6202B10A000FC45B5 /* Adaptavel */,
@@ -437,6 +440,14 @@
 				F2912213203478CC005A8AFB /* Page1ViewController.swift */,
 			);
 			path = "Page Views";
+			sourceTree = "<group>";
+		};
+		F29122152034A551005A8AFB /* Bananas */ = {
+			isa = PBXGroup;
+			children = (
+				F29122162034A569005A8AFB /* BananaViewController.swift */,
+			);
+			path = Bananas;
 			sourceTree = "<group>";
 		};
 		F2B234981FFCECFE00BBC572 /* TableView */ = {
@@ -954,6 +965,7 @@
 				F224C5521FEBEEF000FE59EE /* SearchTableViewController.swift in Sources */,
 				F2C3557A20237A08001ACA0F /* CoisasAcontecemViewController.swift in Sources */,
 				F2DA047C20160C8000E3484B /* CryptoViewController.swift in Sources */,
+				F29122172034A569005A8AFB /* BananaViewController.swift in Sources */,
 				F291220C203463BD005A8AFB /* PageViewController.swift in Sources */,
 				F2EFDE871FFEA15600B705EE /* Viagem.swift in Sources */,
 				F2EFDE7F1FFD4C3000B705EE /* DetalhesViewController.swift in Sources */,

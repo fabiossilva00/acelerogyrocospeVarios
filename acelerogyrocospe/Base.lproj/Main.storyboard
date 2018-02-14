@@ -317,10 +317,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9K-CQ-ehG">
-                                <rect key="frame" x="119" y="320" width="176" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9K-CQ-ehG">
+                                <rect key="frame" x="102" y="318" width="210" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="726-HJ-BpA"/>
+                                    <constraint firstAttribute="height" constant="100" id="zw5-Xy-UC5"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="voltarButton:" destination="EHI-rk-gd8" eventType="touchUpInside" id="WxE-XD-jKS"/>
@@ -328,6 +331,10 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.94117647059999998" green="0.7843137255" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="c9K-CQ-ehG" firstAttribute="centerY" secondItem="EZG-D8-2vU" secondAttribute="centerY" id="Omm-hP-rJC"/>
+                            <constraint firstItem="c9K-CQ-ehG" firstAttribute="centerX" secondItem="EZG-D8-2vU" secondAttribute="centerX" id="WjH-Q8-oSq"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="W62-YH-b5f"/>
                     </view>
                 </viewController>
@@ -2681,7 +2688,7 @@
                 <pageViewController storyboardIdentifier="pageControllerID" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="max" doubleSided="YES" id="LR6-qM-nnR" customClass="PageController" customModule="acelerogyrocospe" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cxf-wR-bf1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-462" y="-2173"/>
+            <point key="canvasLocation" x="-2910" y="-1422"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="A47-5z-GvQ">
@@ -2740,7 +2747,81 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m4A-WQ-A8e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="286.95652173913044" y="-2175"/>
+            <point key="canvasLocation" x="-2054" y="-1422"/>
+        </scene>
+        <!--Banana View Controller-->
+        <scene sceneID="LeH-VC-gIT">
+            <objects>
+                <viewController storyboardIdentifier="bananaID" id="QgG-Cv-0RU" customClass="BananaViewController" customModule="acelerogyrocospe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c79-nj-5JS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OEI-qf-hyK">
+                                <rect key="frame" x="20" y="671" width="374" height="45"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="voltaButton:" destination="QgG-Cv-0RU" eventType="touchUpInside" id="GNR-ug-nJ3"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bxF-8h-afx">
+                                <rect key="frame" x="123" y="105" width="168" height="168"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="crm-Ik-M9r" appends="YES" id="QvO-5v-Wea"/>
+                                    <outletCollection property="gestureRecognizers" destination="iav-ua-fG7" appends="YES" id="LRp-G6-k60"/>
+                                </connections>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qIe-XF-aPW">
+                                <rect key="frame" x="145" y="496" width="125" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="zwT-gI-SzL" appends="YES" id="TJW-kr-sD4"/>
+                                    <outletCollection property="gestureRecognizers" destination="sVB-nv-fhJ" appends="YES" id="CX8-yF-Enn"/>
+                                    <outletCollection property="gestureRecognizers" destination="R2S-1X-YkE" appends="YES" id="3eM-FT-R3W"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="We0-Aw-nkd"/>
+                    </view>
+                    <connections>
+                        <outlet property="bananaImage" destination="qIe-XF-aPW" id="eT0-96-74d"/>
+                        <outlet property="macacoImage" destination="bxF-8h-afx" id="dZy-NE-gDr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mvO-Zc-UT8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="crm-Ik-M9r" userLabel="Macaco Pinch">
+                    <connections>
+                        <action selector="handlerPinchWithRecognizer:" destination="QgG-Cv-0RU" id="7cv-HW-Td3"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="iav-ua-fG7" userLabel="Macaco Rotation">
+                    <connections>
+                        <action selector="handlerRotateWithRecognizer:" destination="QgG-Cv-0RU" id="o8a-kR-pJo"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <pinchGestureRecognizer id="sVB-nv-fhJ" userLabel="Banaca Pinch">
+                    <connections>
+                        <action selector="handlerPinchWithRecognizer:" destination="QgG-Cv-0RU" id="wDo-hk-3AD"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="R2S-1X-YkE" userLabel="Banana Rotation">
+                    <connections>
+                        <action selector="handlerRotateWithRecognizer:" destination="QgG-Cv-0RU" id="MWe-EA-vMh"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="zwT-gI-SzL" userLabel="Banana Pan">
+                    <connections>
+                        <action selector="handlerPanWithRecognizer:" destination="QgG-Cv-0RU" id="HA6-xR-6fT"/>
+                        <outlet property="delegate" destination="QgG-Cv-0RU" id="YaU-jG-i6d"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="286.95652173913044" y="-2173.3695652173915"/>
         </scene>
         <!--Button Telas View Controller-->
         <scene sceneID="fU4-qM-OFL">
@@ -2856,6 +2937,14 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UPl-BB-GPC">
                                 <rect key="frame" x="163" y="429" width="91" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Banana"/>
+                                <connections>
+                                    <action selector="bananasButton:" destination="crh-Nn-1aF" eventType="touchUpInside" id="nfF-Q9-NAh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WYX-ap-76x">
+                                <rect key="frame" x="286" y="427" width="91" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                             </button>

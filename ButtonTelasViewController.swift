@@ -113,6 +113,12 @@ class ButtonTelasViewController: UIViewController {
         
     }
     
+    @IBAction func bananasButton(_ sender: Any) {
+        
+        let bananaID = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "bananaID")
+        self.present(bananaID, animated: true, completion: nil)
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
