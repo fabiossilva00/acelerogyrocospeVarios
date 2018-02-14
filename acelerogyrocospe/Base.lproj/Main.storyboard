@@ -2807,11 +2807,13 @@
                 <pinchGestureRecognizer id="sVB-nv-fhJ" userLabel="Banaca Pinch">
                     <connections>
                         <action selector="handlerPinchWithRecognizer:" destination="QgG-Cv-0RU" id="wDo-hk-3AD"/>
+                        <outlet property="delegate" destination="QgG-Cv-0RU" id="35l-QE-9K4"/>
                     </connections>
                 </pinchGestureRecognizer>
                 <rotationGestureRecognizer id="R2S-1X-YkE" userLabel="Banana Rotation">
                     <connections>
                         <action selector="handlerRotateWithRecognizer:" destination="QgG-Cv-0RU" id="MWe-EA-vMh"/>
+                        <outlet property="delegate" destination="QgG-Cv-0RU" id="8ig-qN-woD"/>
                     </connections>
                 </rotationGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="zwT-gI-SzL" userLabel="Banana Pan">
