@@ -194,6 +194,8 @@
 		F29122112034772B005A8AFB /* PageViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewViewController.swift; sourceTree = "<group>"; };
 		F2912213203478CC005A8AFB /* Page1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page1ViewController.swift; sourceTree = "<group>"; };
 		F29122162034A569005A8AFB /* BananaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BananaViewController.swift; sourceTree = "<group>"; };
+		F29122192034C3A2005A8AFB /* hehehe1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = hehehe1.caf; sourceTree = "<group>"; };
+		F291221A2034C3A2005A8AFB /* chomp.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = chomp.caf; sourceTree = "<group>"; };
 		F2B2349A1FFCED7600BBC572 /* Formata2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formata2ViewController.swift; sourceTree = "<group>"; };
 		F2B2349C1FFCEF5A00BBC572 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		F2B38BF92004F2C300AE084D /* TerminaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminaViewController.swift; sourceTree = "<group>"; };
@@ -445,9 +447,19 @@
 		F29122152034A551005A8AFB /* Bananas */ = {
 			isa = PBXGroup;
 			children = (
+				F29122182034C38F005A8AFB /* Audios */,
 				F29122162034A569005A8AFB /* BananaViewController.swift */,
 			);
 			path = Bananas;
+			sourceTree = "<group>";
+		};
+		F29122182034C38F005A8AFB /* Audios */ = {
+			isa = PBXGroup;
+			children = (
+				F291221A2034C3A2005A8AFB /* chomp.caf */,
+				F29122192034C3A2005A8AFB /* hehehe1.caf */,
+			);
+			path = Audios;
 			sourceTree = "<group>";
 		};
 		F2B234981FFCECFE00BBC572 /* TableView */ = {
