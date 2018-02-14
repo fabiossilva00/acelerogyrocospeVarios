@@ -100,6 +100,13 @@ class ButtonTelasViewController: UIViewController {
     
     }
     
+    @IBAction func pageButton(_ sender: Any) {
+        
+        let pageViewID = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "pageControllerID")
+        self.present(pageViewID, animated: true, completion: nil)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

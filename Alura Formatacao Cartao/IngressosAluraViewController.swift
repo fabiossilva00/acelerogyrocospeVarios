@@ -150,7 +150,7 @@ class IngressosAluraViewController: UIViewController, PickerViewMesText, PickerV
         
         for textField in camposText{
             if let textFieldCEP = textCampos(rawValue: textField.tag){
-                if textFieldCEP == textCampo{
+                if textFieldCEP == textCampo{  
                     completion(textField)
                 }
             }

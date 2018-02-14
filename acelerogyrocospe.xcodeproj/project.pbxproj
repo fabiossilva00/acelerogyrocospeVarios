@@ -33,6 +33,9 @@
 		F250DD871FE8318D00785891 /* ButtonTelasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F250DD861FE8318D00785891 /* ButtonTelasViewController.swift */; };
 		F2623959200694BD009DD5C3 /* CEPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2623958200694BD009DD5C3 /* CEPViewController.swift */; };
 		F262395C20079DC3009DD5C3 /* IngressosAluraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F262395B20079DC3009DD5C3 /* IngressosAluraViewController.swift */; };
+		F291220920346380005A8AFB /* Transition1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F291220820346380005A8AFB /* Transition1ViewController.swift */; };
+		F291220C203463BD005A8AFB /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F291220B203463BD005A8AFB /* PageViewController.swift */; };
+		F291220E203468B8005A8AFB /* PageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F291220D203468B8005A8AFB /* PageController.swift */; };
 		F2B2349B1FFCED7600BBC572 /* Formata2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B2349A1FFCED7600BBC572 /* Formata2ViewController.swift */; };
 		F2B2349D1FFCEF5A00BBC572 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B2349C1FFCEF5A00BBC572 /* CollectionViewCell.swift */; };
 		F2B38BFA2004F2C300AE084D /* TerminaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B38BF92004F2C300AE084D /* TerminaViewController.swift */; };
@@ -182,6 +185,9 @@
 		F26239472006937E009DD5C3 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		F2623958200694BD009DD5C3 /* CEPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CEPViewController.swift; sourceTree = "<group>"; };
 		F262395B20079DC3009DD5C3 /* IngressosAluraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngressosAluraViewController.swift; sourceTree = "<group>"; };
+		F291220820346380005A8AFB /* Transition1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transition1ViewController.swift; sourceTree = "<group>"; };
+		F291220B203463BD005A8AFB /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		F291220D203468B8005A8AFB /* PageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageController.swift; sourceTree = "<group>"; };
 		F2B2349A1FFCED7600BBC572 /* Formata2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formata2ViewController.swift; sourceTree = "<group>"; };
 		F2B2349C1FFCEF5A00BBC572 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		F2B38BF92004F2C300AE084D /* TerminaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminaViewController.swift; sourceTree = "<group>"; };
@@ -257,6 +263,8 @@
 		F21EA1551FA8C37400CDCD83 = {
 			isa = PBXGroup;
 			children = (
+				F291220A203463A8005A8AFB /* PageView */,
+				F29121FE20346131005A8AFB /* Transitions */,
 				F2E197C6202B10A000FC45B5 /* Adaptavel */,
 				F2C3556F202379D1001ACA0F /* VerificaNotificationCenter */,
 				F22807DE2021DC890002EB37 /* CamposRegEx */,
@@ -390,6 +398,23 @@
 				F2E044B8200E2B84001F4254 /* PickerViewAno.swift */,
 			);
 			path = "Alura Formatacao Cartao";
+			sourceTree = "<group>";
+		};
+		F29121FE20346131005A8AFB /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				F291220820346380005A8AFB /* Transition1ViewController.swift */,
+			);
+			path = Transitions;
+			sourceTree = "<group>";
+		};
+		F291220A203463A8005A8AFB /* PageView */ = {
+			isa = PBXGroup;
+			children = (
+				F291220B203463BD005A8AFB /* PageViewController.swift */,
+				F291220D203468B8005A8AFB /* PageController.swift */,
+			);
+			path = PageView;
 			sourceTree = "<group>";
 		};
 		F2B234981FFCECFE00BBC572 /* TableView */ = {
@@ -899,11 +924,14 @@
 				F250DD831FE807D400785891 /* MpasViewController.swift in Sources */,
 				F22807E02021DCC70002EB37 /* CamposRegExViewController.swift in Sources */,
 				F2E197BC202A2ED500FC45B5 /* AutoAdaptavelViewController.swift in Sources */,
+				F291220E203468B8005A8AFB /* PageController.swift in Sources */,
 				F21810071FBDD338006BFD5B /* Tab1ViewController.swift in Sources */,
 				F2DA048620177FAA00E3484B /* AlamoTestes2ViewController.swift in Sources */,
+				F291220920346380005A8AFB /* Transition1ViewController.swift in Sources */,
 				F224C5521FEBEEF000FE59EE /* SearchTableViewController.swift in Sources */,
 				F2C3557A20237A08001ACA0F /* CoisasAcontecemViewController.swift in Sources */,
 				F2DA047C20160C8000E3484B /* CryptoViewController.swift in Sources */,
+				F291220C203463BD005A8AFB /* PageViewController.swift in Sources */,
 				F2EFDE871FFEA15600B705EE /* Viagem.swift in Sources */,
 				F2EFDE7F1FFD4C3000B705EE /* DetalhesViewController.swift in Sources */,
 				F2EFDE851FFEA14000B705EE /* ViagemDAO.swift in Sources */,
