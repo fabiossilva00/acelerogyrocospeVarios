@@ -7,11 +7,29 @@
 //
 
 import UIKit
+import AVFoundation
 
 class BananaViewController: UIViewController {
     
+    var chompAudio: AVAudioPlayer? = nil
+    
     @IBOutlet weak var macacoImage: UIImageView!
     @IBOutlet weak var bananaImage: UIImageView!
+    
+    func loadSound(filename: String) -> AVAudioPlayer {
+        
+        let url = Bundle.main.url(forResource: filename, withExtension: "caf")
+        var player = AVAudioPlayer()
+        do {
+            try player = AVAudioPlayer(contentsOf: url!)
+            player.prepareToPlay()
+        } catch {
+            print("Error loading \(url!): \(error.localizedDescription)")
+        }
+        return player
+        
+    }
+    
     
     @IBAction func handlerPan(recognizer: UIPanGestureRecognizer) {
         
@@ -73,6 +91,10 @@ class BananaViewController: UIViewController {
         macacoImage.isUserInteractionEnabled = true
         bananaImage.image = UIImage(named: "banana.png")
         bananaImage.isUserInteractionEnabled = true
+        
+//        let filteredSubViews = self.view.subviews.filter({
+//            
+//        })
 
         // Do any additional setup after loading the view.
     }
