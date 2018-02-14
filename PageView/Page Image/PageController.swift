@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PageController: UIPageViewController, UIPageViewControllerDataSource {
+class PageController: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
     
     var arrImages = Array<String>()
         
@@ -46,7 +46,7 @@ class PageController: UIPageViewController, UIPageViewControllerDataSource {
         
         return pageView
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

@@ -14,6 +14,8 @@ class PageViewController: UIViewController {
     var nameImage = String()
     
     @IBOutlet weak var imagePage: UIImageView!
+    @IBOutlet weak var pageControl: UIPageControl!
+    
     
     @IBAction func voltaButton(_ sender: Any) {
         

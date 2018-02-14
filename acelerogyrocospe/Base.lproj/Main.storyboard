@@ -301,6 +301,85 @@
             </objects>
             <point key="canvasLocation" x="1818.840579710145" y="-1424.1847826086957"/>
         </scene>
+        <!--Page View View Controller-->
+        <scene sceneID="0io-kE-eAB">
+            <objects>
+                <pageViewController storyboardIdentifier="pageViewViewID" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="v8K-GX-A4Z" customClass="PageViewViewController" customModule="acelerogyrocospe" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Z3-TU-Nd1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2738" y="-1425"/>
+        </scene>
+        <!--Page1 View Controller-->
+        <scene sceneID="AHr-Iw-GkI">
+            <objects>
+                <viewController storyboardIdentifier="page1ID" id="EHI-rk-gd8" customClass="Page1ViewController" customModule="acelerogyrocospe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EZG-D8-2vU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9K-CQ-ehG">
+                                <rect key="frame" x="119" y="320" width="176" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="voltarButton:" destination="EHI-rk-gd8" eventType="touchUpInside" id="WxE-XD-jKS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.7843137255" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="W62-YH-b5f"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vuV-n0-zDL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3563.7681159420295" y="-1424.1847826086957"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ska-TQ-baN">
+            <objects>
+                <viewController storyboardIdentifier="page2ID" id="bL8-kk-ZKG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sni-E5-yIG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.76636713990000005" green="0.26040537079999998" blue="0.18420731209999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="OC2-kc-aPq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FAV-uf-CNw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4403" y="-1425"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mBW-zG-SSD">
+            <objects>
+                <viewController storyboardIdentifier="page3ID" id="QwG-yJ-Z4R" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1zS-25-rFJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="bzm-rZ-nUL"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mcC-ge-gaj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5241" y="-1423"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2nh-dQ-vMO">
+            <objects>
+                <viewController storyboardIdentifier="page4ID" id="5jv-Ca-Rr4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QCD-xD-tN0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="qMh-I1-WNF"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wK9-Jz-fJS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6139" y="-1423"/>
+        </scene>
         <!--Formata2 View Controller-->
         <scene sceneID="703-sv-rcj">
             <objects>
@@ -2623,20 +2702,24 @@
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uN6-0n-DLc">
-                                        <rect key="frame" x="105" y="482" width="121" height="30"/>
+                                        <rect key="frame" x="105" y="59" width="121" height="30"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="voltaButton:" destination="aCD-kq-ctO" eventType="touchUpInside" id="eGl-wm-xf2"/>
                                         </connections>
                                     </button>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Zaf-UY-JLm">
+                                        <rect key="frame" x="100" y="515" width="130" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </pageControl>
                                 </subviews>
                                 <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="uN6-0n-DLc" secondAttribute="trailing" constant="105" id="8Th-uD-CEe"/>
-                                    <constraint firstItem="uN6-0n-DLc" firstAttribute="leading" relation="lessThanOrEqual" secondItem="kkG-jc-vdV" secondAttribute="leading" constant="105" id="XBu-dz-dq9"/>
+                                    <constraint firstItem="uN6-0n-DLc" firstAttribute="leading" relation="lessThanOrEqual" secondItem="kkG-jc-vdV" secondAttribute="leading" constant="105" id="6nu-rq-Zps"/>
+                                    <constraint firstItem="uN6-0n-DLc" firstAttribute="top" secondItem="kkG-jc-vdV" secondAttribute="top" constant="59" id="JkS-rM-ZAO"/>
                                     <constraint firstItem="DIg-bi-RjK" firstAttribute="centerY" secondItem="kkG-jc-vdV" secondAttribute="centerY" id="dWH-DV-roO"/>
-                                    <constraint firstAttribute="bottom" secondItem="uN6-0n-DLc" secondAttribute="bottom" constant="48" id="kB4-nQ-LGL"/>
+                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="uN6-0n-DLc" secondAttribute="trailing" constant="105" id="gbo-j7-TLN"/>
                                     <constraint firstItem="DIg-bi-RjK" firstAttribute="centerX" secondItem="kkG-jc-vdV" secondAttribute="centerX" id="rtD-Tb-x8j"/>
                                 </constraints>
                             </view>
@@ -2652,6 +2735,7 @@
                     </view>
                     <connections>
                         <outlet property="imagePage" destination="DIg-bi-RjK" id="FTm-g0-4pK"/>
+                        <outlet property="pageControl" destination="Zaf-UY-JLm" id="Ke9-Rd-HoV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m4A-WQ-A8e" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2757,13 +2841,21 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6K-Xo-xZz">
                                 <rect key="frame" x="288" y="364" width="91" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="PageView"/>
+                                <state key="normal" title="PageImage"/>
                                 <connections>
                                     <action selector="pageButton:" destination="crh-Nn-1aF" eventType="touchUpInside" id="n2Q-ba-YLx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yom-x0-JGU">
                                 <rect key="frame" x="47" y="429" width="91" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="PageView"/>
+                                <connections>
+                                    <action selector="pageViewButton:" destination="crh-Nn-1aF" eventType="touchUpInside" id="ahA-pK-sBp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UPl-BB-GPC">
+                                <rect key="frame" x="163" y="429" width="91" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                             </button>
