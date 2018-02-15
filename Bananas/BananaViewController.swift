@@ -11,28 +11,27 @@ import AVFoundation
 
 class BananaViewController: UIViewController {
     
-    var chompAudio: AVAudioPlayer? = nil
+//    var chompAudio: AVAudioPlayer? = nil
     
     @IBOutlet weak var macacoImage: UIImageView!
     @IBOutlet weak var bananaImage: UIImageView!
     
-    func loadSound(filename: String) -> AVAudioPlayer {
-        
-        let url = Bundle.main.url(forResource: filename, withExtension: "caf")
-        var player = AVAudioPlayer()
-        do {
-            try player = AVAudioPlayer(contentsOf: url!)
-            player.prepareToPlay()
-        } catch {
-            print("Error loading \(url!): \(error.localizedDescription)")
-        }
-        return player
-        
-    }
-    
+//    func loadSound(filename: String) -> AVAudioPlayer {
+//
+//        let fileEx = Bundle.main.url(forResource: filename, withExtension: "caf")
+//        print(fileEx)
+//        var player = AVAudioPlayer()
+//        do {
+//            try player = AVAudioPlayer(contentsOf: fileEx!)
+//            player.prepareToPlay()
+//        } catch {
+//            print("Error loading \(fileEx!): \(error.localizedDescription)")
+//        }
+//        return player
+//
+//    }
     
     @IBAction func handlerPan(recognizer: UIPanGestureRecognizer) {
-        
         let translation = recognizer.translation(in: self.view)
         if let view = recognizer.view {
             view.center = CGPoint(x: view.center.x + translation.x, y: view.center.y + translation.y)
@@ -61,7 +60,6 @@ class BananaViewController: UIViewController {
     }
     
     @IBAction func handlerPinch(recognizer: UIPinchGestureRecognizer) {
-        
         if let view = recognizer.view {
             view.transform = view.transform.scaledBy(x: recognizer.scale, y: recognizer.scale)
             recognizer.scale = 1
@@ -78,11 +76,14 @@ class BananaViewController: UIViewController {
     }
     
     @IBAction func voltaButton(_ sender: Any) {
-        
         let buttonTelasID = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "buttonTelasID")
         self.present(buttonTelasID, animated: true, completion: nil)
         
     }
+    
+//    @objc func handlerTap(recognizer: UITapGestureRecognizer) {
+//        self.chompAudio?.play()
+//    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -93,8 +94,17 @@ class BananaViewController: UIViewController {
         bananaImage.isUserInteractionEnabled = true
         
 //        let filteredSubViews = self.view.subviews.filter({
-//            
+//            $0 is UIImageView
 //        })
+//        for view in filteredSubViews {
+//
+//            let recognizer = UITapGestureRecognizer(target: self, action: #selector(handlerTap(recognizer:)))
+//            recognizer.delegate = self
+//            view.addGestureRecognizer(recognizer)
+//
+//        }
+//
+//        self.chompAudio = self.loadSound(filename: "chomp")
 
         // Do any additional setup after loading the view.
     }

@@ -9,10 +9,25 @@
 import UIKit
 
 class Transition1ViewController: UIViewController {
+    
+    let transition = PopAnimator()
+    
+    @IBOutlet weak var imageTap: UIImageView!
+    @IBOutlet weak var viewTap: UIView!
+    
+    @objc func didTapImage() {
+        let transition2ID = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "transition2ID")
+        transition2ID.transitioningDelegate  = self
+        self.present(transition2ID, animated: true, completion: nil)
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTapImage))
+        self.viewTap.addGestureRecognizer(tap)
+        
         // Do any additional setup after loading the view.
     }
 
@@ -32,4 +47,17 @@ class Transition1ViewController: UIViewController {
     }
     */
 
+}
+
+extension Transition1ViewController: UIViewControllerTransitioningDelegate {
+    
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return transition
+    }
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.presenting = false
+        return transition
+    }
+    
 }

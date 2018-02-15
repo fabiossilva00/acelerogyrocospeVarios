@@ -120,6 +120,14 @@ class ButtonTelasViewController: UIViewController {
         
     }
     
+    @IBAction func transitionTapButton(_ sender: Any) {
+        
+        let transition1ID = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "transition1ID")
+        self.present(transition1ID, animated: true, completion: nil)
+        
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

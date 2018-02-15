@@ -39,6 +39,8 @@
 		F29122122034772B005A8AFB /* PageViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29122112034772B005A8AFB /* PageViewViewController.swift */; };
 		F2912214203478CC005A8AFB /* Page1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2912213203478CC005A8AFB /* Page1ViewController.swift */; };
 		F29122172034A569005A8AFB /* BananaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29122162034A569005A8AFB /* BananaViewController.swift */; };
+		F291221E2035ACB0005A8AFB /* PopAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F291221D2035ACB0005A8AFB /* PopAnimator.swift */; };
+		F29122202035BF3F005A8AFB /* Transition2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F291221F2035BF3F005A8AFB /* Transition2ViewController.swift */; };
 		F2B2349B1FFCED7600BBC572 /* Formata2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B2349A1FFCED7600BBC572 /* Formata2ViewController.swift */; };
 		F2B2349D1FFCEF5A00BBC572 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B2349C1FFCEF5A00BBC572 /* CollectionViewCell.swift */; };
 		F2B38BFA2004F2C300AE084D /* TerminaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B38BF92004F2C300AE084D /* TerminaViewController.swift */; };
@@ -196,6 +198,8 @@
 		F29122162034A569005A8AFB /* BananaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BananaViewController.swift; sourceTree = "<group>"; };
 		F29122192034C3A2005A8AFB /* hehehe1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = hehehe1.caf; sourceTree = "<group>"; };
 		F291221A2034C3A2005A8AFB /* chomp.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = chomp.caf; sourceTree = "<group>"; };
+		F291221D2035ACB0005A8AFB /* PopAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopAnimator.swift; sourceTree = "<group>"; };
+		F291221F2035BF3F005A8AFB /* Transition2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transition2ViewController.swift; sourceTree = "<group>"; };
 		F2B2349A1FFCED7600BBC572 /* Formata2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formata2ViewController.swift; sourceTree = "<group>"; };
 		F2B2349C1FFCEF5A00BBC572 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		F2B38BF92004F2C300AE084D /* TerminaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminaViewController.swift; sourceTree = "<group>"; };
@@ -413,6 +417,8 @@
 			isa = PBXGroup;
 			children = (
 				F291220820346380005A8AFB /* Transition1ViewController.swift */,
+				F291221D2035ACB0005A8AFB /* PopAnimator.swift */,
+				F291221F2035BF3F005A8AFB /* Transition2ViewController.swift */,
 			);
 			path = Transitions;
 			sourceTree = "<group>";
@@ -456,8 +462,8 @@
 		F29122182034C38F005A8AFB /* Audios */ = {
 			isa = PBXGroup;
 			children = (
-				F291221A2034C3A2005A8AFB /* chomp.caf */,
 				F29122192034C3A2005A8AFB /* hehehe1.caf */,
+				F291221A2034C3A2005A8AFB /* chomp.caf */,
 			);
 			path = Audios;
 			sourceTree = "<group>";
@@ -958,6 +964,7 @@
 				F2E044AF200E0DC4001F4254 /* PickerViewMes.swift in Sources */,
 				F2E197CA202B63F400FC45B5 /* CallChildViewViewController.swift in Sources */,
 				F262395C20079DC3009DD5C3 /* IngressosAluraViewController.swift in Sources */,
+				F29122202035BF3F005A8AFB /* Transition2ViewController.swift in Sources */,
 				F24607DE1FD7FDE400B07B52 /* SplashTesteViewController.swift in Sources */,
 				F21EA1641FA8C37500CDCD83 /* ViewController.swift in Sources */,
 				F2B2349B1FFCED7600BBC572 /* Formata2ViewController.swift in Sources */,
@@ -968,6 +975,7 @@
 				F22807CD201F414C0002EB37 /* AlamoSwiftyJSON.swift in Sources */,
 				F2912214203478CC005A8AFB /* Page1ViewController.swift in Sources */,
 				F250DD831FE807D400785891 /* MpasViewController.swift in Sources */,
+				F291221E2035ACB0005A8AFB /* PopAnimator.swift in Sources */,
 				F22807E02021DCC70002EB37 /* CamposRegExViewController.swift in Sources */,
 				F2E197BC202A2ED500FC45B5 /* AutoAdaptavelViewController.swift in Sources */,
 				F291220E203468B8005A8AFB /* PageController.swift in Sources */,
