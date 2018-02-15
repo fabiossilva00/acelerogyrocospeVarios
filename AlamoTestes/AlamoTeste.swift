@@ -18,8 +18,8 @@ struct info {
 }
 
 struct url {
-    static let login = URL(string: "https://zazzytec.com.br/auth")
-    static let saldoGet = URL(string: "https://zazzytec.com.br/user_saldo")
+    static let login = URL(string: "http://zazzytec.com.br/auth")
+    static let saldoGet = URL(string: "http://zazzytec.com.br/user_saldo")
 }
 
 struct dados {
@@ -30,6 +30,7 @@ class AlamoTeste: NSObject {
     
     func login(sucess:@escaping (_ sucess: Any) -> Void, failure:@escaping(_ error: Any) -> Void){
         let parameters: Parameters=["id": info.userID, "email": info.email, "senha": info.senha, "notification_token": info.notificationToken]
+        print(parameters)
         
         Alamofire.request(url.login!, method: .post, parameters: parameters, encoding:  JSONEncoding.default).validate().responseJSON(){ response in
             switch response.result {

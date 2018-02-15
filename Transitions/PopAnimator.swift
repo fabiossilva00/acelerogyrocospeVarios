@@ -12,7 +12,7 @@ class PopAnimator: NSObject, UIViewControllerAnimatedTransitioning {
     
     let duration = 4.0
     var presenting = true
-    var originFrame = CGRect.zero
+    var originFrame = CGRect(x: 0, y: 0, width: 0, height: 0)
     
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return duration
