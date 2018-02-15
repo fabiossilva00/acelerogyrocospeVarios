@@ -7,46 +7,27 @@
 //
 
 import UIKit
-import AKMaskField
+import InputMask
 
-class TextViewController: UIViewController, AKMaskFieldDelegate {
+class TextViewController: UIViewController {
     
     
-    @IBOutlet weak var textField1: AKMaskField!
+    @IBOutlet weak var textField1: UITextField!
     
-    @IBOutlet weak var textField2: AKMaskField!
+    @IBOutlet weak var textField2: UITextField!
     
-    @IBOutlet weak var textField3: AKMaskField!
+    @IBOutlet weak var textField3: UITextField!
 
-    @IBOutlet weak var textField4: AKMaskField!
+    @IBOutlet weak var textField4: UITextField!
     
     
-//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-////        if textField == textField1{
-////            textField2.becomeFirstResponder()
-////        }else{
-////            textField1.resignFirstResponder()
-////        }
-//        switch textField.tag{
-//        case 1:
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+//        if textField == textField1{
 //            textField2.becomeFirstResponder()
-//            break
-//        case 2:
-//            textField3.becomeFirstResponder()
-//            break
-//        case 3:
-//            textField4.becomeFirstResponder()
-//            break
-//        case 4:
-//            textField4.resignFirstResponder()
-//            break
-//        default: break
+//        }else{
+//            textField1.resignFirstResponder()
 //        }
-//        return true
-//    }
-    
-    func maskFieldShouldReturn(_ maskField: AKMaskField) -> Bool {
-        switch maskField.tag{
+        switch textField.tag{
         case 1:
             textField2.becomeFirstResponder()
             break
@@ -63,36 +44,6 @@ class TextViewController: UIViewController, AKMaskFieldDelegate {
         }
         return true
     }
-    
-    func maskFieldDidBeginEditing(_ maskField: AKMaskField) {
-        switch maskField.tag {
-        case 1:
-            print("Text1B")
-            break
-        case 2:
-            print("Text2B")
-            break
-        case 3:
-            print("Text3B")
-            break
-        default: break
-        }
-    }
-    
-    func maskFieldDidEndEditing(_ maskField: AKMaskField) {
-        switch maskField.tag {
-        case 1:
-            print("Text1E")
-            break
-        case 2:
-            print("Text2E")
-            break
-        case 3:
-            print("Text3E")
-            break
-        default: break
-        }
-    }
 
     @IBAction func voltarButton(_ sender: Any) {
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "buttonTelasID")
@@ -101,11 +52,6 @@ class TextViewController: UIViewController, AKMaskFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        textField1.maskDelegate = self
-        textField2.maskDelegate = self
-        textField3.maskDelegate = self
-        textField4.maskDelegate = self
         
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyBoard")
         view.addGestureRecognizer(tap)

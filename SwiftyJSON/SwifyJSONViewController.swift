@@ -7,10 +7,9 @@
 //
 
 import UIKit
-import AKMaskField
 import CreditCardValidator
 
-class SwifyJSONViewController: UIViewController, AKMaskFieldDelegate {
+class SwifyJSONViewController: UIViewController {
     
     @IBOutlet weak var Button1: UIButton!
     @IBOutlet weak var Button2: UIButton!
@@ -157,9 +156,7 @@ class SwifyJSONViewController: UIViewController, AKMaskFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        cartaoText.maskDelegate = self
-//        cartaoText.maskExpression = "{dddd} {dddd} {dddd} {dddd}"
-//        cartaoText.maskTemplate = " "
+
         
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyBoard")
         view.addGestureRecognizer(tap)
