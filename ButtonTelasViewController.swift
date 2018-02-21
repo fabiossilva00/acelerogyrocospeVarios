@@ -21,9 +21,7 @@ class ButtonTelasViewController: UIViewController {
     }
     
     @IBAction func mapBnt(_ sender: Any) {
-        
         performSegue(withIdentifier: "navmapID", sender: self)
-        
     }
     
     @IBAction func textReturnBnt(_ sender: Any) {
@@ -63,7 +61,6 @@ class ButtonTelasViewController: UIViewController {
     }
     
     @IBAction func alamoTesteButton(_ sender: Any) {
-        
         let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "alamoTesteID")
         self.present(vc, animated: true, completion: nil)
     }
@@ -71,6 +68,7 @@ class ButtonTelasViewController: UIViewController {
     @IBAction func alamoTeste2Button(_ sender: Any) {
         let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "alamoTeste2ID")
         self.present(vc, animated: true, completion: nil)
+        
     }
     
     @IBAction func switfyJSONButton(_ sender: Any) {
@@ -94,47 +92,45 @@ class ButtonTelasViewController: UIViewController {
     }
     
     @IBAction func childButton(_ sender: Any) {
-        
         let callChildID = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "callChildID")
         self.present(callChildID, animated: true, completion: nil)
-    
     }
     
     @IBAction func pageButton(_ sender: Any) {
-        
         let pageViewID = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "pageControllerID")
         self.present(pageViewID, animated: true, completion: nil)
     }
     
     @IBAction func pageViewButton(_ sender: Any) {
-        
         let pageViewViewID = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "pageViewViewID")
         self.present(pageViewViewID, animated: true, completion: nil)
-        
     }
     
     @IBAction func bananasButton(_ sender: Any) {
-        
         let bananaID = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "bananaID")
         self.present(bananaID, animated: true, completion: nil)
-        
     }
     
     @IBAction func transitionTapButton(_ sender: Any) {
-        
         let transition1ID = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "transition1ID")
         self.present(transition1ID, animated: true, completion: nil)
-        
     }
     
     @IBAction func miniAnimatedButton(_ sender: Any) {
-        
         let miniAnimatedID = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "miniAnimatedID")
+//        self.present(miniAnimatedID, animated: true, completion: nil)
         self.present(miniAnimatedID, animated: true, completion: nil)
     }
     
+    @IBAction func agendaButton(_ sender: Any) {
+        
+        let agendaID = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "agendaID")
+        self.present(agendaID, animated: true, completion: nil)
+
+        
+    }
     
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
 

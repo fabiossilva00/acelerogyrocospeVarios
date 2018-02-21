@@ -69,7 +69,7 @@ class TransicaoBaixoViewController: UIViewController {
     }
     
     @IBAction func voltarButton(_ sender: Any) {
-        mudaTela()
+            dismiss(animated: true, completion: nil)
         
     }
     
@@ -95,7 +95,7 @@ class TransicaoBaixoViewController: UIViewController {
     
         let alertController = UIAlertController(title: "Ai!", message: "", preferredStyle: .alert)
         let okButton = UIAlertAction(title: "Tchau!", style: .cancel, handler: { _ in
-            self.mudaTela()
+            self.dismiss(animated: true, completion: nil)
         })
         alertController.addAction(okButton)
         self.present(alertController, animated: true, completion: nil)
