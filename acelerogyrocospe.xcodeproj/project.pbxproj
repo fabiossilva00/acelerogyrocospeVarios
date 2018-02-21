@@ -56,6 +56,8 @@
 		F2DA048220175C4A00E3484B /* AlamoTeste.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DA048120175C4A00E3484B /* AlamoTeste.swift */; };
 		F2DA0484201768F300E3484B /* AlamoTesteCampos.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DA0483201768F300E3484B /* AlamoTesteCampos.swift */; };
 		F2DA048620177FAA00E3484B /* AlamoTestes2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DA048520177FAA00E3484B /* AlamoTestes2ViewController.swift */; };
+		F2DDDB77203DABA7005B79CD /* TransicaoBaixoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DDDB76203DABA7005B79CD /* TransicaoBaixoViewController.swift */; };
+		F2DDDB84203DAE92005B79CD /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DDDB83203DAE92005B79CD /* Delay.swift */; };
 		F2E044AA200D1043001F4254 /* AlamoCampos.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E044A9200D1043001F4254 /* AlamoCampos.swift */; };
 		F2E044AC200D1070001F4254 /* AlamoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E044AB200D1070001F4254 /* AlamoAPI.swift */; };
 		F2E044AF200E0DC4001F4254 /* PickerViewMes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E044AE200E0DC4001F4254 /* PickerViewMes.swift */; };
@@ -120,19 +122,19 @@
 			remoteGlobalIDString = 11F5A1EA77FB906965A003918997AC06;
 			remoteInfo = "Pods-acelerogyrocospeUITests";
 		};
-		F2DA047720160C5500E3484B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F26239472006937E009DD5C3 /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4E2A9B5289C1671A152BBA2BDE084ED0;
-			remoteInfo = AKMaskField;
-		};
 		F2DA047920160C5500E3484B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F26239472006937E009DD5C3 /* Pods.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 7D49326B6391047A8996DDC64EFC8338;
 			remoteInfo = CryptoSwift;
+		};
+		F2DDDB81203DABA9005B79CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F26239472006937E009DD5C3 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CCF3F2523177BED5F85010ACAB505757;
+			remoteInfo = InputMask;
 		};
 		F2E044A5200D0F90001F4254 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -215,6 +217,8 @@
 		F2DA048120175C4A00E3484B /* AlamoTeste.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamoTeste.swift; sourceTree = "<group>"; };
 		F2DA0483201768F300E3484B /* AlamoTesteCampos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamoTesteCampos.swift; sourceTree = "<group>"; };
 		F2DA048520177FAA00E3484B /* AlamoTestes2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamoTestes2ViewController.swift; sourceTree = "<group>"; };
+		F2DDDB76203DABA7005B79CD /* TransicaoBaixoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransicaoBaixoViewController.swift; sourceTree = "<group>"; };
+		F2DDDB83203DAE92005B79CD /* Delay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delay.swift; sourceTree = "<group>"; };
 		F2E044A9200D1043001F4254 /* AlamoCampos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamoCampos.swift; sourceTree = "<group>"; };
 		F2E044AB200D1070001F4254 /* AlamoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamoAPI.swift; sourceTree = "<group>"; };
 		F2E044AE200E0DC4001F4254 /* PickerViewMes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewMes.swift; sourceTree = "<group>"; };
@@ -324,6 +328,7 @@
 				F21EA16A1FA8C37500CDCD83 /* LaunchScreen.storyboard */,
 				F21EA16D1FA8C37500CDCD83 /* Info.plist */,
 				F2E197C9202B63F400FC45B5 /* CallChildViewViewController.swift */,
+				F2DDDB83203DAE92005B79CD /* Delay.swift */,
 			);
 			path = acelerogyrocospe;
 			sourceTree = "<group>";
@@ -388,11 +393,11 @@
 		F26239482006937E009DD5C3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F2DA047820160C5500E3484B /* AKMaskField.framework */,
 				F262394F2006937E009DD5C3 /* Alamofire.framework */,
 				F2E044A6200D0F90001F4254 /* CPF_CNPJ_Validator.framework */,
 				F2E044B7200E0DC5001F4254 /* CreditCardValidator.framework */,
 				F2DA047A20160C5500E3484B /* CryptoSwift.framework */,
+				F2DDDB82203DABA9005B79CD /* InputMask.framework */,
 				F26239512006937E009DD5C3 /* Pods_acelerogyrocospe.framework */,
 				F26239532006937E009DD5C3 /* Pods_acelerogyrocospeTests.framework */,
 				F26239552006937E009DD5C3 /* Pods_acelerogyrocospeUITests.framework */,
@@ -419,6 +424,7 @@
 				F291220820346380005A8AFB /* Transition1ViewController.swift */,
 				F291221D2035ACB0005A8AFB /* PopAnimator.swift */,
 				F291221F2035BF3F005A8AFB /* Transition2ViewController.swift */,
+				F2DDDB76203DABA7005B79CD /* TransicaoBaixoViewController.swift */,
 			);
 			path = Transitions;
 			sourceTree = "<group>";
@@ -723,18 +729,18 @@
 			remoteRef = F26239542006937E009DD5C3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F2DA047820160C5500E3484B /* AKMaskField.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = AKMaskField.framework;
-			remoteRef = F2DA047720160C5500E3484B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		F2DA047A20160C5500E3484B /* CryptoSwift.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = CryptoSwift.framework;
 			remoteRef = F2DA047920160C5500E3484B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F2DDDB82203DABA9005B79CD /* InputMask.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = InputMask.framework;
+			remoteRef = F2DDDB81203DABA9005B79CD /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		F2E044A6200D0F90001F4254 /* CPF_CNPJ_Validator.framework */ = {
@@ -971,6 +977,7 @@
 				F250DD871FE8318D00785891 /* ButtonTelasViewController.swift in Sources */,
 				F250DD811FE3E98000785891 /* TextViewController.swift in Sources */,
 				F2CBFFBD1FF42D96002F685C /* Maps2ViewController.swift in Sources */,
+				F2DDDB84203DAE92005B79CD /* Delay.swift in Sources */,
 				F2C94B2B1FFBA18F000331B2 /* Teste.swift in Sources */,
 				F22807CD201F414C0002EB37 /* AlamoSwiftyJSON.swift in Sources */,
 				F2912214203478CC005A8AFB /* Page1ViewController.swift in Sources */,
@@ -993,6 +1000,7 @@
 				F29122122034772B005A8AFB /* PageViewViewController.swift in Sources */,
 				F2DA0480201757BB00E3484B /* AlamoTestesViewController.swift in Sources */,
 				F2EFDE831FFE937800B705EE /* PacoteViagem.swift in Sources */,
+				F2DDDB77203DABA7005B79CD /* TransicaoBaixoViewController.swift in Sources */,
 				F2C94B271FFB9BE2000331B2 /* ItensTable.swift in Sources */,
 				F21810091FBDD352006BFD5B /* Tab2ViewController.swift in Sources */,
 				F21EA1621FA8C37500CDCD83 /* AppDelegate.swift in Sources */,

@@ -127,6 +127,13 @@ class ButtonTelasViewController: UIViewController {
         
     }
     
+    @IBAction func miniAnimatedButton(_ sender: Any) {
+        
+        let miniAnimatedID = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "miniAnimatedID")
+        self.present(miniAnimatedID, animated: true, completion: nil)
+    }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
