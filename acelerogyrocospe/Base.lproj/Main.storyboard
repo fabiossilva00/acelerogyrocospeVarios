@@ -1295,28 +1295,41 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hsj-fY-EDh">
-                                <rect key="frame" x="119" y="57" width="85" height="85"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="voltarButton:" destination="HwV-ut-BX3" eventType="touchUpInside" id="U3U-i7-B1b"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNs-xX-QrG">
-                                <rect key="frame" x="16" y="191" width="288" height="90"/>
+                                <rect key="frame" x="16" y="435" width="288" height="50"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="animaButton:" destination="HwV-ut-BX3" eventType="touchUpInside" id="LEa-RL-fa2"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="aranha-com-chapeu-da-bruxa_318-111299" translatesAutoresizingMaskIntoConstraints="NO" id="nkk-cR-pyV">
+                                <rect key="frame" x="118" y="-86" width="85" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xgy-jY-3zu">
+                                <rect key="frame" x="161" y="-380" width="1" height="297"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hsj-fY-EDh">
+                                <rect key="frame" x="219" y="20" width="85" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="voltarButton:" destination="HwV-ut-BX3" eventType="touchUpInside" id="U3U-i7-B1b"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="8M0-de-cyz"/>
                     </view>
                     <connections>
+                        <outlet property="algumaLabel" destination="NZb-VK-hbu" id="Fjx-wJ-x3L"/>
+                        <outlet property="animaButton" destination="WNs-xX-QrG" id="LoT-db-zeF"/>
+                        <outlet property="imageAranha" destination="nkk-cR-pyV" id="hAp-2K-XgI"/>
+                        <outlet property="viewTeia" destination="Xgy-jY-3zu" id="kfr-eE-Qwr"/>
                         <outlet property="viewTransicao" destination="dER-QM-BLY" id="xTI-pf-7Ry"/>
                     </connections>
                 </viewController>
@@ -3478,6 +3491,7 @@
     </scenes>
     <resources>
         <image name="FRAME_1" width="562" height="998"/>
+        <image name="aranha-com-chapeu-da-bruxa_318-111299" width="128" height="128"/>
         <image name="carVerde" width="90" height="90"/>
         <image name="icon_back" width="50" height="50"/>
     </resources>
