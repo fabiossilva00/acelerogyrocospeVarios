@@ -8,8 +8,16 @@
 
 import UIKit
 
-class AgendaTableViewController: UITableViewController {
+class AgendaTableViewController: UITableViewController, UISearchBarDelegate  {
     
+    let searchControl = UISearchController(searchResultsController: nil)
+    
+    func searchItem() {
+        self.searchControl.searchBar.delegate = self
+        self.searchControl.dimsBackgroundDuringPresentation = false
+        self.navigationItem.searchController = searchControl
+        
+    }
     
     @objc func mudaTela() {
         dismiss(animated: true, completion: nil)
@@ -17,6 +25,8 @@ class AgendaTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        searchItem()
         
         NotificationCenter.default.addObserver(self, selector: #selector(mudaTela), name: .UIDeviceOrientationDidChange, object: nil)
 

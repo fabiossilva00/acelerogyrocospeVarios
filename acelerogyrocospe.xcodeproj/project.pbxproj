@@ -10,13 +10,14 @@
 		0D33AE6CA0F0AC3A70B0C4F7 /* Pods_acelerogyrocospeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 567F4CFAEA4DCF8D427983BA /* Pods_acelerogyrocospeUITests.framework */; };
 		5E396C4820AADEA27E05E1E1 /* Pods_acelerogyrocospeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E85ABB2E0782288052004F /* Pods_acelerogyrocospeTests.framework */; };
 		C50E2B97D01A6AC40E3D039C /* Pods_acelerogyrocospe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A93975516FD3B588DAD505 /* Pods_acelerogyrocospe.framework */; };
+		F211D1DA203F625600F6C19F /* acelerogyrocospe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F211D1D8203F625600F6C19F /* acelerogyrocospe.xcdatamodeld */; };
 		F2163779203EF87700A236C2 /* NavTesteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2163778203EF87600A236C2 /* NavTesteViewController.swift */; };
 		F2163785203EFEC900A236C2 /* NavTeste2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2163784203EFEC900A236C2 /* NavTeste2ViewController.swift */; };
 		F2163787203F02B800A236C2 /* NavTeste3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2163786203F02B800A236C2 /* NavTeste3ViewController.swift */; };
 		F216378A203F152D00A236C2 /* AgendaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2163789203F152D00A236C2 /* AgendaTableViewController.swift */; };
 		F216378C203F155700A236C2 /* AgendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F216378B203F155700A236C2 /* AgendaViewController.swift */; };
 		F216378E203F15A500A236C2 /* AgendaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F216378D203F15A500A236C2 /* AgendaTableViewCell.swift */; };
-		F2163791203F267B00A236C2 /* Agenda.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F216378F203F267B00A236C2 /* Agenda.xcdatamodeld */; };
+		F2163793203F387A00A236C2 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2163792203F387A00A236C2 /* ImagePicker.swift */; };
 		F21810071FBDD338006BFD5B /* Tab1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21810061FBDD337006BFD5B /* Tab1ViewController.swift */; };
 		F21810091FBDD352006BFD5B /* Tab2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21810081FBDD352006BFD5B /* Tab2ViewController.swift */; };
 		F21EA1621FA8C37500CDCD83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21EA1611FA8C37500CDCD83 /* AppDelegate.swift */; };
@@ -169,13 +170,15 @@
 		80574DD1D7ACA53FA8395142 /* Pods-acelerogyrocospeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-acelerogyrocospeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-acelerogyrocospeUITests/Pods-acelerogyrocospeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		951FC131997593D9B2B69F77 /* Pods-acelerogyrocospe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-acelerogyrocospe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-acelerogyrocospe/Pods-acelerogyrocospe.debug.xcconfig"; sourceTree = "<group>"; };
 		E9E2710EBE6364E61051C45F /* Pods-acelerogyrocospeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-acelerogyrocospeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-acelerogyrocospeUITests/Pods-acelerogyrocospeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F211D1D9203F625600F6C19F /* acelerogyrocospe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = acelerogyrocospe.xcdatamodel; sourceTree = "<group>"; };
 		F2163778203EF87600A236C2 /* NavTesteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavTesteViewController.swift; sourceTree = "<group>"; };
 		F2163784203EFEC900A236C2 /* NavTeste2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavTeste2ViewController.swift; sourceTree = "<group>"; };
 		F2163786203F02B800A236C2 /* NavTeste3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavTeste3ViewController.swift; sourceTree = "<group>"; };
 		F2163789203F152D00A236C2 /* AgendaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaTableViewController.swift; sourceTree = "<group>"; };
 		F216378B203F155700A236C2 /* AgendaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaViewController.swift; sourceTree = "<group>"; };
 		F216378D203F15A500A236C2 /* AgendaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaTableViewCell.swift; sourceTree = "<group>"; };
-		F2163790203F267B00A236C2 /* Agenda.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Agenda.xcdatamodel; sourceTree = "<group>"; };
+		F2163792203F387A00A236C2 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		F2163794203F56A200A236C2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		F21810061FBDD337006BFD5B /* Tab1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1ViewController.swift; sourceTree = "<group>"; };
 		F21810081FBDD352006BFD5B /* Tab2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab2ViewController.swift; sourceTree = "<group>"; };
 		F21EA15E1FA8C37400CDCD83 /* acelerogyrocospe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = acelerogyrocospe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -306,7 +309,7 @@
 				F2163789203F152D00A236C2 /* AgendaTableViewController.swift */,
 				F216378B203F155700A236C2 /* AgendaViewController.swift */,
 				F216378D203F15A500A236C2 /* AgendaTableViewCell.swift */,
-				F216378F203F267B00A236C2 /* Agenda.xcdatamodeld */,
+				F2163792203F387A00A236C2 /* ImagePicker.swift */,
 			);
 			path = "Agenda Alura";
 			sourceTree = "<group>";
@@ -355,7 +358,6 @@
 				F2623958200694BD009DD5C3 /* CEPViewController.swift */,
 				F250DD801FE3E97F00785891 /* TextViewController.swift */,
 				F22EB1F21FE0521300A1936F /* WebViewController.swift */,
-				F21EA1611FA8C37500CDCD83 /* AppDelegate.swift */,
 				F21EA1631FA8C37500CDCD83 /* ViewController.swift */,
 				F24607DD1FD7FDE400B07B52 /* SplashTesteViewController.swift */,
 				F21EA1651FA8C37500CDCD83 /* Main.storyboard */,
@@ -365,7 +367,9 @@
 				F2DDDB83203DAE92005B79CD /* Delay.swift */,
 				F21EA1681FA8C37500CDCD83 /* Assets.xcassets */,
 				F21EA16A1FA8C37500CDCD83 /* LaunchScreen.storyboard */,
+				F21EA1611FA8C37500CDCD83 /* AppDelegate.swift */,
 				F21EA16D1FA8C37500CDCD83 /* Info.plist */,
+				F211D1D8203F625600F6C19F /* acelerogyrocospe.xcdatamodeld */,
 			);
 			path = acelerogyrocospe;
 			sourceTree = "<group>";
@@ -391,6 +395,7 @@
 		F21EA18F1FA8C84800CDCD83 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F2163794203F56A200A236C2 /* CoreData.framework */,
 				F26239472006937E009DD5C3 /* Pods.xcodeproj */,
 				F250DD841FE829AD00785891 /* MapKit.framework */,
 				F21EA1901FA8C84A00CDCD83 /* CoreMotion.framework */,
@@ -996,6 +1001,7 @@
 				F2DA0484201768F300E3484B /* AlamoTesteCampos.swift in Sources */,
 				F2B2349D1FFCEF5A00BBC572 /* CollectionViewCell.swift in Sources */,
 				F2DA048220175C4A00E3484B /* AlamoTeste.swift in Sources */,
+				F211D1DA203F625600F6C19F /* acelerogyrocospe.xcdatamodeld in Sources */,
 				F22EB1F31FE0521300A1936F /* WebViewController.swift in Sources */,
 				F2E197C8202B10CA00FC45B5 /* AdptavelEscondidoViewController.swift in Sources */,
 				F216378A203F152D00A236C2 /* AgendaTableViewController.swift in Sources */,
@@ -1038,7 +1044,6 @@
 				F2163785203EFEC900A236C2 /* NavTeste2ViewController.swift in Sources */,
 				F2EFDE871FFEA15600B705EE /* Viagem.swift in Sources */,
 				F2EFDE7F1FFD4C3000B705EE /* DetalhesViewController.swift in Sources */,
-				F2163791203F267B00A236C2 /* Agenda.xcdatamodeld in Sources */,
 				F2EFDE851FFEA14000B705EE /* ViagemDAO.swift in Sources */,
 				F29122122034772B005A8AFB /* PageViewViewController.swift in Sources */,
 				F2DA0480201757BB00E3484B /* AlamoTestesViewController.swift in Sources */,
@@ -1046,6 +1051,7 @@
 				F2DDDB77203DABA7005B79CD /* TransicaoBaixoViewController.swift in Sources */,
 				F2C94B271FFB9BE2000331B2 /* ItensTable.swift in Sources */,
 				F21810091FBDD352006BFD5B /* Tab2ViewController.swift in Sources */,
+				F2163793203F387A00A236C2 /* ImagePicker.swift in Sources */,
 				F21EA1621FA8C37500CDCD83 /* AppDelegate.swift in Sources */,
 				F216378C203F155700A236C2 /* AgendaViewController.swift in Sources */,
 			);
@@ -1355,14 +1361,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		F216378F203F267B00A236C2 /* Agenda.xcdatamodeld */ = {
+		F211D1D8203F625600F6C19F /* acelerogyrocospe.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				F2163790203F267B00A236C2 /* Agenda.xcdatamodel */,
+				F211D1D9203F625600F6C19F /* acelerogyrocospe.xcdatamodel */,
 			);
-			currentVersion = F2163790203F267B00A236C2 /* Agenda.xcdatamodel */;
-			path = Agenda.xcdatamodeld;
-			sourceTree = "<group>";
+			currentVersion = F211D1D9203F625600F6C19F /* acelerogyrocospe.xcdatamodel */;
+			path = acelerogyrocospe.xcdatamodeld;
+			sourceTree = SOURCE_ROOT;
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
