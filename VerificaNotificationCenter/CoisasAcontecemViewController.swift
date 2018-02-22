@@ -24,7 +24,7 @@ class CoisasAcontecemViewController: UIViewController {
     }
     
     @objc func luz() {
-        coisasLabel.text = "Luz!"
+        coisasLabel.text = "Luz!, Camera ?"
     }
         
     @objc func posicao() {
@@ -39,6 +39,12 @@ class CoisasAcontecemViewController: UIViewController {
         coisasLabel.text = "Take my energy"
     }
     
+    @objc func lowPower() {
+        coisasLabel.text = "Poder é abaixo de 8000"
+    }
+    
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -46,6 +52,8 @@ class CoisasAcontecemViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(posicao), name: .UIDeviceOrientationDidChange, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(SS), name: .UIApplicationUserDidTakeScreenshot, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(bateriaC), name: .UIDeviceBatteryStateDidChange, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(lowPower), name: .NSProcessInfoPowerStateDidChange, object: nil)
+        
 
         // Do any additional setup after loading the view.
     }

@@ -13,6 +13,10 @@
 		F2163779203EF87700A236C2 /* NavTesteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2163778203EF87600A236C2 /* NavTesteViewController.swift */; };
 		F2163785203EFEC900A236C2 /* NavTeste2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2163784203EFEC900A236C2 /* NavTeste2ViewController.swift */; };
 		F2163787203F02B800A236C2 /* NavTeste3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2163786203F02B800A236C2 /* NavTeste3ViewController.swift */; };
+		F216378A203F152D00A236C2 /* AgendaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2163789203F152D00A236C2 /* AgendaTableViewController.swift */; };
+		F216378C203F155700A236C2 /* AgendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F216378B203F155700A236C2 /* AgendaViewController.swift */; };
+		F216378E203F15A500A236C2 /* AgendaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F216378D203F15A500A236C2 /* AgendaTableViewCell.swift */; };
+		F2163791203F267B00A236C2 /* Agenda.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F216378F203F267B00A236C2 /* Agenda.xcdatamodeld */; };
 		F21810071FBDD338006BFD5B /* Tab1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21810061FBDD337006BFD5B /* Tab1ViewController.swift */; };
 		F21810091FBDD352006BFD5B /* Tab2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21810081FBDD352006BFD5B /* Tab2ViewController.swift */; };
 		F21EA1621FA8C37500CDCD83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21EA1611FA8C37500CDCD83 /* AppDelegate.swift */; };
@@ -168,6 +172,10 @@
 		F2163778203EF87600A236C2 /* NavTesteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavTesteViewController.swift; sourceTree = "<group>"; };
 		F2163784203EFEC900A236C2 /* NavTeste2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavTeste2ViewController.swift; sourceTree = "<group>"; };
 		F2163786203F02B800A236C2 /* NavTeste3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavTeste3ViewController.swift; sourceTree = "<group>"; };
+		F2163789203F152D00A236C2 /* AgendaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaTableViewController.swift; sourceTree = "<group>"; };
+		F216378B203F155700A236C2 /* AgendaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaViewController.swift; sourceTree = "<group>"; };
+		F216378D203F15A500A236C2 /* AgendaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaTableViewCell.swift; sourceTree = "<group>"; };
+		F2163790203F267B00A236C2 /* Agenda.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Agenda.xcdatamodel; sourceTree = "<group>"; };
 		F21810061FBDD337006BFD5B /* Tab1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1ViewController.swift; sourceTree = "<group>"; };
 		F21810081FBDD352006BFD5B /* Tab2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab2ViewController.swift; sourceTree = "<group>"; };
 		F21EA15E1FA8C37400CDCD83 /* acelerogyrocospe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = acelerogyrocospe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -292,9 +300,21 @@
 			path = NavTeste;
 			sourceTree = "<group>";
 		};
+		F2163788203F14F100A236C2 /* Agenda Alura */ = {
+			isa = PBXGroup;
+			children = (
+				F2163789203F152D00A236C2 /* AgendaTableViewController.swift */,
+				F216378B203F155700A236C2 /* AgendaViewController.swift */,
+				F216378D203F15A500A236C2 /* AgendaTableViewCell.swift */,
+				F216378F203F267B00A236C2 /* Agenda.xcdatamodeld */,
+			);
+			path = "Agenda Alura";
+			sourceTree = "<group>";
+		};
 		F21EA1551FA8C37400CDCD83 = {
 			isa = PBXGroup;
 			children = (
+				F2163788203F14F100A236C2 /* Agenda Alura */,
 				F2163783203EFEA700A236C2 /* NavTeste */,
 				F29122152034A551005A8AFB /* Bananas */,
 				F291220A203463A8005A8AFB /* PageView */,
@@ -341,11 +361,11 @@
 				F21EA1651FA8C37500CDCD83 /* Main.storyboard */,
 				F21810061FBDD337006BFD5B /* Tab1ViewController.swift */,
 				F21810081FBDD352006BFD5B /* Tab2ViewController.swift */,
+				F2E197C9202B63F400FC45B5 /* CallChildViewViewController.swift */,
+				F2DDDB83203DAE92005B79CD /* Delay.swift */,
 				F21EA1681FA8C37500CDCD83 /* Assets.xcassets */,
 				F21EA16A1FA8C37500CDCD83 /* LaunchScreen.storyboard */,
 				F21EA16D1FA8C37500CDCD83 /* Info.plist */,
-				F2E197C9202B63F400FC45B5 /* CallChildViewViewController.swift */,
-				F2DDDB83203DAE92005B79CD /* Delay.swift */,
 			);
 			path = acelerogyrocospe;
 			sourceTree = "<group>";
@@ -978,6 +998,7 @@
 				F2DA048220175C4A00E3484B /* AlamoTeste.swift in Sources */,
 				F22EB1F31FE0521300A1936F /* WebViewController.swift in Sources */,
 				F2E197C8202B10CA00FC45B5 /* AdptavelEscondidoViewController.swift in Sources */,
+				F216378A203F152D00A236C2 /* AgendaTableViewController.swift in Sources */,
 				F2E044AC200D1070001F4254 /* AlamoAPI.swift in Sources */,
 				F224C5541FEC4B6900FE59EE /* FormataViewController.swift in Sources */,
 				F2B38BFA2004F2C300AE084D /* TerminaViewController.swift in Sources */,
@@ -995,6 +1016,7 @@
 				F2B2349B1FFCED7600BBC572 /* Formata2ViewController.swift in Sources */,
 				F250DD871FE8318D00785891 /* ButtonTelasViewController.swift in Sources */,
 				F250DD811FE3E98000785891 /* TextViewController.swift in Sources */,
+				F216378E203F15A500A236C2 /* AgendaTableViewCell.swift in Sources */,
 				F2CBFFBD1FF42D96002F685C /* Maps2ViewController.swift in Sources */,
 				F2DDDB84203DAE92005B79CD /* Delay.swift in Sources */,
 				F2C94B2B1FFBA18F000331B2 /* Teste.swift in Sources */,
@@ -1016,6 +1038,7 @@
 				F2163785203EFEC900A236C2 /* NavTeste2ViewController.swift in Sources */,
 				F2EFDE871FFEA15600B705EE /* Viagem.swift in Sources */,
 				F2EFDE7F1FFD4C3000B705EE /* DetalhesViewController.swift in Sources */,
+				F2163791203F267B00A236C2 /* Agenda.xcdatamodeld in Sources */,
 				F2EFDE851FFEA14000B705EE /* ViagemDAO.swift in Sources */,
 				F29122122034772B005A8AFB /* PageViewViewController.swift in Sources */,
 				F2DA0480201757BB00E3484B /* AlamoTestesViewController.swift in Sources */,
@@ -1024,6 +1047,7 @@
 				F2C94B271FFB9BE2000331B2 /* ItensTable.swift in Sources */,
 				F21810091FBDD352006BFD5B /* Tab2ViewController.swift in Sources */,
 				F21EA1621FA8C37500CDCD83 /* AppDelegate.swift in Sources */,
+				F216378C203F155700A236C2 /* AgendaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1329,6 +1353,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F216378F203F267B00A236C2 /* Agenda.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F2163790203F267B00A236C2 /* Agenda.xcdatamodel */,
+			);
+			currentVersion = F2163790203F267B00A236C2 /* Agenda.xcdatamodel */;
+			path = Agenda.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F21EA1561FA8C37400CDCD83 /* Project object */;
 }
