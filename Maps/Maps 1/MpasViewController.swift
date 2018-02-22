@@ -93,8 +93,7 @@ class MpasViewController: UIViewController, UISearchBarDelegate{
     
     @IBAction func voltarButton(_ sender: Any) {
         
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "buttonTelasID")
-        self.present(vc, animated: true, completion: nil)
+        dismiss(animated: true, completion: nil)
         
     }
 

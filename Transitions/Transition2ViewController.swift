@@ -16,6 +16,7 @@ class Transition2ViewController: UIViewController {
     @objc func tapView() {
         let buttonTelasID = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "buttonTelasID")
         self.present(buttonTelasID, animated: true, completion: nil)
+        removeFromParentViewController()
     }
     
     override func viewDidLoad() {

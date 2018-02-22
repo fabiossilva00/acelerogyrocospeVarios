@@ -20,8 +20,7 @@ class AutoAdaptavelViewController: UIViewController {
     }
     
     @IBAction func voltarButton(_ sender: Any) {
-        let buttonTelasID = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "buttonTelasID")
-        self.present(buttonTelasID, animated: true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
     
     override func viewDidLoad() {

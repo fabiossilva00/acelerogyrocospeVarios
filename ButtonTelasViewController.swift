@@ -108,6 +108,8 @@ class ButtonTelasViewController: UIViewController {
     
     @IBAction func bananasButton(_ sender: Any) {
         let bananaID = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "bananaID")
+        bananaID.modalPresentationStyle = .pageSheet
+        bananaID.modalTransitionStyle = .crossDissolve
         self.present(bananaID, animated: true, completion: nil)
     }
     
@@ -119,18 +121,26 @@ class ButtonTelasViewController: UIViewController {
     @IBAction func miniAnimatedButton(_ sender: Any) {
         let miniAnimatedID = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "miniAnimatedID")
 //        self.present(miniAnimatedID, animated: true, completion: nil)
+        miniAnimatedID.modalTransitionStyle = .partialCurl
         self.present(miniAnimatedID, animated: true, completion: nil)
+        
     }
     
     @IBAction func agendaButton(_ sender: Any) {
         
         let agendaID = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "agendaID")
         self.present(agendaID, animated: true, completion: nil)
-
         
     }
     
+    @IBAction func navTesteButton(_ sender: Any) {
         
+        let navTestesID = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "navTestesID")
+        navTestesID.modalTransitionStyle = .flipHorizontal
+        self.present(navTestesID, animated: true, completion: nil)
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

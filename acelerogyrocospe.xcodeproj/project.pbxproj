@@ -10,6 +10,9 @@
 		0D33AE6CA0F0AC3A70B0C4F7 /* Pods_acelerogyrocospeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 567F4CFAEA4DCF8D427983BA /* Pods_acelerogyrocospeUITests.framework */; };
 		5E396C4820AADEA27E05E1E1 /* Pods_acelerogyrocospeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E85ABB2E0782288052004F /* Pods_acelerogyrocospeTests.framework */; };
 		C50E2B97D01A6AC40E3D039C /* Pods_acelerogyrocospe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A93975516FD3B588DAD505 /* Pods_acelerogyrocospe.framework */; };
+		F2163779203EF87700A236C2 /* NavTesteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2163778203EF87600A236C2 /* NavTesteViewController.swift */; };
+		F2163785203EFEC900A236C2 /* NavTeste2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2163784203EFEC900A236C2 /* NavTeste2ViewController.swift */; };
+		F2163787203F02B800A236C2 /* NavTeste3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2163786203F02B800A236C2 /* NavTeste3ViewController.swift */; };
 		F21810071FBDD338006BFD5B /* Tab1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21810061FBDD337006BFD5B /* Tab1ViewController.swift */; };
 		F21810091FBDD352006BFD5B /* Tab2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21810081FBDD352006BFD5B /* Tab2ViewController.swift */; };
 		F21EA1621FA8C37500CDCD83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21EA1611FA8C37500CDCD83 /* AppDelegate.swift */; };
@@ -162,6 +165,9 @@
 		80574DD1D7ACA53FA8395142 /* Pods-acelerogyrocospeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-acelerogyrocospeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-acelerogyrocospeUITests/Pods-acelerogyrocospeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		951FC131997593D9B2B69F77 /* Pods-acelerogyrocospe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-acelerogyrocospe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-acelerogyrocospe/Pods-acelerogyrocospe.debug.xcconfig"; sourceTree = "<group>"; };
 		E9E2710EBE6364E61051C45F /* Pods-acelerogyrocospeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-acelerogyrocospeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-acelerogyrocospeUITests/Pods-acelerogyrocospeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F2163778203EF87600A236C2 /* NavTesteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavTesteViewController.swift; sourceTree = "<group>"; };
+		F2163784203EFEC900A236C2 /* NavTeste2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavTeste2ViewController.swift; sourceTree = "<group>"; };
+		F2163786203F02B800A236C2 /* NavTeste3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavTeste3ViewController.swift; sourceTree = "<group>"; };
 		F21810061FBDD337006BFD5B /* Tab1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1ViewController.swift; sourceTree = "<group>"; };
 		F21810081FBDD352006BFD5B /* Tab2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab2ViewController.swift; sourceTree = "<group>"; };
 		F21EA15E1FA8C37400CDCD83 /* acelerogyrocospe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = acelerogyrocospe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -276,9 +282,20 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F2163783203EFEA700A236C2 /* NavTeste */ = {
+			isa = PBXGroup;
+			children = (
+				F2163778203EF87600A236C2 /* NavTesteViewController.swift */,
+				F2163784203EFEC900A236C2 /* NavTeste2ViewController.swift */,
+				F2163786203F02B800A236C2 /* NavTeste3ViewController.swift */,
+			);
+			path = NavTeste;
+			sourceTree = "<group>";
+		};
 		F21EA1551FA8C37400CDCD83 = {
 			isa = PBXGroup;
 			children = (
+				F2163783203EFEA700A236C2 /* NavTeste */,
 				F29122152034A551005A8AFB /* Bananas */,
 				F291220A203463A8005A8AFB /* PageView */,
 				F29121FE20346131005A8AFB /* Transitions */,
@@ -967,12 +984,14 @@
 				F2EFDE811FFE928C00B705EE /* PacoteViagemDAO.swift in Sources */,
 				F2E044B9200E2B84001F4254 /* PickerViewAno.swift in Sources */,
 				F2E044AA200D1043001F4254 /* AlamoCampos.swift in Sources */,
+				F2163779203EF87700A236C2 /* NavTesteViewController.swift in Sources */,
 				F2E044AF200E0DC4001F4254 /* PickerViewMes.swift in Sources */,
 				F2E197CA202B63F400FC45B5 /* CallChildViewViewController.swift in Sources */,
 				F262395C20079DC3009DD5C3 /* IngressosAluraViewController.swift in Sources */,
 				F29122202035BF3F005A8AFB /* Transition2ViewController.swift in Sources */,
 				F24607DE1FD7FDE400B07B52 /* SplashTesteViewController.swift in Sources */,
 				F21EA1641FA8C37500CDCD83 /* ViewController.swift in Sources */,
+				F2163787203F02B800A236C2 /* NavTeste3ViewController.swift in Sources */,
 				F2B2349B1FFCED7600BBC572 /* Formata2ViewController.swift in Sources */,
 				F250DD871FE8318D00785891 /* ButtonTelasViewController.swift in Sources */,
 				F250DD811FE3E98000785891 /* TextViewController.swift in Sources */,
@@ -994,6 +1013,7 @@
 				F2DA047C20160C8000E3484B /* CryptoViewController.swift in Sources */,
 				F29122172034A569005A8AFB /* BananaViewController.swift in Sources */,
 				F291220C203463BD005A8AFB /* PageViewController.swift in Sources */,
+				F2163785203EFEC900A236C2 /* NavTeste2ViewController.swift in Sources */,
 				F2EFDE871FFEA15600B705EE /* Viagem.swift in Sources */,
 				F2EFDE7F1FFD4C3000B705EE /* DetalhesViewController.swift in Sources */,
 				F2EFDE851FFEA14000B705EE /* ViagemDAO.swift in Sources */,

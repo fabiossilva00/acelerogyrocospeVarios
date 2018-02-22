@@ -1,21 +1,26 @@
 //
-//  Page1ViewController.swift
+//  NavTesteViewController.swift
 //  acelerogyrocospe
 //
-//  Created by Fabio Sousa da Silva on 14/02/2018.
+//  Created by Fabio Sousa da Silva on 22/02/2018.
 //  Copyright © 2018 Fabio Sousa da Silva. All rights reserved.
 //
 
 import UIKit
 
-class Page1ViewController: UIViewController {
+class NavTesteViewController: UIViewController {
+
+    @IBAction func proximoButton(_ sender: Any) {
+        
+        performSegue(withIdentifier: "NavTesteID", sender: nil)
+        
+    }
     
-    @IBAction func voltarButton(_ sender: Any) {
+    @IBAction func bar3Button(_ sender: Any) {
         
         dismiss(animated: true, completion: nil)
         
     }
-    
     
 
     override func viewDidLoad() {
