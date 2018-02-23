@@ -90,9 +90,8 @@ class AgendaViewController: UIViewController, ImagePickerSelecionado {
         if alertOpcao == .cameraButton && UIImagePickerController.isSourceTypeAvailable( .camera) {
             acessoMidia.sourceType = .camera
         }else{
-            if alertOpcao == .galeriaButton && UIImagePickerController.isSourceTypeAvailable( .photoLibrary){
              acessoMidia.sourceType = .photoLibrary
-            }
+
         }
         
         self.present(acessoMidia, animated: true, completion: nil)

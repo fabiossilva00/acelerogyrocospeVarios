@@ -923,7 +923,7 @@
         <!--Navigation Controller-->
         <scene sceneID="GAy-IS-9uM">
             <objects>
-                <navigationController storyboardIdentifier="agendaID" modalTransitionStyle="partialCurl" modalPresentationStyle="pageSheet" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WRR-GD-kCF" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="agendaID" modalPresentationStyle="formSheet" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WRR-GD-kCF" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="yk5-OG-cUR">
                         <rect key="frame" x="0.0" y="20" width="320" height="93"/>
                         <autoresizingMask key="autoresizingMask"/>
