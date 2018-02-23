@@ -12,6 +12,18 @@ class AgendaTableViewCell: UITableViewCell {
     
     @IBOutlet weak var fotoImageCell: UIImageView!
     @IBOutlet weak var nomeLabelCell: UILabel!
+    
+    func configCell(_ agenda: AgendaDados) {
+        
+        nomeLabelCell.text = agenda.nome
+        fotoImageCell.layer.cornerRadius = self.fotoImageCell.frame.width / 2
+        fotoImageCell.layer.masksToBounds = true
+        if let fotoImage = agenda.imagem as? UIImage {
+            fotoImageCell.image = fotoImage
+            
+        }
+        
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()

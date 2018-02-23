@@ -7,15 +7,47 @@
 //
 
 import UIKit
+import CoreData
 
-class AgendaTableViewController: UITableViewController, UISearchBarDelegate  {
+class AgendaTableViewController: UITableViewController, UISearchBarDelegate, NSFetchedResultsControllerDelegate{
     
     let searchControl = UISearchController(searchResultsController: nil)
+    var gerenciaSearch: NSFetchedResultsController<AgendaDados>?
+    
+    var contexto: NSManagedObjectContext {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        
+        return appDelegate.persistentContainer.viewContext
+    }
     
     func searchItem() {
         self.searchControl.searchBar.delegate = self
         self.searchControl.dimsBackgroundDuringPresentation = false
         self.navigationItem.searchController = searchControl
+        
+    }
+    
+    func recuperaAgenda() {
+        
+        let searchAgenda: NSFetchRequest<AgendaDados> = AgendaDados.fetchRequest()
+        let ordenaNome = NSSortDescriptor(key: "nome", ascending: false)
+
+        searchAgenda.sortDescriptors = [ordenaNome]
+        
+        gerenciaSearch = NSFetchedResultsController(fetchRequest: searchAgenda, managedObjectContext: contexto, sectionNameKeyPath: nil, cacheName: nil)
+        gerenciaSearch?.delegate = self
+        
+        do{
+            try
+            gerenciaSearch?.performFetch()
+            print("Foi")
+        }catch{
+            print(error.localizedDescription)
+        }
+        
+//        let searchAgenda: NSFetchRequest<AgendaDados> = AgendaDados.fetchRequest()
+//        let ordenaNome = NSSortDescriptor(key: "nome", ascending: true)
+//        searchAgenda.sortDescriptors = [ordenaNome]
         
     }
     
@@ -27,6 +59,7 @@ class AgendaTableViewController: UITableViewController, UISearchBarDelegate  {
         super.viewDidLoad()
         
         searchItem()
+        recuperaAgenda()
         
         NotificationCenter.default.addObserver(self, selector: #selector(mudaTela), name: .UIDeviceOrientationDidChange, object: nil)
 
@@ -44,23 +77,38 @@ class AgendaTableViewController: UITableViewController, UISearchBarDelegate  {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
+//    override func numberOfSections(in tableView: UITableView) -> Int {
+//        // #warning Incomplete implementation, return the number of sections
+//        return 0
+//    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        
+        guard let listaAgenda = gerenciaSearch?.fetchedObjects?.count else { return 0 }
+        
+        return listaAgenda
     }
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellAgenda", for: indexPath)
-
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellAgenda", for: indexPath) as! AgendaTableViewCell
         // Configure the cell...
-
+        guard let agendaCell = gerenciaSearch?.fetchedObjects![indexPath.row] else { return cell}
+        cell.configCell(agendaCell)
+//        cell.nomeLabelCell.text = agendaCell.nome
+//
+//        if let imageAgenda = agendaCell.imagem as? UIImage {
+//                cell.fotoImageCell.image = imageAgenda
+//
+//        }
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        return 86
     }
 
     /*
@@ -71,6 +119,10 @@ class AgendaTableViewController: UITableViewController, UISearchBarDelegate  {
     }
     */
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
+    
     
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
@@ -81,6 +133,21 @@ class AgendaTableViewController: UITableViewController, UISearchBarDelegate  {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
+    
+    
+    func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
+        switch type {
+        case .delete:
+            
+            
+            break
+        default:
+            tableView.reloadData()
+            
+            break
+        }
+    }
+    
     
 
     /*

@@ -120,7 +120,7 @@ class AgendaViewController: UIViewController, ImagePickerSelecionado {
         do {
          try contexto.save()
             navigationController?.popViewController(animated: true)
-            
+            print("Foi")
         }catch{
             print(error.localizedDescription)
         }
