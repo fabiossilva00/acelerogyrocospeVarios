@@ -24,7 +24,7 @@ class AlamoCandidato: NSObject {
     
     func candidatoPost(nome: String, data: String, telefone: String, email: String, senha: String, sucess: @escaping (_ sucess : Any) -> Void, failure: @escaping (_ failure: Any) -> Void) {
         
-        let url = URL(string: "http://192.168.15.11:3000/api/teste/selecao")
+        let url = URL(string: "http://35.224.221.96:3000/api/teste/selecao")
         
         let parameters: Parameters=["nome": nome, "data_nascimento": data, "telefone": telefone, "email": email, "senha": senha]
         print("Parameters \(parameters)")
@@ -34,7 +34,7 @@ class AlamoCandidato: NSObject {
                 print("Sucess \(response)")
                 if let resposta = response.result.value {
                     
-                    let json = resposta as! NSArray
+                    let json = resposta as! NSDictionary
                     let double = json.value(forKey: "valor")
                     
                     print(double)

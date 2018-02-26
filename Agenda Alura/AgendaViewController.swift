@@ -46,7 +46,16 @@ class AgendaViewController: UIViewController, ImagePickerSelecionado {
         enderecoText.text = agendaSeleciona.endereco
         telefoneText.text = agendaSeleciona.telefone
         siteText.text = agendaSeleciona.site
-        imageFoto.image = agendaSeleciona.imagem as? UIImage
+        
+        let gerenciaArquivos = FileManager.default
+        
+        let local = NSHomeDirectory() as NSString
+        let localImage = local.appendingPathComponent(agendaSeleciona.imagem!)
+        
+        if gerenciaArquivos.fileExists(atPath: localImage) {
+            imageFoto.image = UIImage(contentsOfFile: localImage)
+        }
+        
         
     }
     
@@ -120,7 +129,38 @@ class AgendaViewController: UIViewController, ImagePickerSelecionado {
     @IBAction func saveButton(_ sender: Any) {
         
         if agenda == nil {
-            let agenda = AgendaDados(context: contexto)
+            agenda = AgendaDados(context: contexto)
+        }
+        
+        let localImage = NSHomeDirectory() as NSString
+        let pastaImages = "Documents/Images"
+        let localCompleto = localImage.appendingPathComponent(pastaImages)
+        let gerenciaFiles = FileManager.default
+        print(localCompleto)
+        
+        if !gerenciaFiles.fileExists(atPath: localCompleto){
+            do {
+                try gerenciaFiles.createDirectory(atPath: localCompleto, withIntermediateDirectories: false, attributes: nil)
+            }catch{
+                print("Error \(error.localizedDescription)")
+            }
+        }
+        
+        let nameImage = String(format: "%@.jpeg", agenda!.objectID.uriRepresentation().lastPathComponent)
+            print(nameImage)
+        
+        let urlImage = URL(fileURLWithPath: String(format: "%@/%@", localCompleto, nameImage))
+            print(urlImage)
+        
+        guard let imagem = imageFoto.image else { return }
+        print(imagem)
+        guard let data = UIImagePNGRepresentation(imagem) else { return }
+        print(data)
+        
+        do {
+            try data.write(to: urlImage)
+        }catch{
+            print("Error \(error.localizedDescription)")
         }
         
         agenda?.nome = nomeText.text!
@@ -128,7 +168,7 @@ class AgendaViewController: UIViewController, ImagePickerSelecionado {
         agenda?.telefone = telefoneText.text!
         agenda?.site = siteText.text!
         agenda?.nota = 10.0
-        agenda?.imagem = imageFoto.image
+        agenda?.imagem = String(format: "%@/%@", pastaImages, nameImage)
         
         do {
          try contexto.save()

@@ -18,9 +18,14 @@ class AgendaTableViewCell: UITableViewCell {
         nomeLabelCell.text = agenda.nome
         fotoImageCell.layer.cornerRadius = self.fotoImageCell.frame.width / 2
         fotoImageCell.layer.masksToBounds = true
-        if let fotoImage = agenda.imagem as? UIImage {
-            fotoImageCell.image = fotoImage
-            
+        
+        let gerenciaArquivos = FileManager.default
+        
+        let localNS = NSHomeDirectory() as NSString
+        let localImage = localNS.appendingPathComponent(agenda.imagem!)
+        
+        if gerenciaArquivos.fileExists(atPath: agenda.imagem!) {
+            fotoImageCell.image = UIImage(contentsOfFile: localImage)
         }
         
     }
