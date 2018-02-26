@@ -181,6 +181,10 @@ class IngressosAluraViewController: UIViewController, PickerViewMesText, PickerV
         ingressoImage.layer.masksToBounds = true
     }
     
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
+    
     @objc func okClick(_ textField: UITextField) {
         self.cepCampos(textCampo: .mes){ (cepText) in
             cepText.resignFirstResponder()
@@ -194,16 +198,16 @@ class IngressosAluraViewController: UIViewController, PickerViewMesText, PickerV
         scrollIngressos.contentSize = CGSize(width: self.scrollIngressos.frame.width, height: self.scrollIngressos.frame.height + (self.scrollIngressos.frame.height * 2) )
     }
     
-    @objc func scrollDown(notification: Notification){
-        scrollIngressos.contentSize = CGSize(width: self.scrollIngressos.frame.width, height: self.scrollIngressos.frame.height)
-    }
+//    @objc func scrollDown(notification: Notification){
+//        scrollIngressos.contentSize = CGSize(width: self.scrollIngressos.frame.width, height: self.scrollIngressos.frame.height)
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         atuaTela()
         
-//        NotificationCenter.default.addObserver(self, selector: #selector(scrollUP(notification:)), name: .UIKeyboardDidShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(scrollUP(notification:)), name: .UIKeyboardDidShow, object: nil)
 //        NotificationCenter.default.addObserver(self, selector: #selector(scrollDown(notification:)), name: .UIKeyboardDidHide, object: nil)
         
         // Do any additional setup after loading the view.

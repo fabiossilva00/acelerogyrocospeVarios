@@ -13,7 +13,8 @@ class AgendaTableViewController: UITableViewController, UISearchBarDelegate, NSF
     
     let searchControl = UISearchController(searchResultsController: nil)
     var gerenciaSearch: NSFetchedResultsController<AgendaDados>?
-    
+    var agendaView: AgendaViewController?
+ 
     var contexto: NSManagedObjectContext {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         
@@ -97,6 +98,8 @@ class AgendaTableViewController: UITableViewController, UISearchBarDelegate, NSF
         // Configure the cell...
         guard let agendaCell = gerenciaSearch?.fetchedObjects![indexPath.row] else { return cell}
         cell.configCell(agendaCell)
+        
+        //Direto na View
 //        cell.nomeLabelCell.text = agendaCell.nome
 //
 //        if let imageAgenda = agendaCell.imagem as? UIImage {
@@ -119,15 +122,35 @@ class AgendaTableViewController: UITableViewController, UISearchBarDelegate, NSF
     }
     */
 
+//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//
+//        performSegue(withIdentifier: "segueAgendaID", sender: nil)
+//
+//    }
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        guard let agendaSeleciona = gerenciaSearch?.fetchedObjects![indexPath.row] else { return }
+        agendaView?.agenda = agendaSeleciona
+        
     }
-    
     
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
+            
+            guard let agendaSeleciona = gerenciaSearch?.fetchedObjects![indexPath.row] else { return }
+            contexto.delete(agendaSeleciona)
+            
+            do {
+                try
+                contexto.save()
+                
+            }catch{
+                print(error.localizedDescription)
+            }
+            
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
@@ -139,7 +162,6 @@ class AgendaTableViewController: UITableViewController, UISearchBarDelegate, NSF
         switch type {
         case .delete:
             
-            
             break
         default:
             tableView.reloadData()
@@ -148,7 +170,12 @@ class AgendaTableViewController: UITableViewController, UISearchBarDelegate, NSF
         }
     }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segueAgendaEditar"{
+            agendaView = segue.destination as? AgendaViewController
+        }
+        
+    }
 
     /*
     // Override to support rearranging the table view.

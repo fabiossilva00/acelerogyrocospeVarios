@@ -10,6 +10,9 @@
 		0D33AE6CA0F0AC3A70B0C4F7 /* Pods_acelerogyrocospeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 567F4CFAEA4DCF8D427983BA /* Pods_acelerogyrocospeUITests.framework */; };
 		5E396C4820AADEA27E05E1E1 /* Pods_acelerogyrocospeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E85ABB2E0782288052004F /* Pods_acelerogyrocospeTests.framework */; };
 		C50E2B97D01A6AC40E3D039C /* Pods_acelerogyrocospe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A93975516FD3B588DAD505 /* Pods_acelerogyrocospe.framework */; };
+		F207F216204452F8002482D9 /* TesteAPICandidatoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F207F215204452F8002482D9 /* TesteAPICandidatoViewController.swift */; };
+		F207F21820445537002482D9 /* DadosCandidatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F207F21720445537002482D9 /* DadosCandidatorViewController.swift */; };
+		F207F21A2044559F002482D9 /* AlamoCandidato.swift in Sources */ = {isa = PBXBuildFile; fileRef = F207F2192044559E002482D9 /* AlamoCandidato.swift */; };
 		F211D1DA203F625600F6C19F /* acelerogyrocospe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F211D1D8203F625600F6C19F /* acelerogyrocospe.xcdatamodeld */; };
 		F2163779203EF87700A236C2 /* NavTesteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2163778203EF87600A236C2 /* NavTesteViewController.swift */; };
 		F2163785203EFEC900A236C2 /* NavTeste2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2163784203EFEC900A236C2 /* NavTeste2ViewController.swift */; };
@@ -170,6 +173,9 @@
 		80574DD1D7ACA53FA8395142 /* Pods-acelerogyrocospeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-acelerogyrocospeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-acelerogyrocospeUITests/Pods-acelerogyrocospeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		951FC131997593D9B2B69F77 /* Pods-acelerogyrocospe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-acelerogyrocospe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-acelerogyrocospe/Pods-acelerogyrocospe.debug.xcconfig"; sourceTree = "<group>"; };
 		E9E2710EBE6364E61051C45F /* Pods-acelerogyrocospeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-acelerogyrocospeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-acelerogyrocospeUITests/Pods-acelerogyrocospeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F207F215204452F8002482D9 /* TesteAPICandidatoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesteAPICandidatoViewController.swift; sourceTree = "<group>"; };
+		F207F21720445537002482D9 /* DadosCandidatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadosCandidatorViewController.swift; sourceTree = "<group>"; };
+		F207F2192044559E002482D9 /* AlamoCandidato.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamoCandidato.swift; sourceTree = "<group>"; };
 		F211D1D9203F625600F6C19F /* acelerogyrocospe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = acelerogyrocospe.xcdatamodel; sourceTree = "<group>"; };
 		F2163778203EF87600A236C2 /* NavTesteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavTesteViewController.swift; sourceTree = "<group>"; };
 		F2163784203EFEC900A236C2 /* NavTeste2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavTeste2ViewController.swift; sourceTree = "<group>"; };
@@ -293,6 +299,23 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F207F20A204452AB002482D9 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		F207F214204452C1002482D9 /* Teste API Candidato */ = {
+			isa = PBXGroup;
+			children = (
+				F207F215204452F8002482D9 /* TesteAPICandidatoViewController.swift */,
+				F207F21720445537002482D9 /* DadosCandidatorViewController.swift */,
+				F207F2192044559E002482D9 /* AlamoCandidato.swift */,
+			);
+			path = "Teste API Candidato";
+			sourceTree = "<group>";
+		};
 		F2163783203EFEA700A236C2 /* NavTeste */ = {
 			isa = PBXGroup;
 			children = (
@@ -317,6 +340,7 @@
 		F21EA1551FA8C37400CDCD83 = {
 			isa = PBXGroup;
 			children = (
+				F207F20A204452AB002482D9 /* New Group */,
 				F2163788203F14F100A236C2 /* Agenda Alura */,
 				F2163783203EFEA700A236C2 /* NavTeste */,
 				F29122152034A551005A8AFB /* Bananas */,
@@ -596,6 +620,7 @@
 		F2DA047E2017579400E3484B /* AlamoTestes */ = {
 			isa = PBXGroup;
 			children = (
+				F207F214204452C1002482D9 /* Teste API Candidato */,
 				F2DA047F201757BB00E3484B /* AlamoTestesViewController.swift */,
 				F2DA048120175C4A00E3484B /* AlamoTeste.swift */,
 				F2DA0483201768F300E3484B /* AlamoTesteCampos.swift */,
@@ -1029,6 +1054,7 @@
 				F22807CD201F414C0002EB37 /* AlamoSwiftyJSON.swift in Sources */,
 				F2912214203478CC005A8AFB /* Page1ViewController.swift in Sources */,
 				F250DD831FE807D400785891 /* MpasViewController.swift in Sources */,
+				F207F21820445537002482D9 /* DadosCandidatorViewController.swift in Sources */,
 				F291221E2035ACB0005A8AFB /* PopAnimator.swift in Sources */,
 				F22807E02021DCC70002EB37 /* CamposRegExViewController.swift in Sources */,
 				F2E197BC202A2ED500FC45B5 /* AutoAdaptavelViewController.swift in Sources */,
@@ -1044,12 +1070,14 @@
 				F2163785203EFEC900A236C2 /* NavTeste2ViewController.swift in Sources */,
 				F2EFDE871FFEA15600B705EE /* Viagem.swift in Sources */,
 				F2EFDE7F1FFD4C3000B705EE /* DetalhesViewController.swift in Sources */,
+				F207F21A2044559F002482D9 /* AlamoCandidato.swift in Sources */,
 				F2EFDE851FFEA14000B705EE /* ViagemDAO.swift in Sources */,
 				F29122122034772B005A8AFB /* PageViewViewController.swift in Sources */,
 				F2DA0480201757BB00E3484B /* AlamoTestesViewController.swift in Sources */,
 				F2EFDE831FFE937800B705EE /* PacoteViagem.swift in Sources */,
 				F2DDDB77203DABA7005B79CD /* TransicaoBaixoViewController.swift in Sources */,
 				F2C94B271FFB9BE2000331B2 /* ItensTable.swift in Sources */,
+				F207F216204452F8002482D9 /* TesteAPICandidatoViewController.swift in Sources */,
 				F21810091FBDD352006BFD5B /* Tab2ViewController.swift in Sources */,
 				F2163793203F387A00A236C2 /* ImagePicker.swift in Sources */,
 				F21EA1621FA8C37500CDCD83 /* AppDelegate.swift in Sources */,

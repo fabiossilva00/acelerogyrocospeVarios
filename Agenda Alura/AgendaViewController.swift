@@ -23,6 +23,7 @@ class AgendaViewController: UIViewController, ImagePickerSelecionado {
     @IBOutlet weak var scrollView: UIScrollView!
     
     let pickerImage = ImagePicker()
+    var agenda: AgendaDados?
     
     var contexto: NSManagedObjectContext {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -38,6 +39,14 @@ class AgendaViewController: UIViewController, ImagePickerSelecionado {
         imageFoto.layer.masksToBounds = true
         //Tanto faz
 //        imageFoto.layer.cornerRadius = self.imageFoto.frame.width / 2
+        
+        pickerImage.delegate = self
+        guard let agendaSeleciona = agenda else { return }
+        nomeText.text = agendaSeleciona.nome
+        enderecoText.text = agendaSeleciona.endereco
+        telefoneText.text = agendaSeleciona.telefone
+        siteText.text = agendaSeleciona.site
+        imageFoto.image = agendaSeleciona.imagem as? UIImage
         
     }
     
@@ -109,22 +118,25 @@ class AgendaViewController: UIViewController, ImagePickerSelecionado {
     }
     
     @IBAction func saveButton(_ sender: Any) {
-        let agendaDados = AgendaDados(context: contexto)
-        agendaDados.nome = nomeText.text!
-        agendaDados.endereco = enderecoText.text!
-        agendaDados.telefone = telefoneText.text!
-        agendaDados.site = siteText.text!
-        agendaDados.nota = 10.0
-        agendaDados.imagem = imageFoto.image
+        
+        if agenda == nil {
+            let agenda = AgendaDados(context: contexto)
+        }
+        
+        agenda?.nome = nomeText.text!
+        agenda?.endereco = enderecoText.text!
+        agenda?.telefone = telefoneText.text!
+        agenda?.site = siteText.text!
+        agenda?.nota = 10.0
+        agenda?.imagem = imageFoto.image
         
         do {
          try contexto.save()
             navigationController?.popViewController(animated: true)
-            print("Foi")
+            
         }catch{
             print(error.localizedDescription)
         }
-        
         
     }
     
@@ -142,8 +154,6 @@ class AgendaViewController: UIViewController, ImagePickerSelecionado {
         super.viewDidLoad()
         
         atualizaTela()
-        
-        pickerImage.delegate = self
         
         NotificationCenter.default.addObserver(self, selector: #selector (scrollPlus(_:)), name: .UIKeyboardDidShow, object: nil)
 
