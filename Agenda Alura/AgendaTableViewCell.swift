@@ -24,10 +24,10 @@ class AgendaTableViewCell: UITableViewCell {
         let localNS = NSHomeDirectory() as NSString
         let localImage = localNS.appendingPathComponent(agenda.imagem!)
         
-        if gerenciaArquivos.fileExists(atPath: agenda.imagem!) {
+        if gerenciaArquivos.fileExists(atPath: localImage) {
             fotoImageCell.image = UIImage(contentsOfFile: localImage)
         }
-        
+ 
     }
 
     override func awakeFromNib() {

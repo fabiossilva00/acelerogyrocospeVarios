@@ -52,6 +52,22 @@ class AgendaTableViewController: UITableViewController, UISearchBarDelegate, NSF
         
     }
     
+    @objc func pressLong(_ longPress: UILongPressGestureRecognizer) {
+        if longPress.state == .began {
+            let agendaMenu = AgendaMenu().configuraMenu(completion: { (opcao) in
+                switch opcao {
+                case .smsButton:
+                        print("SMS")
+                    
+                    break
+                }
+            })
+            self.present(agendaMenu, animated: true, completion: nil)
+        }
+        
+    }
+    
+    
     @objc func mudaTela() {
         dismiss(animated: true, completion: nil)
     }
@@ -96,8 +112,11 @@ class AgendaTableViewController: UITableViewController, UISearchBarDelegate, NSF
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellAgenda", for: indexPath) as! AgendaTableViewCell
         // Configure the cell...
+        let longPress: UILongPressGestureRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(pressLong(_:)))
         guard let agendaCell = gerenciaSearch?.fetchedObjects![indexPath.row] else { return cell}
         cell.configCell(agendaCell)
+        cell.addGestureRecognizer(longPress)
+        
         
         //Direto na View
 //        cell.nomeLabelCell.text = agendaCell.nome
@@ -121,17 +140,13 @@ class AgendaTableViewController: UITableViewController, UISearchBarDelegate, NSF
         return true
     }
     */
-
-//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//
-//        performSegue(withIdentifier: "segueAgendaID", sender: nil)
-//
-//    }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         guard let agendaSeleciona = gerenciaSearch?.fetchedObjects![indexPath.row] else { return }
         agendaView?.agenda = agendaSeleciona
+        
+        
         
     }
     

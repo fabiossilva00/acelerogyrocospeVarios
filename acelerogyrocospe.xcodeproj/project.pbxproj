@@ -44,6 +44,7 @@
 		F250DD871FE8318D00785891 /* ButtonTelasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F250DD861FE8318D00785891 /* ButtonTelasViewController.swift */; };
 		F2623959200694BD009DD5C3 /* CEPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2623958200694BD009DD5C3 /* CEPViewController.swift */; };
 		F262395C20079DC3009DD5C3 /* IngressosAluraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F262395B20079DC3009DD5C3 /* IngressosAluraViewController.swift */; };
+		F28D20972044A625002E248F /* AgendaMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28D20962044A625002E248F /* AgendaMenu.swift */; };
 		F291220920346380005A8AFB /* Transition1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F291220820346380005A8AFB /* Transition1ViewController.swift */; };
 		F291220C203463BD005A8AFB /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F291220B203463BD005A8AFB /* PageViewController.swift */; };
 		F291220E203468B8005A8AFB /* PageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F291220D203468B8005A8AFB /* PageController.swift */; };
@@ -215,6 +216,7 @@
 		F26239472006937E009DD5C3 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		F2623958200694BD009DD5C3 /* CEPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CEPViewController.swift; sourceTree = "<group>"; };
 		F262395B20079DC3009DD5C3 /* IngressosAluraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngressosAluraViewController.swift; sourceTree = "<group>"; };
+		F28D20962044A625002E248F /* AgendaMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaMenu.swift; sourceTree = "<group>"; };
 		F291220820346380005A8AFB /* Transition1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transition1ViewController.swift; sourceTree = "<group>"; };
 		F291220B203463BD005A8AFB /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		F291220D203468B8005A8AFB /* PageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageController.swift; sourceTree = "<group>"; };
@@ -333,6 +335,7 @@
 				F216378B203F155700A236C2 /* AgendaViewController.swift */,
 				F216378D203F15A500A236C2 /* AgendaTableViewCell.swift */,
 				F2163792203F387A00A236C2 /* ImagePicker.swift */,
+				F28D20962044A625002E248F /* AgendaMenu.swift */,
 			);
 			path = "Agenda Alura";
 			sourceTree = "<group>";
@@ -1019,6 +1022,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F28D20972044A625002E248F /* AgendaMenu.swift in Sources */,
 				F2623959200694BD009DD5C3 /* CEPViewController.swift in Sources */,
 				F2CBFFC41FF54621002F685C /* PinTabs.swift in Sources */,
 				F22807D0201F434A0002EB37 /* SwifyJSONViewController.swift in Sources */,

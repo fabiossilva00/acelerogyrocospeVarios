@@ -56,7 +56,6 @@ class AgendaViewController: UIViewController, ImagePickerSelecionado {
             imageFoto.image = UIImage(contentsOfFile: localImage)
         }
         
-        
     }
     
     func imageSelecionado(_ imagem: UIImage) {
@@ -153,9 +152,7 @@ class AgendaViewController: UIViewController, ImagePickerSelecionado {
             print(urlImage)
         
         guard let imagem = imageFoto.image else { return }
-        print(imagem)
         guard let data = UIImagePNGRepresentation(imagem) else { return }
-        print(data)
         
         do {
             try data.write(to: urlImage)
