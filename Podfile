@@ -13,6 +13,7 @@ target 'acelerogyrocospe' do
     pod 'CryptoSwift'
     pod 'SwiftyJSON'
     pod 'InputMask'
+    pod 'SwiftMessages'
 
   target 'acelerogyrocospeTests' do
     inherit! :search_paths

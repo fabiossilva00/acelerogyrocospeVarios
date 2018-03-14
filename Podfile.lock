@@ -4,6 +4,7 @@ PODS:
   - CreditCardValidator (0.4)
   - CryptoSwift (0.8.1)
   - InputMask (2.2.6)
+  - SwiftMessages (4.1.0)
   - SwiftyJSON (4.0.0)
 
 DEPENDENCIES:
@@ -12,6 +13,7 @@ DEPENDENCIES:
   - CreditCardValidator
   - CryptoSwift
   - InputMask
+  - SwiftMessages
   - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -20,8 +22,9 @@ SPEC CHECKSUMS:
   CreditCardValidator: 9f0814dd61682c004071a250d89327ca83514a48
   CryptoSwift: 4b07d5b508c1eb67bfa314a727b705f8048a85de
   InputMask: 756ffc515121d07a9c81a605fa5c44e5ac5bde13
+  SwiftMessages: 1bacc783c8f10bdfdc57c14860cae8a1f1fa6591
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: aaa594c6d86bc4c8ee0f3ffd24508a96119f91ec
+PODFILE CHECKSUM: b00bbc6e1d002327516cc85da6644a333a88b3f0
 
 COCOAPODS: 1.3.1

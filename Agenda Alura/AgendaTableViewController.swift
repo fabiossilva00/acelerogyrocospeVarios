@@ -14,6 +14,7 @@ class AgendaTableViewController: UITableViewController, UISearchBarDelegate, NSF
     let searchControl = UISearchController(searchResultsController: nil)
     var gerenciaSearch: NSFetchedResultsController<AgendaDados>?
     var agendaView: AgendaViewController?
+    let sms = SMS()
  
     var contexto: NSManagedObjectContext {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -54,10 +55,52 @@ class AgendaTableViewController: UITableViewController, UISearchBarDelegate, NSF
     
     @objc func pressLong(_ longPress: UILongPressGestureRecognizer) {
         if longPress.state == .began {
+            
+            guard let agendaSeleciona = gerenciaSearch?.fetchedObjects?[(longPress.view?.tag)!] else { return }
             let agendaMenu = AgendaMenu().configuraMenu(completion: { (opcao) in
                 switch opcao {
                 case .smsButton:
-                        print("SMS")
+                    
+                    if let compSMS = self.sms.configuraSMS(agendaSeleciona) {
+                        compSMS.messageComposeDelegate = self.sms
+                        self.present(compSMS, animated: true, completion: nil)
+                    }
+                    
+                    break
+                case .ligaButton:
+                    
+                    guard let numeroAgenda = agendaSeleciona.telefone else { return }
+                    if let urlLiga = URL(string: "tel://\(numeroAgenda)"), UIApplication.shared.canOpenURL(urlLiga) {
+                        UIApplication.shared.open(urlLiga, options: [:], completionHandler: nil)
+                    }
+                    
+                    break
+                case .wazeButton:
+                    if UIApplication.shared.canOpenURL(URL(string: "waze://")!){
+                        
+                        guard let localizacaoAgenda = agendaSeleciona.endereco else { return }
+                        print(localizacaoAgenda)
+                        LocalizacaoWaze().convertForCoords(endereco: localizacaoAgenda, local: { (localizaAgenda) in
+                            let latitude = localizaAgenda.location?.coordinate.latitude
+                            let longitude = localizaAgenda.location?.coordinate.longitude
+                            let lat = String(describing: latitude!)
+                            let lon = String(describing: longitude!)
+                            let urlEnderecoWaze: String = ("waze://ul?ll=\(lat),\(lon)&navigate=yes")
+                            print(urlEnderecoWaze)
+                            UIApplication.shared.open(URL(string: urlEnderecoWaze)!, options: [:], completionHandler: nil)
+                            
+                        })
+                        
+                    }else {
+                        UIApplication.shared.open(URL(string: "http://itunes.apple.com/us/app/id323229106")!, options: [:], completionHandler: nil)
+                    }
+                    
+                    break
+                case .mapButton:
+                    
+                    let mapAgendaID = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "mapAgendaID") as! AgendaMapViewController
+                    mapAgendaID.agenda = agendaSeleciona
+                    self.navigationController?.pushViewController(mapAgendaID, animated: true)
                     
                     break
                 }
@@ -66,7 +109,7 @@ class AgendaTableViewController: UITableViewController, UISearchBarDelegate, NSF
         }
         
     }
-    
+
     
     @objc func mudaTela() {
         dismiss(animated: true, completion: nil)

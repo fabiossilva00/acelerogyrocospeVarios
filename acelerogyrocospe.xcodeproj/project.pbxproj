@@ -53,6 +53,7 @@
 		F29122172034A569005A8AFB /* BananaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29122162034A569005A8AFB /* BananaViewController.swift */; };
 		F291221E2035ACB0005A8AFB /* PopAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F291221D2035ACB0005A8AFB /* PopAnimator.swift */; };
 		F29122202035BF3F005A8AFB /* Transition2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F291221F2035BF3F005A8AFB /* Transition2ViewController.swift */; };
+		F2B125E52052AF3700899C26 /* MessageSwiftPodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B125E42052AF3700899C26 /* MessageSwiftPodViewController.swift */; };
 		F2B2349B1FFCED7600BBC572 /* Formata2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B2349A1FFCED7600BBC572 /* Formata2ViewController.swift */; };
 		F2B2349D1FFCEF5A00BBC572 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B2349C1FFCEF5A00BBC572 /* CollectionViewCell.swift */; };
 		F2B38BFA2004F2C300AE084D /* TerminaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B38BF92004F2C300AE084D /* TerminaViewController.swift */; };
@@ -60,9 +61,15 @@
 		F2C94B271FFB9BE2000331B2 /* ItensTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C94B261FFB9BE2000331B2 /* ItensTable.swift */; };
 		F2C94B2B1FFBA18F000331B2 /* Teste.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C94B2A1FFBA18F000331B2 /* Teste.swift */; };
 		F2C94B351FFBB6C7000331B2 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C94B341FFBB6C7000331B2 /* TableViewCell.swift */; };
+		F2CA58862045818600A3051A /* SMS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CA58852045818600A3051A /* SMS.swift */; };
+		F2CA58912045913600A3051A /* LocalizacaoWaze.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CA58902045913600A3051A /* LocalizacaoWaze.swift */; };
+		F2CA58952045CD5600A3051A /* AgendaMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CA58942045CD5600A3051A /* AgendaMapViewController.swift */; };
 		F2CBFFBD1FF42D96002F685C /* Maps2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CBFFBC1FF42D96002F685C /* Maps2ViewController.swift */; };
 		F2CBFFC01FF53D59002F685C /* PublicArt.json in Resources */ = {isa = PBXBuildFile; fileRef = F2CBFFBF1FF53D58002F685C /* PublicArt.json */; };
 		F2CBFFC41FF54621002F685C /* PinTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CBFFC31FF54621002F685C /* PinTabs.swift */; };
+		F2CF46C82056D72200B0332C /* viewMessagePodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CF46C62056D72200B0332C /* viewMessagePodView.swift */; };
+		F2CF46CB2056E31C00B0332C /* viewMessagePodView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2CF46CA2056E31C00B0332C /* viewMessagePodView.xib */; };
+		F2CF46CD2056F6A300B0332C /* outraMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CF46CC2056F6A300B0332C /* outraMessageViewController.swift */; };
 		F2DA047C20160C8000E3484B /* CryptoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DA047B20160C8000E3484B /* CryptoViewController.swift */; };
 		F2DA0480201757BB00E3484B /* AlamoTestesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DA047F201757BB00E3484B /* AlamoTestesViewController.swift */; };
 		F2DA048220175C4A00E3484B /* AlamoTeste.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DA048120175C4A00E3484B /* AlamoTeste.swift */; };
@@ -133,6 +140,20 @@
 			proxyType = 2;
 			remoteGlobalIDString = 11F5A1EA77FB906965A003918997AC06;
 			remoteInfo = "Pods-acelerogyrocospeUITests";
+		};
+		F2B125E02052AEFC00899C26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F26239472006937E009DD5C3 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F214C16555814C3C578E754FF164E999;
+			remoteInfo = SwiftMessages;
+		};
+		F2B125E22052AEFC00899C26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F26239472006937E009DD5C3 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F05506B4A862EAFD86FFF68D5377ACA4;
+			remoteInfo = "SwiftMessages-SwiftMessages";
 		};
 		F2DA047920160C5500E3484B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -227,6 +248,7 @@
 		F291221A2034C3A2005A8AFB /* chomp.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = chomp.caf; sourceTree = "<group>"; };
 		F291221D2035ACB0005A8AFB /* PopAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopAnimator.swift; sourceTree = "<group>"; };
 		F291221F2035BF3F005A8AFB /* Transition2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transition2ViewController.swift; sourceTree = "<group>"; };
+		F2B125E42052AF3700899C26 /* MessageSwiftPodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageSwiftPodViewController.swift; sourceTree = "<group>"; };
 		F2B2349A1FFCED7600BBC572 /* Formata2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formata2ViewController.swift; sourceTree = "<group>"; };
 		F2B2349C1FFCEF5A00BBC572 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		F2B38BF92004F2C300AE084D /* TerminaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminaViewController.swift; sourceTree = "<group>"; };
@@ -234,9 +256,15 @@
 		F2C94B261FFB9BE2000331B2 /* ItensTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItensTable.swift; sourceTree = "<group>"; };
 		F2C94B2A1FFBA18F000331B2 /* Teste.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teste.swift; sourceTree = "<group>"; };
 		F2C94B341FFBB6C7000331B2 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		F2CA58852045818600A3051A /* SMS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMS.swift; sourceTree = "<group>"; };
+		F2CA58902045913600A3051A /* LocalizacaoWaze.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizacaoWaze.swift; sourceTree = "<group>"; };
+		F2CA58942045CD5600A3051A /* AgendaMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaMapViewController.swift; sourceTree = "<group>"; };
 		F2CBFFBC1FF42D96002F685C /* Maps2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Maps2ViewController.swift; path = "Maps/Maps 2/Maps2ViewController.swift"; sourceTree = SOURCE_ROOT; };
 		F2CBFFBF1FF53D58002F685C /* PublicArt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PublicArt.json; sourceTree = "<group>"; };
 		F2CBFFC31FF54621002F685C /* PinTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinTabs.swift; sourceTree = "<group>"; };
+		F2CF46C62056D72200B0332C /* viewMessagePodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewMessagePodView.swift; sourceTree = "<group>"; };
+		F2CF46CA2056E31C00B0332C /* viewMessagePodView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = viewMessagePodView.xib; sourceTree = "<group>"; };
+		F2CF46CC2056F6A300B0332C /* outraMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = outraMessageViewController.swift; sourceTree = "<group>"; };
 		F2DA047B20160C8000E3484B /* CryptoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewController.swift; sourceTree = "<group>"; };
 		F2DA047F201757BB00E3484B /* AlamoTestesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamoTestesViewController.swift; sourceTree = "<group>"; };
 		F2DA048120175C4A00E3484B /* AlamoTeste.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamoTeste.swift; sourceTree = "<group>"; };
@@ -301,11 +329,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		F207F20A204452AB002482D9 /* New Group */ = {
+		F207F20A204452AB002482D9 /* Swift Message */ = {
 			isa = PBXGroup;
 			children = (
+				F2B125E62052B5C100899C26 /* Xib */,
+				F2B125E42052AF3700899C26 /* MessageSwiftPodViewController.swift */,
+				F2CF46CC2056F6A300B0332C /* outraMessageViewController.swift */,
 			);
-			path = "New Group";
+			path = "Swift Message";
 			sourceTree = "<group>";
 		};
 		F207F214204452C1002482D9 /* Teste API Candidato */ = {
@@ -331,11 +362,11 @@
 		F2163788203F14F100A236C2 /* Agenda Alura */ = {
 			isa = PBXGroup;
 			children = (
+				F2C5FBA920457FD000133EDE /* MenuAction */,
 				F2163789203F152D00A236C2 /* AgendaTableViewController.swift */,
 				F216378B203F155700A236C2 /* AgendaViewController.swift */,
 				F216378D203F15A500A236C2 /* AgendaTableViewCell.swift */,
 				F2163792203F387A00A236C2 /* ImagePicker.swift */,
-				F28D20962044A625002E248F /* AgendaMenu.swift */,
 			);
 			path = "Agenda Alura";
 			sourceTree = "<group>";
@@ -343,7 +374,7 @@
 		F21EA1551FA8C37400CDCD83 = {
 			isa = PBXGroup;
 			children = (
-				F207F20A204452AB002482D9 /* New Group */,
+				F207F20A204452AB002482D9 /* Swift Message */,
 				F2163788203F14F100A236C2 /* Agenda Alura */,
 				F2163783203EFEA700A236C2 /* NavTeste */,
 				F29122152034A551005A8AFB /* Bananas */,
@@ -470,6 +501,8 @@
 				F26239512006937E009DD5C3 /* Pods_acelerogyrocospe.framework */,
 				F26239532006937E009DD5C3 /* Pods_acelerogyrocospeTests.framework */,
 				F26239552006937E009DD5C3 /* Pods_acelerogyrocospeUITests.framework */,
+				F2B125E12052AEFC00899C26 /* SwiftMessages.framework */,
+				F2B125E32052AEFC00899C26 /* SwiftMessages.bundle */,
 				F22807DB201F434B0002EB37 /* SwiftyJSON.framework */,
 			);
 			name = Products;
@@ -543,6 +576,15 @@
 			path = Audios;
 			sourceTree = "<group>";
 		};
+		F2B125E62052B5C100899C26 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				F2CF46C62056D72200B0332C /* viewMessagePodView.swift */,
+				F2CF46CA2056E31C00B0332C /* viewMessagePodView.xib */,
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
 		F2B234981FFCECFE00BBC572 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
@@ -577,6 +619,17 @@
 			path = VerificaNotificationCenter;
 			sourceTree = "<group>";
 		};
+		F2C5FBA920457FD000133EDE /* MenuAction */ = {
+			isa = PBXGroup;
+			children = (
+				F2CA58922045CD0100A3051A /* MapAgenda */,
+				F28D20962044A625002E248F /* AgendaMenu.swift */,
+				F2CA58852045818600A3051A /* SMS.swift */,
+				F2CA58902045913600A3051A /* LocalizacaoWaze.swift */,
+			);
+			path = MenuAction;
+			sourceTree = "<group>";
+		};
 		F2C94B251FFB9A9F000331B2 /* Formata */ = {
 			isa = PBXGroup;
 			children = (
@@ -584,6 +637,14 @@
 				F2B234981FFCECFE00BBC572 /* TableView */,
 			);
 			path = Formata;
+			sourceTree = "<group>";
+		};
+		F2CA58922045CD0100A3051A /* MapAgenda */ = {
+			isa = PBXGroup;
+			children = (
+				F2CA58942045CD5600A3051A /* AgendaMapViewController.swift */,
+			);
+			path = MapAgenda;
 			sourceTree = "<group>";
 		};
 		F2CBFFBB1FF42D5C002F685C /* Maps 1 */ = {
@@ -799,6 +860,20 @@
 			remoteRef = F26239542006937E009DD5C3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		F2B125E12052AEFC00899C26 /* SwiftMessages.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftMessages.framework;
+			remoteRef = F2B125E02052AEFC00899C26 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F2B125E32052AEFC00899C26 /* SwiftMessages.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwiftMessages.bundle;
+			remoteRef = F2B125E22052AEFC00899C26 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		F2DA047A20160C5500E3484B /* CryptoSwift.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -838,6 +913,7 @@
 				F21EA16C1FA8C37500CDCD83 /* LaunchScreen.storyboard in Resources */,
 				F21EA1691FA8C37500CDCD83 /* Assets.xcassets in Resources */,
 				F21EA1671FA8C37500CDCD83 /* Main.storyboard in Resources */,
+				F2CF46CB2056E31C00B0332C /* viewMessagePodView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -936,6 +1012,7 @@
 				"${BUILT_PRODUCTS_DIR}/CreditCardValidator/CreditCardValidator.framework",
 				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/InputMask/InputMask.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -945,6 +1022,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CreditCardValidator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InputMask.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMessages.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1022,6 +1100,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2CF46C82056D72200B0332C /* viewMessagePodView.swift in Sources */,
 				F28D20972044A625002E248F /* AgendaMenu.swift in Sources */,
 				F2623959200694BD009DD5C3 /* CEPViewController.swift in Sources */,
 				F2CBFFC41FF54621002F685C /* PinTabs.swift in Sources */,
@@ -1053,8 +1132,10 @@
 				F250DD811FE3E98000785891 /* TextViewController.swift in Sources */,
 				F216378E203F15A500A236C2 /* AgendaTableViewCell.swift in Sources */,
 				F2CBFFBD1FF42D96002F685C /* Maps2ViewController.swift in Sources */,
+				F2CA58862045818600A3051A /* SMS.swift in Sources */,
 				F2DDDB84203DAE92005B79CD /* Delay.swift in Sources */,
 				F2C94B2B1FFBA18F000331B2 /* Teste.swift in Sources */,
+				F2B125E52052AF3700899C26 /* MessageSwiftPodViewController.swift in Sources */,
 				F22807CD201F414C0002EB37 /* AlamoSwiftyJSON.swift in Sources */,
 				F2912214203478CC005A8AFB /* Page1ViewController.swift in Sources */,
 				F250DD831FE807D400785891 /* MpasViewController.swift in Sources */,
@@ -1066,6 +1147,8 @@
 				F21810071FBDD338006BFD5B /* Tab1ViewController.swift in Sources */,
 				F2DA048620177FAA00E3484B /* AlamoTestes2ViewController.swift in Sources */,
 				F291220920346380005A8AFB /* Transition1ViewController.swift in Sources */,
+				F2CA58952045CD5600A3051A /* AgendaMapViewController.swift in Sources */,
+				F2CA58912045913600A3051A /* LocalizacaoWaze.swift in Sources */,
 				F224C5521FEBEEF000FE59EE /* SearchTableViewController.swift in Sources */,
 				F2C3557A20237A08001ACA0F /* CoisasAcontecemViewController.swift in Sources */,
 				F2DA047C20160C8000E3484B /* CryptoViewController.swift in Sources */,
@@ -1079,6 +1162,7 @@
 				F29122122034772B005A8AFB /* PageViewViewController.swift in Sources */,
 				F2DA0480201757BB00E3484B /* AlamoTestesViewController.swift in Sources */,
 				F2EFDE831FFE937800B705EE /* PacoteViagem.swift in Sources */,
+				F2CF46CD2056F6A300B0332C /* outraMessageViewController.swift in Sources */,
 				F2DDDB77203DABA7005B79CD /* TransicaoBaixoViewController.swift in Sources */,
 				F2C94B271FFB9BE2000331B2 /* ItensTable.swift in Sources */,
 				F207F216204452F8002482D9 /* TesteAPICandidatoViewController.swift in Sources */,
