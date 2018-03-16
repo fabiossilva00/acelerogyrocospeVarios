@@ -12,9 +12,9 @@ class outraMessageViewController: UIViewController {
     
     @IBAction func alertXib(_ sender: Any) {
         
-        let alertController = UIAlertController(title: <#T##String?#>, message: <#T##String?#>, preferredStyle: <#T##UIAlertControllerStyle#>)
+//        let alertController = UIAlertController(title: <#T##String?#>, message: <#T##String?#>, preferredStyle: <#T##UIAlertControllerStyle#>)
         
-        self.present(alertController, animated: true, completion: nil)
+//        self.present(alertController, animated: true, completion: nil)
         
     }
     
