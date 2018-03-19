@@ -21,7 +21,7 @@ class ConfiguracoesTableViewController: UITableViewController{
         let footer = UIView()
 //        footer.backgroundColor = UIColor.red
         let childView = UIView(frame: CGRect(x: tableView.frame.width / 4, y: 0, width: tableView.frame.width / 2, height: 35))
-//        childView.backgroundColor = UIColor.red
+        childView.backgroundColor = UIColor.red
         
 //        let version = UILabel(frame: CGRect(x: Double(childView.frame.width / 5), y: Double(childView.frame.height / 2), width: Double(childView.frame.width), height: 30))
         let version = UILabel(frame: CGRect(x: tableView.frame.width / 3, y: 0, width: tableView.frame.width / 3, height: 35))
@@ -44,16 +44,7 @@ class ConfiguracoesTableViewController: UITableViewController{
         
         return footer
     }
- 
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let sairCell = tableView.dequeueReusableCell(withIdentifier: "sairCell")
-        if tableView.indexPath(for: sairCell!) != nil{
-            print("Saindo")
-            dismiss(animated: true)
-        }
-        
-    }
- 
+  
     /*
     override func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
         
