@@ -13,7 +13,7 @@ class ConfiguracoesTableViewController: UITableViewController{
     @IBOutlet var configsTableView: UITableView!
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 75
+        return 50
     }
     
     override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
@@ -30,7 +30,6 @@ class ConfiguracoesTableViewController: UITableViewController{
         version.text = "Versáo 1.0"
         version.font = UIFont.systemFont(ofSize: 17, weight: UIFont.Weight.regular)
         childView.addSubview(version)
-        
         
         switch section {
         case 0:
@@ -54,10 +53,47 @@ class ConfiguracoesTableViewController: UITableViewController{
     }
      */
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if indexPath.section == 1 && indexPath.row == 0 {
+            dismiss(animated: true)
+        }
+        
+//        switch indexPath.section {
+//        case 0:
+////            dismiss(animated: true)
+//            switch indexPath.row {
+//            case 0:
+//                print("Perfil")
+//                break
+//            case 1:
+//                print("Configs BU")
+//                break
+//            case 2:
+//                print("Fale")
+//                break
+//            case 3:
+//                print("Politica")
+//                break
+//            case 4:
+//                print("Sobre")
+//                break
+//            case 5:
+//                print("Ajuda")
+//                break
+//            default: break
+//            }
+//            break
+//        case 1:
+//            print("Sair")
+//            dismiss(animated: true)
+//        default: break
+//        }
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
