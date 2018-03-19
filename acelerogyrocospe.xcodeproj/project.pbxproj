@@ -67,6 +67,7 @@
 		F2CBFFBD1FF42D96002F685C /* Maps2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CBFFBC1FF42D96002F685C /* Maps2ViewController.swift */; };
 		F2CBFFC01FF53D59002F685C /* PublicArt.json in Resources */ = {isa = PBXBuildFile; fileRef = F2CBFFBF1FF53D58002F685C /* PublicArt.json */; };
 		F2CBFFC41FF54621002F685C /* PinTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CBFFC31FF54621002F685C /* PinTabs.swift */; };
+		F2CED3EB205FE72E007CCE5C /* ConfiguracoesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CED3EA205FE72E007CCE5C /* ConfiguracoesTableViewController.swift */; };
 		F2CF46C82056D72200B0332C /* viewMessagePodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CF46C62056D72200B0332C /* viewMessagePodView.swift */; };
 		F2CF46CB2056E31C00B0332C /* viewMessagePodView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2CF46CA2056E31C00B0332C /* viewMessagePodView.xib */; };
 		F2CF46CD2056F6A300B0332C /* outraMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CF46CC2056F6A300B0332C /* outraMessageViewController.swift */; };
@@ -262,6 +263,7 @@
 		F2CBFFBC1FF42D96002F685C /* Maps2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Maps2ViewController.swift; path = "Maps/Maps 2/Maps2ViewController.swift"; sourceTree = SOURCE_ROOT; };
 		F2CBFFBF1FF53D58002F685C /* PublicArt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PublicArt.json; sourceTree = "<group>"; };
 		F2CBFFC31FF54621002F685C /* PinTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinTabs.swift; sourceTree = "<group>"; };
+		F2CED3EA205FE72E007CCE5C /* ConfiguracoesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguracoesTableViewController.swift; sourceTree = "<group>"; };
 		F2CF46C62056D72200B0332C /* viewMessagePodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewMessagePodView.swift; sourceTree = "<group>"; };
 		F2CF46CA2056E31C00B0332C /* viewMessagePodView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = viewMessagePodView.xib; sourceTree = "<group>"; };
 		F2CF46CC2056F6A300B0332C /* outraMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = outraMessageViewController.swift; sourceTree = "<group>"; };
@@ -374,6 +376,7 @@
 		F21EA1551FA8C37400CDCD83 = {
 			isa = PBXGroup;
 			children = (
+				F2CED3DA205FDACE007CCE5C /* Configuracoes */,
 				F207F20A204452AB002482D9 /* Swift Message */,
 				F2163788203F14F100A236C2 /* Agenda Alura */,
 				F2163783203EFEA700A236C2 /* NavTeste */,
@@ -671,6 +674,14 @@
 			children = (
 			);
 			path = TouchID;
+			sourceTree = "<group>";
+		};
+		F2CED3DA205FDACE007CCE5C /* Configuracoes */ = {
+			isa = PBXGroup;
+			children = (
+				F2CED3EA205FE72E007CCE5C /* ConfiguracoesTableViewController.swift */,
+			);
+			path = Configuracoes;
 			sourceTree = "<group>";
 		};
 		F2DA046E20160C5300E3484B /* Try CrypoSwift */ = {
@@ -1148,6 +1159,7 @@
 				F2DA048620177FAA00E3484B /* AlamoTestes2ViewController.swift in Sources */,
 				F291220920346380005A8AFB /* Transition1ViewController.swift in Sources */,
 				F2CA58952045CD5600A3051A /* AgendaMapViewController.swift in Sources */,
+				F2CED3EB205FE72E007CCE5C /* ConfiguracoesTableViewController.swift in Sources */,
 				F2CA58912045913600A3051A /* LocalizacaoWaze.swift in Sources */,
 				F224C5521FEBEEF000FE59EE /* SearchTableViewController.swift in Sources */,
 				F2C3557A20237A08001ACA0F /* CoisasAcontecemViewController.swift in Sources */,

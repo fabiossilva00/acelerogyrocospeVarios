@@ -147,7 +147,12 @@ class ButtonTelasViewController: UIViewController {
         self.present(messagePodID, animated: true, completion: nil)
         
     }
-    
+
+    @IBAction func configuracoesButton(_ sender: Any) {
+        let configuracoesID = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "configuracoesID")
+        self.present(configuracoesID, animated: true)
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
