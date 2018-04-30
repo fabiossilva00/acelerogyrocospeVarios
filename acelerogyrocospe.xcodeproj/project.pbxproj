@@ -37,6 +37,7 @@
 		F22807D0201F434A0002EB37 /* SwifyJSONViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22807CF201F434A0002EB37 /* SwifyJSONViewController.swift */; };
 		F22807E02021DCC70002EB37 /* CamposRegExViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22807DF2021DCC60002EB37 /* CamposRegExViewController.swift */; };
 		F22EB1F31FE0521300A1936F /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22EB1F21FE0521300A1936F /* WebViewController.swift */; };
+		F239266820616424008FFDF4 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F239266720616424008FFDF4 /* Settings.bundle */; };
 		F24607DE1FD7FDE400B07B52 /* SplashTesteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24607DD1FD7FDE400B07B52 /* SplashTesteViewController.swift */; };
 		F250DD811FE3E98000785891 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F250DD801FE3E97F00785891 /* TextViewController.swift */; };
 		F250DD831FE807D400785891 /* MpasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F250DD821FE807D300785891 /* MpasViewController.swift */; };
@@ -44,6 +45,7 @@
 		F250DD871FE8318D00785891 /* ButtonTelasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F250DD861FE8318D00785891 /* ButtonTelasViewController.swift */; };
 		F2623959200694BD009DD5C3 /* CEPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2623958200694BD009DD5C3 /* CEPViewController.swift */; };
 		F262395C20079DC3009DD5C3 /* IngressosAluraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F262395B20079DC3009DD5C3 /* IngressosAluraViewController.swift */; };
+		F285F7EF207F860B00B98023 /* aapTesteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F285F7EE207F860B00B98023 /* aapTesteViewController.swift */; };
 		F28D20972044A625002E248F /* AgendaMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28D20962044A625002E248F /* AgendaMenu.swift */; };
 		F291220920346380005A8AFB /* Transition1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F291220820346380005A8AFB /* Transition1ViewController.swift */; };
 		F291220C203463BD005A8AFB /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F291220B203463BD005A8AFB /* PageViewController.swift */; };
@@ -230,6 +232,7 @@
 		F22807CF201F434A0002EB37 /* SwifyJSONViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifyJSONViewController.swift; sourceTree = "<group>"; };
 		F22807DF2021DCC60002EB37 /* CamposRegExViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamposRegExViewController.swift; sourceTree = "<group>"; };
 		F22EB1F21FE0521300A1936F /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		F239266720616424008FFDF4 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		F24607DD1FD7FDE400B07B52 /* SplashTesteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashTesteViewController.swift; sourceTree = "<group>"; };
 		F250DD801FE3E97F00785891 /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		F250DD821FE807D300785891 /* MpasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MpasViewController.swift; sourceTree = "<group>"; };
@@ -238,6 +241,7 @@
 		F26239472006937E009DD5C3 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		F2623958200694BD009DD5C3 /* CEPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CEPViewController.swift; sourceTree = "<group>"; };
 		F262395B20079DC3009DD5C3 /* IngressosAluraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngressosAluraViewController.swift; sourceTree = "<group>"; };
+		F285F7EE207F860B00B98023 /* aapTesteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aapTesteViewController.swift; sourceTree = "<group>"; };
 		F28D20962044A625002E248F /* AgendaMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaMenu.swift; sourceTree = "<group>"; };
 		F291220820346380005A8AFB /* Transition1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transition1ViewController.swift; sourceTree = "<group>"; };
 		F291220B203463BD005A8AFB /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
@@ -394,6 +398,7 @@
 				F224C5501FEBEE5A00FE59EE /* Maps */,
 				F262395A20079D1A009DD5C3 /* Alura Formatacao Cartao */,
 				F250DD861FE8318D00785891 /* ButtonTelasViewController.swift */,
+				F239266720616424008FFDF4 /* Settings.bundle */,
 				F21EA1601FA8C37400CDCD83 /* acelerogyrocospe */,
 				F21EA1751FA8C37500CDCD83 /* acelerogyrocospeTests */,
 				F21EA1801FA8C37500CDCD83 /* acelerogyrocospeUITests */,
@@ -422,6 +427,7 @@
 				F21EA1631FA8C37500CDCD83 /* ViewController.swift */,
 				F24607DD1FD7FDE400B07B52 /* SplashTesteViewController.swift */,
 				F21EA1651FA8C37500CDCD83 /* Main.storyboard */,
+				F285F7EE207F860B00B98023 /* aapTesteViewController.swift */,
 				F21810061FBDD337006BFD5B /* Tab1ViewController.swift */,
 				F21810081FBDD352006BFD5B /* Tab2ViewController.swift */,
 				F2E197C9202B63F400FC45B5 /* CallChildViewViewController.swift */,
@@ -924,6 +930,7 @@
 				F21EA16C1FA8C37500CDCD83 /* LaunchScreen.storyboard in Resources */,
 				F21EA1691FA8C37500CDCD83 /* Assets.xcassets in Resources */,
 				F21EA1671FA8C37500CDCD83 /* Main.storyboard in Resources */,
+				F239266820616424008FFDF4 /* Settings.bundle in Resources */,
 				F2CF46CB2056E31C00B0332C /* viewMessagePodView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1140,6 +1147,7 @@
 				F2163787203F02B800A236C2 /* NavTeste3ViewController.swift in Sources */,
 				F2B2349B1FFCED7600BBC572 /* Formata2ViewController.swift in Sources */,
 				F250DD871FE8318D00785891 /* ButtonTelasViewController.swift in Sources */,
+				F285F7EF207F860B00B98023 /* aapTesteViewController.swift in Sources */,
 				F250DD811FE3E98000785891 /* TextViewController.swift in Sources */,
 				F216378E203F15A500A236C2 /* AgendaTableViewCell.swift in Sources */,
 				F2CBFFBD1FF42D96002F685C /* Maps2ViewController.swift in Sources */,

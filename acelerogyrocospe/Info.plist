@@ -6,6 +6,7 @@
 	<array>
 		<string>waze</string>
 		<string>bradesco</string>
+		<string>itau</string>
 	</array>
 	<key>NSCameraUsageDescription</key>
 	<string>$(PRODUCT_NAME) Camera</string>

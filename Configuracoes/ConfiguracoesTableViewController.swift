@@ -27,7 +27,8 @@ class ConfiguracoesTableViewController: UITableViewController{
         let version = UILabel(frame: CGRect(x: tableView.frame.width / 3, y: 0, width: tableView.frame.width / 3, height: 35))
         version.backgroundColor = UIColor.gray
         version.textAlignment = .center
-        version.text = "Versáo 1.0"
+        version.text = "Versáo 1.0 \n ID Mobile 01"
+        version.numberOfLines = 2
         version.font = UIFont.systemFont(ofSize: 17, weight: UIFont.Weight.regular)
         childView.addSubview(version)
         
@@ -57,6 +58,15 @@ class ConfiguracoesTableViewController: UITableViewController{
         
         if indexPath.section == 1 && indexPath.row == 0 {
             dismiss(animated: true)
+        }
+        
+        if indexPath.section == 0 && indexPath.row == 2 {
+            let messagePodID = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "messagePodID")
+            self.present(messagePodID, animated: true, completion: nil)
+        }
+        
+        if indexPath.section == 0 && indexPath.row == 3 {
+            UIApplication.shared.open(URL(string: "https://zazzytec.com.br/politica_consultai.php")!, options: [:], completionHandler: nil)
         }
         
 //        switch indexPath.section {
