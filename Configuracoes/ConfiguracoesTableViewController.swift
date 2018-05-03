@@ -24,7 +24,7 @@ class ConfiguracoesTableViewController: UITableViewController{
         childView.backgroundColor = UIColor.red
         
 //        let version = UILabel(frame: CGRect(x: Double(childView.frame.width / 5), y: Double(childView.frame.height / 2), width: Double(childView.frame.width), height: 30))
-        let version = UILabel(frame: CGRect(x: tableView.frame.width / 3, y: 0, width: tableView.frame.width / 3, height: 35))
+        let version = UILabel(frame: CGRect(x: tableView.frame.width / 3, y: 0, width: tableView.frame.width / 3, height: 55))
         version.backgroundColor = UIColor.gray
         version.textAlignment = .center
         version.text = "Versáo 1.0 \n ID Mobile 01"

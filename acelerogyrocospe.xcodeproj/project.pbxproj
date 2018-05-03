@@ -10,6 +10,7 @@
 		0D33AE6CA0F0AC3A70B0C4F7 /* Pods_acelerogyrocospeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 567F4CFAEA4DCF8D427983BA /* Pods_acelerogyrocospeUITests.framework */; };
 		5E396C4820AADEA27E05E1E1 /* Pods_acelerogyrocospeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E85ABB2E0782288052004F /* Pods_acelerogyrocospeTests.framework */; };
 		C50E2B97D01A6AC40E3D039C /* Pods_acelerogyrocospe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A93975516FD3B588DAD505 /* Pods_acelerogyrocospe.framework */; };
+		F20500AD209B869C001C7D10 /* CrypoSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20500AC209B869C001C7D10 /* CrypoSwiftViewController.swift */; };
 		F207F216204452F8002482D9 /* TesteAPICandidatoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F207F215204452F8002482D9 /* TesteAPICandidatoViewController.swift */; };
 		F207F21820445537002482D9 /* DadosCandidatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F207F21720445537002482D9 /* DadosCandidatorViewController.swift */; };
 		F207F21A2044559F002482D9 /* AlamoCandidato.swift in Sources */ = {isa = PBXBuildFile; fileRef = F207F2192044559E002482D9 /* AlamoCandidato.swift */; };
@@ -198,6 +199,7 @@
 		80574DD1D7ACA53FA8395142 /* Pods-acelerogyrocospeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-acelerogyrocospeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-acelerogyrocospeUITests/Pods-acelerogyrocospeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		951FC131997593D9B2B69F77 /* Pods-acelerogyrocospe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-acelerogyrocospe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-acelerogyrocospe/Pods-acelerogyrocospe.debug.xcconfig"; sourceTree = "<group>"; };
 		E9E2710EBE6364E61051C45F /* Pods-acelerogyrocospeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-acelerogyrocospeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-acelerogyrocospeUITests/Pods-acelerogyrocospeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F20500AC209B869C001C7D10 /* CrypoSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrypoSwiftViewController.swift; sourceTree = "<group>"; };
 		F207F215204452F8002482D9 /* TesteAPICandidatoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesteAPICandidatoViewController.swift; sourceTree = "<group>"; };
 		F207F21720445537002482D9 /* DadosCandidatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadosCandidatorViewController.swift; sourceTree = "<group>"; };
 		F207F2192044559E002482D9 /* AlamoCandidato.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamoCandidato.swift; sourceTree = "<group>"; };
@@ -694,6 +696,7 @@
 			isa = PBXGroup;
 			children = (
 				F2DA047B20160C8000E3484B /* CryptoViewController.swift */,
+				F20500AC209B869C001C7D10 /* CrypoSwiftViewController.swift */,
 			);
 			path = "Try CrypoSwift";
 			sourceTree = "<group>";
@@ -1167,6 +1170,7 @@
 				F2DA048620177FAA00E3484B /* AlamoTestes2ViewController.swift in Sources */,
 				F291220920346380005A8AFB /* Transition1ViewController.swift in Sources */,
 				F2CA58952045CD5600A3051A /* AgendaMapViewController.swift in Sources */,
+				F20500AD209B869C001C7D10 /* CrypoSwiftViewController.swift in Sources */,
 				F2CED3EB205FE72E007CCE5C /* ConfiguracoesTableViewController.swift in Sources */,
 				F2CA58912045913600A3051A /* LocalizacaoWaze.swift in Sources */,
 				F224C5521FEBEEF000FE59EE /* SearchTableViewController.swift in Sources */,
