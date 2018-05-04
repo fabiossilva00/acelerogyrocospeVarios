@@ -154,6 +154,12 @@ class ButtonTelasViewController: UIViewController {
         
     }
     
+    @IBAction func cryptSwiftButton(_ sender: Any) {
+        let cryptSwiftID = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "cryptSwiftID")
+        self.present(cryptSwiftID, animated: true)
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NkS-lD-aDW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XTo-ea-a22">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -2176,50 +2176,89 @@
         <!--Crypo Swift View Controller-->
         <scene sceneID="NNO-l2-pwY">
             <objects>
-                <viewController id="NkS-lD-aDW" customClass="CrypoSwiftViewController" customModule="acelerogyrocospe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="cryptSwiftID" id="NkS-lD-aDW" customClass="CrypoSwiftViewController" customModule="acelerogyrocospe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nCu-TD-Xpf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ser-U1-67x">
-                                <rect key="frame" x="112" y="115" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4nl-7J-gkr">
-                                <rect key="frame" x="24" y="213" width="90" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="crypto:" destination="NkS-lD-aDW" eventType="touchUpInside" id="WFg-me-2yX"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SUC-P2-RAI">
-                                <rect key="frame" x="24" y="153" width="267" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6D-2e-9mo">
-                                <rect key="frame" x="245" y="223" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="decrypto:" destination="NkS-lD-aDW" eventType="touchUpInside" id="B6Z-Jw-VdO"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKx-m3-gVq">
-                                <rect key="frame" x="24" y="52" width="267" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="8rO-jh-1oM">
+                                <rect key="frame" x="16" y="36" width="288" height="284"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="UwC-V2-lcf">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="146"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" text="Crypt" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LKx-m3-gVq">
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="47.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" text="Decrypt" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SUC-P2-RAI">
+                                                <rect key="frame" x="0.0" y="49.5" width="288" height="47"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" text="X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KGA-qf-P7Y">
+                                                <rect key="frame" x="0.0" y="98.5" width="288" height="47.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ser-U1-67x">
+                                        <rect key="frame" x="0.0" y="162" width="288" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="T1c-ne-ARA">
+                                        <rect key="frame" x="0.0" y="208" width="288" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4nl-7J-gkr">
+                                                <rect key="frame" x="0.0" y="0.0" width="85.5" height="30"/>
+                                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Crypt"/>
+                                                <connections>
+                                                    <action selector="crypto:" destination="NkS-lD-aDW" eventType="touchUpInside" id="WFg-me-2yX"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4yf-mq-Dsv">
+                                                <rect key="frame" x="101.5" y="0.0" width="85" height="30"/>
+                                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="X"/>
+                                                <connections>
+                                                    <action selector="xxButton:" destination="NkS-lD-aDW" eventType="touchUpInside" id="Rvw-rP-3fZ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6D-2e-9mo">
+                                                <rect key="frame" x="202.5" y="0.0" width="85.5" height="30"/>
+                                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Decrypt"/>
+                                                <connections>
+                                                    <action selector="decrypto:" destination="NkS-lD-aDW" eventType="touchUpInside" id="B6Z-Jw-VdO"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="cryptSwiftID" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JjJ-vl-sYP">
+                                        <rect key="frame" x="0.0" y="254" width="288" height="30"/>
+                                        <state key="normal" title="Voltar"/>
+                                        <connections>
+                                            <action selector="voltarButton:" destination="NkS-lD-aDW" eventType="touchUpInside" id="aPR-Z9-saj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="W1i-oV-dZu" firstAttribute="bottom" secondItem="8rO-jh-1oM" secondAttribute="bottom" constant="248" id="O7D-RE-V91"/>
+                            <constraint firstItem="8rO-jh-1oM" firstAttribute="leading" secondItem="W1i-oV-dZu" secondAttribute="leading" constant="16" id="UTe-6v-Ab0"/>
+                            <constraint firstItem="W1i-oV-dZu" firstAttribute="trailing" secondItem="8rO-jh-1oM" secondAttribute="trailing" constant="16" id="VcG-bb-gdp"/>
+                            <constraint firstItem="8rO-jh-1oM" firstAttribute="top" secondItem="W1i-oV-dZu" secondAttribute="top" constant="16" id="kGK-Dq-rZT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="W1i-oV-dZu"/>
                     </view>
                     <connections>
@@ -2227,6 +2266,9 @@
                         <outlet property="doButton" destination="4nl-7J-gkr" id="53S-Yp-SlT"/>
                         <outlet property="textValor" destination="Ser-U1-67x" id="e2n-LQ-TFL"/>
                         <outlet property="valorLabel" destination="LKx-m3-gVq" id="cnJ-0N-70f"/>
+                        <outlet property="voltarButton" destination="JjJ-vl-sYP" id="BwD-y2-k6r"/>
+                        <outlet property="xxButton" destination="4yf-mq-Dsv" id="Rm4-9f-aOK"/>
+                        <outlet property="xxlabel" destination="KGA-qf-P7Y" id="hqm-gw-2g3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UcH-vw-19p" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -4299,7 +4341,10 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xjk-aa-k7a">
                                                 <rect key="frame" x="145.5" y="0.0" width="142.5" height="33.5"/>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" title="CryptSwift - AES"/>
+                                                <connections>
+                                                    <action selector="cryptSwiftButton:" destination="crh-Nn-1aF" eventType="touchUpInside" id="DFg-X9-Tzz"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
