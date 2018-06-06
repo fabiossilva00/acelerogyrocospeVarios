@@ -26,3 +26,9 @@ target 'acelerogyrocospe' do
   end
 
 end
+
+target 'widgetAcce' do
+    use_frameworks!
+    pod 'Alamofire', '~> 4.5'
+    
+end

@@ -1,0 +1,6 @@
+framework module Pods_acelerogyrocospeUITests {
+  umbrella header "Pods-acelerogyrocospeUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

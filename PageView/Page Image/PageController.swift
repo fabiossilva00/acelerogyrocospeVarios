@@ -18,6 +18,7 @@ class PageController: UIPageViewController, UIPageViewControllerDataSource, UIPa
         if index == 0 || index == NSNotFound {
             return nil
         }
+        
         index = index - 1
         
         return getViewindex(index: index)
@@ -54,7 +55,7 @@ class PageController: UIPageViewController, UIPageViewControllerDataSource, UIPa
         
         self.dataSource = self
         
-        self.setViewControllers([getViewindex(index: 0)] as [UIViewController], direction: UIPageViewControllerNavigationDirection.forward, animated: false, completion: nil)
+        self.setViewControllers([getViewindex(index: 0)] as [UIViewController], direction: UIPageViewControllerNavigationDirection.forward, animated: true, completion: nil)
 
         // Do any additional setup after loading the view.
     }

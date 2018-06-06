@@ -69,4 +69,59 @@ class AlamoTeste: NSObject {
         
     }
     
+        let defaultManager: Alamofire.SessionManager = {
+            let serverTrustPolicies: [String: ServerTrustPolicy] = [
+                "bilbo.redepontocerto.com.br:8473": .disableEvaluation,
+            ]
+
+            let configuration = URLSessionConfiguration.default
+            configuration.httpAdditionalHeaders = Alamofire.SessionManager.defaultHTTPHeaders
+
+            return Alamofire.SessionManager(
+                configuration: configuration,
+                serverTrustPolicyManager: ServerTrustPolicyManager(policies: serverTrustPolicies)
+            )
+        }()
+    
+    func managerTeste() {
+        
+        let serverPolicie = ServerTrustPolicyManager(policies: ["bilbo.redepontocerto.com.br:8473": .disableEvaluation])
+//        let serverPolicies: [String: ServerTrustPolicy] = ["redepontocerto.com.br": .disableEvaluation]
+//        let serverPoliciess: [String: ServerTrustPolicy] = ["bilbo.redepontocerto.com.br": .pinCertificates(certificates: ServerTrustPolicy.certificates(), validateCertificateChain: false, validateHost: false)]
+        let sessaoManager = SessionManager(serverTrustPolicyManager: serverPolicie ) /*ServerTrustPolicyManager(policies: serverPolicie)*/
+        
+        guard let urlRequest = URL(string: "https://bilbo.redepontocerto.com.br:8473/mobile-server-integracao-3.0/inicializar") else { return }
+        
+        let parametros: Parameters=["teste": 1]
+        
+        sessaoManager.request(urlRequest, method: .post, parameters: parametros, encoding: JSONEncoding.default).responseJSON { (response) in
+            print(response.debugDescription)
+        }
+        
+//        sessaoManager
+        
+    }
+    
+    func alamoTrust(){
+        
+        let parameters: Parameters=["teste": 1]
+        
+        guard let urlRequest = URL(string: "https://bilbo.redepontocerto.com.br:8473/mobile-server-integracao-3.0/inicializar") else { return }
+        
+        defaultManager.request(urlRequest, method: .post, parameters: parameters, encoding: JSONEncoding.default).validate().responseJSON() { response in
+            print(response.debugDescription)
+            
+//            switch response.result {
+//            case .success:
+//                print(response)
+//                break
+//            case .failure:
+//                print(response)
+//                break
+//            }
+            
+        }
+        
+    }
+    
 }

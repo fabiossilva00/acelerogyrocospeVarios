@@ -15,6 +15,14 @@ class AgendaTableViewController: UITableViewController, UISearchBarDelegate, NSF
     var gerenciaSearch: NSFetchedResultsController<AgendaDados>?
     var agendaView: AgendaViewController?
     let sms = SMS()
+    
+    @IBOutlet weak var livroButton: UIBarButtonItem!
+    
+    @IBAction func livroButton(_ sender: Any) {
+        
+        
+        
+    }
  
     var contexto: NSManagedObjectContext {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate

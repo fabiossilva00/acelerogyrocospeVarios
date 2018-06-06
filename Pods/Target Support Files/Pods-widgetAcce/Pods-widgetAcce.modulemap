@@ -1,0 +1,6 @@
+framework module Pods_widgetAcce {
+  umbrella header "Pods-widgetAcce-umbrella.h"
+
+  export *
+  module * { export * }
+}

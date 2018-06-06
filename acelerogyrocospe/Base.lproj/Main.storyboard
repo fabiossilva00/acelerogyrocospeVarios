@@ -559,35 +559,102 @@
             </objects>
             <point key="canvasLocation" x="3563.7681159420295" y="-1424.1847826086957"/>
         </scene>
-        <!--View Controller-->
+        <!--Today Valores View Controller-->
         <scene sceneID="ska-TQ-baN">
             <objects>
-                <viewController storyboardIdentifier="page2ID" id="bL8-kk-ZKG" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="page2ID" id="bL8-kk-ZKG" customClass="TodayValoresViewController" customModule="acelerogyrocospe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Sni-E5-yIG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Rl-he-jnW">
+                                <rect key="frame" x="39" y="98" width="237" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OKz-DM-IDb">
+                                <rect key="frame" x="39" y="200" width="237" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XFT-Uu-c55">
+                                <rect key="frame" x="39" y="43" width="237" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="af5-K7-ED2">
+                                <rect key="frame" x="39" y="153" width="237" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RWc-eh-l7o">
+                                <rect key="frame" x="59" y="280" width="202" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="dadosButton:" destination="bL8-kk-ZKG" eventType="touchUpInside" id="i4a-qw-Lyx"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.76636713990000005" green="0.26040537079999998" blue="0.18420731209999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="OC2-kc-aPq"/>
                     </view>
+                    <connections>
+                        <outlet property="emailLabel" destination="XFT-Uu-c55" id="iWK-Tq-JAW"/>
+                        <outlet property="emailText" destination="1Rl-he-jnW" id="oLp-Yr-7hk"/>
+                        <outlet property="senhaLabel" destination="af5-K7-ED2" id="9Wk-ds-4PZ"/>
+                        <outlet property="senhaText" destination="OKz-DM-IDb" id="2lH-va-Mkp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FAV-uf-CNw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4354" y="-1425"/>
+            <point key="canvasLocation" x="4353.75" y="-1425"/>
         </scene>
-        <!--View Controller-->
+        <!--SaldoAPI View Controller-->
         <scene sceneID="mBW-zG-SSD">
             <objects>
-                <viewController storyboardIdentifier="page3ID" id="QwG-yJ-Z4R" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="page3ID" id="QwG-yJ-Z4R" customClass="saldoAPIViewController" customModule="acelerogyrocospe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1zS-25-rFJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rvw-6m-ko4">
+                                <rect key="frame" x="0.0" y="242" width="320" height="85"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="getButton:" destination="QwG-yJ-Z4R" eventType="touchUpInside" id="TrR-0Y-wak"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Rvw-6m-ko4" firstAttribute="trailing" secondItem="bzm-rZ-nUL" secondAttribute="trailing" id="Dyw-cx-mJg"/>
+                            <constraint firstItem="Rvw-6m-ko4" firstAttribute="top" secondItem="bzm-rZ-nUL" secondAttribute="top" constant="222" id="LDF-tL-dwX"/>
+                            <constraint firstItem="bzm-rZ-nUL" firstAttribute="bottom" secondItem="Rvw-6m-ko4" secondAttribute="bottom" constant="241" id="R0R-Un-VEy"/>
+                            <constraint firstItem="Rvw-6m-ko4" firstAttribute="leading" secondItem="bzm-rZ-nUL" secondAttribute="leading" id="r9k-5q-iL6"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="bzm-rZ-nUL"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mcC-ge-gaj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5171" y="-1425"/>
+            <point key="canvasLocation" x="5169.375" y="-1425"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="2nh-dQ-vMO">
@@ -778,13 +845,20 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Agenda" id="2HY-T9-Wf0">
                         <barButtonItem key="backBarButtonItem" title="Voltar" id="kpR-YK-kOE"/>
-                        <barButtonItem key="leftBarButtonItem" systemItem="bookmarks" id="UgR-Wq-GRE"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="bookmarks" id="UgR-Wq-GRE">
+                            <connections>
+                                <action selector="livroButton:" destination="Oqz-Bz-Kws" id="922-jC-qZY"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="crw-gJ-nKg">
                             <connections>
                                 <segue destination="Fzr-dk-lgq" kind="show" id="Vy8-b1-NOB"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="livroButton" destination="UgR-Wq-GRE" id="Z1t-zZ-ttR"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WsZ-ch-Jwn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3441,7 +3515,7 @@
                                                 <rect key="frame" x="93.5" y="0.0" width="93" height="80.5"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="paH-38-ilS">
-                                                        <rect key="frame" x="17" y="17" width="58" height="59"/>
+                                                        <rect key="frame" x="17" y="17" width="58" height="58.5"/>
                                                         <color key="backgroundColor" red="0.0" green="0.73725490199999999" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="paH-38-ilS" secondAttribute="height" multiplier="1:1" id="ZBa-X1-etu"/>

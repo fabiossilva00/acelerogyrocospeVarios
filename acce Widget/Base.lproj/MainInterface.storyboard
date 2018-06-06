@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="acce_Widget" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 40.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRd-n7-TBW">
+                                <rect key="frame" x="116" y="20" width="89" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQd-db-4d5">
+                                <rect key="frame" x="110" y="53" width="100" height="51"/>
+                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zQd-db-4d5" secondAttribute="height" multiplier="10:3" constant="-70" id="Glh-KZ-Lu7"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonWidget:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="ZQW-10-I9L"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="HRd-n7-TBW" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" constant="20" id="GVD-Sb-do3"/>
+                            <constraint firstItem="zQd-db-4d5" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" constant="110" id="KQf-gk-blF"/>
+                            <constraint firstItem="HRd-n7-TBW" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" constant="116" id="Qv6-m8-bnc"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="HRd-n7-TBW" secondAttribute="trailing" constant="115" id="blR-XJ-fC9"/>
+                            <constraint firstItem="zQd-db-4d5" firstAttribute="top" secondItem="HRd-n7-TBW" secondAttribute="bottom" constant="7.5" id="dHW-Xr-apJ"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="bottom" secondItem="zQd-db-4d5" secondAttribute="bottom" constant="6" id="mfW-sM-CVZ"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="zQd-db-4d5" secondAttribute="trailing" constant="110" id="zKf-Vr-Uca"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ssy-KU-ocm"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="110"/>
+                    <connections>
+                        <outlet property="buttonWidget" destination="zQd-db-4d5" id="6yA-8U-8jc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.375" y="30.633802816901408"/>
+        </scene>
+    </scenes>
+</document>
