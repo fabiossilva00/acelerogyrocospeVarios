@@ -15,6 +15,8 @@
 		F207F216204452F8002482D9 /* TesteAPICandidatoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F207F215204452F8002482D9 /* TesteAPICandidatoViewController.swift */; };
 		F207F21820445537002482D9 /* DadosCandidatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F207F21720445537002482D9 /* DadosCandidatorViewController.swift */; };
 		F207F21A2044559F002482D9 /* AlamoCandidato.swift in Sources */ = {isa = PBXBuildFile; fileRef = F207F2192044559E002482D9 /* AlamoCandidato.swift */; };
+		F211469320EE3D1A00772635 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = F211469220EE3D1A00772635 /* Reachability.swift */; };
+		F211469A20EF9A4E00772635 /* InternetTestesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F211469920EF9A4E00772635 /* InternetTestesViewController.swift */; };
 		F211D1DA203F625600F6C19F /* acelerogyrocospe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F211D1D8203F625600F6C19F /* acelerogyrocospe.xcdatamodeld */; };
 		F2163779203EF87700A236C2 /* NavTesteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2163778203EF87600A236C2 /* NavTesteViewController.swift */; };
 		F2163785203EFEC900A236C2 /* NavTeste2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2163784203EFEC900A236C2 /* NavTeste2ViewController.swift */; };
@@ -58,6 +60,10 @@
 		F29122172034A569005A8AFB /* BananaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29122162034A569005A8AFB /* BananaViewController.swift */; };
 		F291221E2035ACB0005A8AFB /* PopAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F291221D2035ACB0005A8AFB /* PopAnimator.swift */; };
 		F29122202035BF3F005A8AFB /* Transition2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F291221F2035BF3F005A8AFB /* Transition2ViewController.swift */; };
+		F2AA41442130726B00AF18A5 /* ProtocolsTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AA41432130726B00AF18A5 /* ProtocolsTesting.swift */; };
+		F2AA41462130740400AF18A5 /* ProtocolTestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AA41452130740400AF18A5 /* ProtocolTestsViewController.swift */; };
+		F2AA41482130821E00AF18A5 /* ProtocolsTestingsExtensionFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AA41472130821E00AF18A5 /* ProtocolsTestingsExtensionFunctions.swift */; };
+		F2AA414B2130960100AF18A5 /* rectangleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AA414A2130960100AF18A5 /* rectangleProtocol.swift */; };
 		F2AC790820B6DC1300D945F9 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2AC790720B6DC1300D945F9 /* NotificationCenter.framework */; };
 		F2AC790B20B6DC1300D945F9 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AC790A20B6DC1300D945F9 /* TodayViewController.swift */; };
 		F2AC790E20B6DC1300D945F9 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2AC790C20B6DC1300D945F9 /* MainInterface.storyboard */; };
@@ -98,6 +104,30 @@
 		F2E197BC202A2ED500FC45B5 /* AutoAdaptavelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E197BB202A2ED400FC45B5 /* AutoAdaptavelViewController.swift */; };
 		F2E197C8202B10CA00FC45B5 /* AdptavelEscondidoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E197C7202B10CA00FC45B5 /* AdptavelEscondidoViewController.swift */; };
 		F2E197CA202B63F400FC45B5 /* CallChildViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E197C9202B63F400FC45B5 /* CallChildViewViewController.swift */; };
+		F2EE487221342318004F1CD1 /* togglableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EE487121342318004F1CD1 /* togglableProtocol.swift */; };
+		F2EE487421346454004F1CD1 /* weaponProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EE487321346454004F1CD1 /* weaponProtocol.swift */; };
+		F2EE4877213465B9004F1CD1 /* weponTypesStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EE4876213465B9004F1CD1 /* weponTypesStruct.swift */; };
+		F2EE487921346793004F1CD1 /* weaponExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EE487821346793004F1CD1 /* weaponExtension.swift */; };
+		F2EE487C213481C9004F1CD1 /* racingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EE487B213481C9004F1CD1 /* racingProtocol.swift */; };
+		F2EE487E2134826D004F1CD1 /* racingTypesStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EE487D2134826D004F1CD1 /* racingTypesStruct.swift */; };
+		F2EE4880213482EC004F1CD1 /* birdExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EE487F213482EC004F1CD1 /* birdExtension.swift */; };
+		F2EE488221348EC0004F1CD1 /* unladenSwallowExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EE488121348EC0004F1CD1 /* unladenSwallowExtension.swift */; };
+		F2EE488421349252004F1CD1 /* customStringConvertibleExtensionBird.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EE488321349252004F1CD1 /* customStringConvertibleExtensionBird.swift */; };
+		F2EE488621349927004F1CD1 /* vehiclesRacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EE488521349927004F1CD1 /* vehiclesRacing.swift */; };
+		F2EE488821349B16004F1CD1 /* racerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EE488721349B16004F1CD1 /* racerProtocol.swift */; };
+		F2EE488A21349B58004F1CD1 /* flappyBirdExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EE488921349B58004F1CD1 /* flappyBirdExtension.swift */; };
+		F2EE488C21349BB3004F1CD1 /* penguinExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EE488B21349BB3004F1CD1 /* penguinExtension.swift */; };
+		F2EE488E21349BE6004F1CD1 /* swiftBirdExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EE488D21349BE6004F1CD1 /* swiftBirdExtension.swift */; };
+		F2EE489021349CF1004F1CD1 /* motorcycleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EE488F21349CF1004F1CD1 /* motorcycleExtension.swift */; };
+		F2EE489621357E9B004F1CD1 /* sequenceExtensionRacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EE489521357E9B004F1CD1 /* sequenceExtensionRacer.swift */; };
+		F2EE48982135807B004F1CD1 /* scoreProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EE48972135807B004F1CD1 /* scoreProtocol.swift */; };
+		F2EE489A2135813E004F1CD1 /* racingScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EE48992135813E004F1CD1 /* racingScore.swift */; };
+		F2EE48B02136C706004F1CD1 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EE48AF2136C706004F1CD1 /* EndPointType.swift */; };
+		F2EE490A213732A8004F1CD1 /* EmailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EE4909213732A8004F1CD1 /* EmailModel.swift */; };
+		F2EE490E213732DD004F1CD1 /* MVPSimpleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EE490D213732DD004F1CD1 /* MVPSimpleViewController.swift */; };
+		F2EE491021373493004F1CD1 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EE490F21373493004F1CD1 /* LoginService.swift */; };
+		F2EE491521381548004F1CD1 /* EmailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EE491421381548004F1CD1 /* EmailPresenter.swift */; };
+		F2EE491B213988D7004F1CD1 /* MVPSimpleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EE491A213988D7004F1CD1 /* MVPSimpleConfigurator.swift */; };
 		F2EFDE7F1FFD4C3000B705EE /* DetalhesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EFDE7E1FFD4C3000B705EE /* DetalhesViewController.swift */; };
 		F2EFDE811FFE928C00B705EE /* PacoteViagemDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EFDE801FFE928A00B705EE /* PacoteViagemDAO.swift */; };
 		F2EFDE831FFE937800B705EE /* PacoteViagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EFDE821FFE937800B705EE /* PacoteViagem.swift */; };
@@ -252,6 +282,8 @@
 		F207F215204452F8002482D9 /* TesteAPICandidatoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesteAPICandidatoViewController.swift; sourceTree = "<group>"; };
 		F207F21720445537002482D9 /* DadosCandidatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadosCandidatorViewController.swift; sourceTree = "<group>"; };
 		F207F2192044559E002482D9 /* AlamoCandidato.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamoCandidato.swift; sourceTree = "<group>"; };
+		F211469220EE3D1A00772635 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		F211469920EF9A4E00772635 /* InternetTestesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetTestesViewController.swift; sourceTree = "<group>"; };
 		F211D1D9203F625600F6C19F /* acelerogyrocospe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = acelerogyrocospe.xcdatamodel; sourceTree = "<group>"; };
 		F2163778203EF87600A236C2 /* NavTesteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavTesteViewController.swift; sourceTree = "<group>"; };
 		F2163784203EFEC900A236C2 /* NavTeste2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavTeste2ViewController.swift; sourceTree = "<group>"; };
@@ -307,6 +339,10 @@
 		F291221A2034C3A2005A8AFB /* chomp.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = chomp.caf; sourceTree = "<group>"; };
 		F291221D2035ACB0005A8AFB /* PopAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopAnimator.swift; sourceTree = "<group>"; };
 		F291221F2035BF3F005A8AFB /* Transition2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transition2ViewController.swift; sourceTree = "<group>"; };
+		F2AA41432130726B00AF18A5 /* ProtocolsTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolsTesting.swift; sourceTree = "<group>"; };
+		F2AA41452130740400AF18A5 /* ProtocolTestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolTestsViewController.swift; sourceTree = "<group>"; };
+		F2AA41472130821E00AF18A5 /* ProtocolsTestingsExtensionFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolsTestingsExtensionFunctions.swift; sourceTree = "<group>"; };
+		F2AA414A2130960100AF18A5 /* rectangleProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rectangleProtocol.swift; sourceTree = "<group>"; };
 		F2AC790620B6DC1300D945F9 /* widgetAcce.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = widgetAcce.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2AC790720B6DC1300D945F9 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		F2AC790A20B6DC1300D945F9 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
@@ -348,6 +384,30 @@
 		F2E197BB202A2ED400FC45B5 /* AutoAdaptavelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoAdaptavelViewController.swift; sourceTree = "<group>"; };
 		F2E197C7202B10CA00FC45B5 /* AdptavelEscondidoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdptavelEscondidoViewController.swift; sourceTree = "<group>"; };
 		F2E197C9202B63F400FC45B5 /* CallChildViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallChildViewViewController.swift; sourceTree = "<group>"; };
+		F2EE487121342318004F1CD1 /* togglableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = togglableProtocol.swift; sourceTree = "<group>"; };
+		F2EE487321346454004F1CD1 /* weaponProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weaponProtocol.swift; sourceTree = "<group>"; };
+		F2EE4876213465B9004F1CD1 /* weponTypesStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weponTypesStruct.swift; sourceTree = "<group>"; };
+		F2EE487821346793004F1CD1 /* weaponExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weaponExtension.swift; sourceTree = "<group>"; };
+		F2EE487B213481C9004F1CD1 /* racingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = racingProtocol.swift; sourceTree = "<group>"; };
+		F2EE487D2134826D004F1CD1 /* racingTypesStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = racingTypesStruct.swift; sourceTree = "<group>"; };
+		F2EE487F213482EC004F1CD1 /* birdExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = birdExtension.swift; sourceTree = "<group>"; };
+		F2EE488121348EC0004F1CD1 /* unladenSwallowExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unladenSwallowExtension.swift; sourceTree = "<group>"; };
+		F2EE488321349252004F1CD1 /* customStringConvertibleExtensionBird.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customStringConvertibleExtensionBird.swift; sourceTree = "<group>"; };
+		F2EE488521349927004F1CD1 /* vehiclesRacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vehiclesRacing.swift; sourceTree = "<group>"; };
+		F2EE488721349B16004F1CD1 /* racerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = racerProtocol.swift; sourceTree = "<group>"; };
+		F2EE488921349B58004F1CD1 /* flappyBirdExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flappyBirdExtension.swift; sourceTree = "<group>"; };
+		F2EE488B21349BB3004F1CD1 /* penguinExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = penguinExtension.swift; sourceTree = "<group>"; };
+		F2EE488D21349BE6004F1CD1 /* swiftBirdExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftBirdExtension.swift; sourceTree = "<group>"; };
+		F2EE488F21349CF1004F1CD1 /* motorcycleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = motorcycleExtension.swift; sourceTree = "<group>"; };
+		F2EE489521357E9B004F1CD1 /* sequenceExtensionRacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sequenceExtensionRacer.swift; sourceTree = "<group>"; };
+		F2EE48972135807B004F1CD1 /* scoreProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scoreProtocol.swift; sourceTree = "<group>"; };
+		F2EE48992135813E004F1CD1 /* racingScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = racingScore.swift; sourceTree = "<group>"; };
+		F2EE48AF2136C706004F1CD1 /* EndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		F2EE4909213732A8004F1CD1 /* EmailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailModel.swift; sourceTree = "<group>"; };
+		F2EE490D213732DD004F1CD1 /* MVPSimpleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPSimpleViewController.swift; sourceTree = "<group>"; };
+		F2EE490F21373493004F1CD1 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		F2EE491421381548004F1CD1 /* EmailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailPresenter.swift; sourceTree = "<group>"; };
+		F2EE491A213988D7004F1CD1 /* MVPSimpleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPSimpleConfigurator.swift; sourceTree = "<group>"; };
 		F2EFDE7E1FFD4C3000B705EE /* DetalhesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhesViewController.swift; sourceTree = "<group>"; };
 		F2EFDE801FFE928A00B705EE /* PacoteViagemDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PacoteViagemDAO.swift; sourceTree = "<group>"; };
 		F2EFDE821FFE937800B705EE /* PacoteViagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacoteViagem.swift; sourceTree = "<group>"; };
@@ -429,6 +489,15 @@
 			path = "Teste API Candidato";
 			sourceTree = "<group>";
 		};
+		F211468420EE3CBB00772635 /* InternetCheck */ = {
+			isa = PBXGroup;
+			children = (
+				F211469220EE3D1A00772635 /* Reachability.swift */,
+				F211469920EF9A4E00772635 /* InternetTestesViewController.swift */,
+			);
+			path = InternetCheck;
+			sourceTree = "<group>";
+		};
 		F2163783203EFEA700A236C2 /* NavTeste */ = {
 			isa = PBXGroup;
 			children = (
@@ -455,6 +524,10 @@
 		F21EA1551FA8C37400CDCD83 = {
 			isa = PBXGroup;
 			children = (
+				F2EE48F92137325E004F1CD1 /* MVP */,
+				F2EE489E2136C385004F1CD1 /* Network */,
+				F2AA41352130723D00AF18A5 /* Protocols */,
+				F211468420EE3CBB00772635 /* InternetCheck */,
 				F2CED3DA205FDACE007CCE5C /* Configuracoes */,
 				F207F20A204452AB002482D9 /* Swift Message */,
 				F2163788203F14F100A236C2 /* Agenda Alura */,
@@ -670,6 +743,28 @@
 			path = Audios;
 			sourceTree = "<group>";
 		};
+		F2AA41352130723D00AF18A5 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F2AA41452130740400AF18A5 /* ProtocolTestsViewController.swift */,
+				F2EE487A213480E2004F1CD1 /* RacingProtocol */,
+				F2EE487521346459004F1CD1 /* WeaponProtocolTest */,
+				F2AA414921308EB700AF18A5 /* ProtocolTests */,
+				F2AA414A2130960100AF18A5 /* rectangleProtocol.swift */,
+				F2EE487121342318004F1CD1 /* togglableProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F2AA414921308EB700AF18A5 /* ProtocolTests */ = {
+			isa = PBXGroup;
+			children = (
+				F2AA41432130726B00AF18A5 /* ProtocolsTesting.swift */,
+				F2AA41472130821E00AF18A5 /* ProtocolsTestingsExtensionFunctions.swift */,
+			);
+			path = ProtocolTests;
+			sourceTree = "<group>";
+		};
 		F2AC790920B6DC1300D945F9 /* widgetAcce */ = {
 			isa = PBXGroup;
 			children = (
@@ -826,6 +921,129 @@
 			path = Adaptavel;
 			sourceTree = "<group>";
 		};
+		F2EE487521346459004F1CD1 /* WeaponProtocolTest */ = {
+			isa = PBXGroup;
+			children = (
+				F2EE487321346454004F1CD1 /* weaponProtocol.swift */,
+				F2EE4876213465B9004F1CD1 /* weponTypesStruct.swift */,
+				F2EE487821346793004F1CD1 /* weaponExtension.swift */,
+			);
+			path = WeaponProtocolTest;
+			sourceTree = "<group>";
+		};
+		F2EE487A213480E2004F1CD1 /* RacingProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				F2EE489421357DB9004F1CD1 /* Structs */,
+				F2EE489321357D9E004F1CD1 /* Protocols */,
+				F2EE489121357D36004F1CD1 /* Extensions */,
+			);
+			path = RacingProtocol;
+			sourceTree = "<group>";
+		};
+		F2EE489121357D36004F1CD1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F2EE488321349252004F1CD1 /* customStringConvertibleExtensionBird.swift */,
+				F2EE487F213482EC004F1CD1 /* birdExtension.swift */,
+				F2EE488921349B58004F1CD1 /* flappyBirdExtension.swift */,
+				F2EE488B21349BB3004F1CD1 /* penguinExtension.swift */,
+				F2EE488D21349BE6004F1CD1 /* swiftBirdExtension.swift */,
+				F2EE488F21349CF1004F1CD1 /* motorcycleExtension.swift */,
+				F2EE488121348EC0004F1CD1 /* unladenSwallowExtension.swift */,
+				F2EE489521357E9B004F1CD1 /* sequenceExtensionRacer.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F2EE489321357D9E004F1CD1 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F2EE487B213481C9004F1CD1 /* racingProtocol.swift */,
+				F2EE488721349B16004F1CD1 /* racerProtocol.swift */,
+				F2EE48972135807B004F1CD1 /* scoreProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F2EE489421357DB9004F1CD1 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				F2EE487D2134826D004F1CD1 /* racingTypesStruct.swift */,
+				F2EE488521349927004F1CD1 /* vehiclesRacing.swift */,
+				F2EE48992135813E004F1CD1 /* racingScore.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		F2EE489E2136C385004F1CD1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F2EE48B12136CA6E004F1CD1 /* Services */,
+				F2EE48AE2136C6F3004F1CD1 /* EndPoint */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F2EE48AE2136C6F3004F1CD1 /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EndPoint;
+			sourceTree = "<group>";
+		};
+		F2EE48B12136CA6E004F1CD1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F2EE48AF2136C706004F1CD1 /* EndPointType.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F2EE48F92137325E004F1CD1 /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+				F2EE490721373264004F1CD1 /* MVPSimple */,
+				F2EE491321381520004F1CD1 /* Presenter */,
+			);
+			path = MVP;
+			sourceTree = "<group>";
+		};
+		F2EE490721373264004F1CD1 /* MVPSimple */ = {
+			isa = PBXGroup;
+			children = (
+				F2EE490B213732C3004F1CD1 /* View */,
+				F2EE490821373270004F1CD1 /* Model */,
+			);
+			path = MVPSimple;
+			sourceTree = "<group>";
+		};
+		F2EE490821373270004F1CD1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F2EE4909213732A8004F1CD1 /* EmailModel.swift */,
+				F2EE490F21373493004F1CD1 /* LoginService.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F2EE490B213732C3004F1CD1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F2EE490D213732DD004F1CD1 /* MVPSimpleViewController.swift */,
+				F2EE491A213988D7004F1CD1 /* MVPSimpleConfigurator.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F2EE491321381520004F1CD1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F2EE491421381548004F1CD1 /* EmailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -838,7 +1056,6 @@
 				F21EA15B1FA8C37400CDCD83 /* Frameworks */,
 				F21EA15C1FA8C37400CDCD83 /* Resources */,
 				8927A34730794ED22A6F6FE7 /* [CP] Embed Pods Frameworks */,
-				CFC4019192CB26DC7B58AED7 /* [CP] Copy Pods Resources */,
 				F2AC792120B6DC1300D945F9 /* Embed App Extensions */,
 			);
 			buildRules = (
@@ -859,8 +1076,6 @@
 				F21EA16E1FA8C37500CDCD83 /* Sources */,
 				F21EA16F1FA8C37500CDCD83 /* Frameworks */,
 				F21EA1701FA8C37500CDCD83 /* Resources */,
-				D10581F31C4960670679AAEB /* [CP] Embed Pods Frameworks */,
-				64906B7A6B75A16440141731 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -880,8 +1095,6 @@
 				F21EA1791FA8C37500CDCD83 /* Sources */,
 				F21EA17A1FA8C37500CDCD83 /* Frameworks */,
 				F21EA17B1FA8C37500CDCD83 /* Resources */,
-				1C3138B12B512A18DC965FF1 /* [CP] Embed Pods Frameworks */,
-				9F24DB464E68533875D51503 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -901,7 +1114,6 @@
 				F2AC790220B6DC1300D945F9 /* Sources */,
 				F2AC790320B6DC1300D945F9 /* Frameworks */,
 				F2AC790420B6DC1300D945F9 /* Resources */,
-				D3A1F0042350E831D26E13C6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1115,21 +1327,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1C3138B12B512A18DC965FF1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-acelerogyrocospeUITests/Pods-acelerogyrocospeUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		4772B04666A7F1CFD35CD699 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1146,21 +1343,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		64906B7A6B75A16440141731 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-acelerogyrocospeTests/Pods-acelerogyrocospeTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6BA41A04BC7FF0A8F94963EF /* [CP] Check Pods Manifest.lock */ = {
@@ -1206,7 +1388,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InputMask.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMessages.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1231,21 +1412,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9F24DB464E68533875D51503 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-acelerogyrocospeUITests/Pods-acelerogyrocospeUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C373075512B81CF5B639EDFE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1262,51 +1428,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CFC4019192CB26DC7B58AED7 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-acelerogyrocospe/Pods-acelerogyrocospe-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D10581F31C4960670679AAEB /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-acelerogyrocospeTests/Pods-acelerogyrocospeTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D3A1F0042350E831D26E13C6 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-widgetAcce/Pods-widgetAcce-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1328,18 +1449,26 @@
 				F2D95ACD20C6D01A00BAE167 /* saldoAPIViewController.swift in Sources */,
 				F211D1DA203F625600F6C19F /* acelerogyrocospe.xcdatamodeld in Sources */,
 				F22EB1F31FE0521300A1936F /* WebViewController.swift in Sources */,
+				F2EE488621349927004F1CD1 /* vehiclesRacing.swift in Sources */,
 				F2E197C8202B10CA00FC45B5 /* AdptavelEscondidoViewController.swift in Sources */,
+				F2EE487E2134826D004F1CD1 /* racingTypesStruct.swift in Sources */,
 				F216378A203F152D00A236C2 /* AgendaTableViewController.swift in Sources */,
 				F2E044AC200D1070001F4254 /* AlamoAPI.swift in Sources */,
 				F224C5541FEC4B6900FE59EE /* FormataViewController.swift in Sources */,
 				F2B38BFA2004F2C300AE084D /* TerminaViewController.swift in Sources */,
+				F2EE489621357E9B004F1CD1 /* sequenceExtensionRacer.swift in Sources */,
+				F2EE488E21349BE6004F1CD1 /* swiftBirdExtension.swift in Sources */,
+				F2EE487921346793004F1CD1 /* weaponExtension.swift in Sources */,
 				F2EFDE811FFE928C00B705EE /* PacoteViagemDAO.swift in Sources */,
 				F2E044B9200E2B84001F4254 /* PickerViewAno.swift in Sources */,
 				F2E044AA200D1043001F4254 /* AlamoCampos.swift in Sources */,
 				F2163779203EF87700A236C2 /* NavTesteViewController.swift in Sources */,
 				F2E044AF200E0DC4001F4254 /* PickerViewMes.swift in Sources */,
+				F2AA41482130821E00AF18A5 /* ProtocolsTestingsExtensionFunctions.swift in Sources */,
 				F2E197CA202B63F400FC45B5 /* CallChildViewViewController.swift in Sources */,
 				F2D95ACB20C5F22700BAE167 /* saldoBilheteAPI.swift in Sources */,
+				F2EE487221342318004F1CD1 /* togglableProtocol.swift in Sources */,
+				F2EE4880213482EC004F1CD1 /* birdExtension.swift in Sources */,
 				F262395C20079DC3009DD5C3 /* IngressosAluraViewController.swift in Sources */,
 				F29122202035BF3F005A8AFB /* Transition2ViewController.swift in Sources */,
 				F24607DE1FD7FDE400B07B52 /* SplashTesteViewController.swift in Sources */,
@@ -1347,23 +1476,32 @@
 				F2163787203F02B800A236C2 /* NavTeste3ViewController.swift in Sources */,
 				F2B2349B1FFCED7600BBC572 /* Formata2ViewController.swift in Sources */,
 				F250DD871FE8318D00785891 /* ButtonTelasViewController.swift in Sources */,
+				F2EE491521381548004F1CD1 /* EmailPresenter.swift in Sources */,
 				F285F7EF207F860B00B98023 /* aapTesteViewController.swift in Sources */,
 				F250DD811FE3E98000785891 /* TextViewController.swift in Sources */,
 				F216378E203F15A500A236C2 /* AgendaTableViewCell.swift in Sources */,
 				F2CBFFBD1FF42D96002F685C /* Maps2ViewController.swift in Sources */,
 				F2CA58862045818600A3051A /* SMS.swift in Sources */,
+				F2EE490A213732A8004F1CD1 /* EmailModel.swift in Sources */,
 				F2DDDB84203DAE92005B79CD /* Delay.swift in Sources */,
 				F2C94B2B1FFBA18F000331B2 /* Teste.swift in Sources */,
+				F211469320EE3D1A00772635 /* Reachability.swift in Sources */,
 				F2356F1520B7459E007FF526 /* TodayValoresViewController.swift in Sources */,
+				F2EE489A2135813E004F1CD1 /* racingScore.swift in Sources */,
 				F2B125E52052AF3700899C26 /* MessageSwiftPodViewController.swift in Sources */,
 				F22807CD201F414C0002EB37 /* AlamoSwiftyJSON.swift in Sources */,
 				F2912214203478CC005A8AFB /* Page1ViewController.swift in Sources */,
 				F250DD831FE807D400785891 /* MpasViewController.swift in Sources */,
+				F2EE48982135807B004F1CD1 /* scoreProtocol.swift in Sources */,
 				F207F21820445537002482D9 /* DadosCandidatorViewController.swift in Sources */,
+				F2EE488421349252004F1CD1 /* customStringConvertibleExtensionBird.swift in Sources */,
+				F2AA414B2130960100AF18A5 /* rectangleProtocol.swift in Sources */,
+				F2EE488A21349B58004F1CD1 /* flappyBirdExtension.swift in Sources */,
 				F291221E2035ACB0005A8AFB /* PopAnimator.swift in Sources */,
 				F22807E02021DCC70002EB37 /* CamposRegExViewController.swift in Sources */,
 				F2E197BC202A2ED500FC45B5 /* AutoAdaptavelViewController.swift in Sources */,
 				F291220E203468B8005A8AFB /* PageController.swift in Sources */,
+				F2EE487C213481C9004F1CD1 /* racingProtocol.swift in Sources */,
 				F21810071FBDD338006BFD5B /* Tab1ViewController.swift in Sources */,
 				F2DA048620177FAA00E3484B /* AlamoTestes2ViewController.swift in Sources */,
 				F291220920346380005A8AFB /* Transition1ViewController.swift in Sources */,
@@ -1373,25 +1511,38 @@
 				F2CA58912045913600A3051A /* LocalizacaoWaze.swift in Sources */,
 				F2D95AC920C5E2D400BAE167 /* CalculaMediaAPI.swift in Sources */,
 				F224C5521FEBEEF000FE59EE /* SearchTableViewController.swift in Sources */,
+				F2EE488C21349BB3004F1CD1 /* penguinExtension.swift in Sources */,
 				F2C3557A20237A08001ACA0F /* CoisasAcontecemViewController.swift in Sources */,
 				F2DA047C20160C8000E3484B /* CryptoViewController.swift in Sources */,
 				F29122172034A569005A8AFB /* BananaViewController.swift in Sources */,
 				F291220C203463BD005A8AFB /* PageViewController.swift in Sources */,
 				F2163785203EFEC900A236C2 /* NavTeste2ViewController.swift in Sources */,
+				F2AA41462130740400AF18A5 /* ProtocolTestsViewController.swift in Sources */,
+				F211469A20EF9A4E00772635 /* InternetTestesViewController.swift in Sources */,
 				F2EFDE871FFEA15600B705EE /* Viagem.swift in Sources */,
 				F2EFDE7F1FFD4C3000B705EE /* DetalhesViewController.swift in Sources */,
+				F2EE4877213465B9004F1CD1 /* weponTypesStruct.swift in Sources */,
 				F207F21A2044559F002482D9 /* AlamoCandidato.swift in Sources */,
 				F2EFDE851FFEA14000B705EE /* ViagemDAO.swift in Sources */,
+				F2AA41442130726B00AF18A5 /* ProtocolsTesting.swift in Sources */,
 				F29122122034772B005A8AFB /* PageViewViewController.swift in Sources */,
+				F2EE488821349B16004F1CD1 /* racerProtocol.swift in Sources */,
 				F2DA0480201757BB00E3484B /* AlamoTestesViewController.swift in Sources */,
 				F2EFDE831FFE937800B705EE /* PacoteViagem.swift in Sources */,
 				F2CF46CD2056F6A300B0332C /* outraMessageViewController.swift in Sources */,
+				F2EE490E213732DD004F1CD1 /* MVPSimpleViewController.swift in Sources */,
+				F2EE489021349CF1004F1CD1 /* motorcycleExtension.swift in Sources */,
 				F2DDDB77203DABA7005B79CD /* TransicaoBaixoViewController.swift in Sources */,
 				F2C94B271FFB9BE2000331B2 /* ItensTable.swift in Sources */,
 				F207F216204452F8002482D9 /* TesteAPICandidatoViewController.swift in Sources */,
+				F2EE491021373493004F1CD1 /* LoginService.swift in Sources */,
+				F2EE487421346454004F1CD1 /* weaponProtocol.swift in Sources */,
 				F21810091FBDD352006BFD5B /* Tab2ViewController.swift in Sources */,
+				F2EE488221348EC0004F1CD1 /* unladenSwallowExtension.swift in Sources */,
+				F2EE48B02136C706004F1CD1 /* EndPointType.swift in Sources */,
 				F2163793203F387A00A236C2 /* ImagePicker.swift in Sources */,
 				F21EA1621FA8C37500CDCD83 /* AppDelegate.swift in Sources */,
+				F2EE491B213988D7004F1CD1 /* MVPSimpleConfigurator.swift in Sources */,
 				F216378C203F155700A236C2 /* AgendaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

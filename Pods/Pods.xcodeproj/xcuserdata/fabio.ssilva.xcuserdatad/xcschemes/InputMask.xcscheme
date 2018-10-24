@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '47130D42BDB761C86FFD29CAF89D281A'
-               BlueprintName = 'InputMask'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'InputMask.framework'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "47130D42BDB761C86FFD29CAF89D281A"
+               BlueprintName = "InputMask"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "InputMask.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -160,6 +160,13 @@ class ButtonTelasViewController: UIViewController {
         
     }
     
+    @IBAction func internetTestButton(_ sender: Any) {
+        let internetTesteID = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "internetTesteID")
+        self.present(internetTesteID, animated: true)
+        
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
